@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Grive
+Comment=A free service that lets you bring your photos, docs, and videos anywhere and share them easily.
+Exec=$HOME/scripts/grive2.sh
+Icon=/home/ed/.local/share/icons/apps/google-drive.svg
+Terminal=false
+StartupNotify=false
+Categories=Network;
+Name[en_US]=Grive
+Path=

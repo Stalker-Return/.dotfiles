@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+        <menu id="terminal-menu" label="Terminal Commands" icon="/usr/share/icons/bash0.png">
+	<separator label="Upgrading"/>
+			<item label="sudo apt-get update">
+			  <action name="Execute">
+					<command>
+						xdotool type "sudo apt-get update"
+					</command>
+				</action>
+			</item>
+			<item label="sudo apt-get upgrade">
+			  <action name="Execute">
+					<command>
+						xdotool type "sudo apt-get upgrade"
+					</command>
+				</action>
+			</item>
+			<item label="sudo apt-get dist-upgrade">
+			  <action name="Execute">
+					<command>
+						xdotool type "sudo apt-get dist-upgrade"
+					</command>
+				</action>
+			</item>
+			<item label="sudo apt-get autoremove">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo apt-get autoremove"
+					</command>
+				</action>
+			</item>
+		<separator label="Installing"/>
+			<item label="sudo apt-get install ?">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo apt-get install ?"
+					</command>
+				</action>
+			</item>
+			<item label="sudo apt-get install --no-install-recommends ?">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo apt-get install --no-install-recommends ?"
+					</command>
+				</action>
+			</item>
+			<item label="sudo apt-get install ? notthisdep-?">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo apt-get install ? notthisdep-?"
+					</command>
+				</action>
+			</item>
+			<item label="dpkg --list | grep ? (info)">
+			<action name="Execute">
+					<command>
+						xdotool type "dpkg --list | grep ?"
+					</command>
+				</action>
+			</item>
+			<item label="sudo dpkg -i ?.deb">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo dpkg -i ?.deb"
+					</command>
+				</action>
+			</item>
+			<item label="sudo alien -i p ?.rpm">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo alien -i p ?.rpm"
+					</command>
+				</action>
+			</item>
+			<item label="sudo alien -d ?.rpm">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo alien -d ?.rpm"
+					</command>
+				</action>
+			</item>
+		<separator label="Cleaning & Removing"/>
+			<item label="du -sh /var/cache/apt/archives">
+				<action name="Execute">
+					<command>
+						xdotool type "du -sh /var/cache/apt/archives"
+					</command>
+				</action>
+			</item>	
+			<item label="sudo apt-get autoclean">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo apt-get autoclean"
+					</command>
+				</action>
+			</item>
+			<item label="sudo apt-get clean">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo apt-get clean"
+					</command>
+				</action>
+			</item>	
+			<item label="apt-get remove --purge ?">
+			<action name="Execute">
+					<command>
+						xdotool type "sudo apt-get remove --purge ?"
+					</command>
+				</action>
+			</item>	
+			<item label="dpkg -r ?">
+			<action name="Execute">
+					<command>
+						xdotool type "sudo dpkg -r ?"
+					</command>
+				</action>
+			</item>	
+			<item label="dpkg -P ? (configs)">
+			<action name="Execute">
+					<command>
+						xdotool type "sudo dpkg -P ?"
+					</command>
+				</action>
+			</item>
+		<separator label="Fixing"/>
+			<item label="sudo apt-get --no-remove -f install">
+			<action name="Execute">
+					<command>
+						xdotool type "sudo apt-get --no-remove -f install"
+					</command>
+				</action>
+			</item>
+			<item label="sudo apt-get update –fix-missing">
+			<action name="Execute">
+					<command>
+						xdotool type "sudo apt-get update –fix-missing"
+					</command>
+				</action>
+			</item>
+			<item label="sudo dpkg -configure -a">
+			<action name="Execute">
+					<command>
+						xdotool type "sudo dpkg --configure -a"
+					</command>
+				</action>
+			</item>
+			<item label="sudo update-grub">
+			<action name="Execute">
+					<command>
+						xdotool type "sudo update-grub"
+					</command>
+				</action>
+			</item>
+		<separator label="Ownership-Execute"/>
+			<item label="sudo chown me ?">
+			<action name="Execute">
+					<command>
+						xdotool type "sudo chown me ?"
+					</command>
+				</action>
+			</item>
+			<item label="sudo chmod 755 ?">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo chmod 755 ?"
+					</command>
+				</action>
+			</item>
+			<item label="sudo chmod +x ?">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo chmod +x ?"
+					</command>
+				</action>
+			</item>
+		<separator label="Tasking" />
+			<item label="mount priv">
+			<action name="Execute">
+					<command>
+						xdotool type "sudo mount -t nfs -o noatime,nfsvers=3,proto=tcp klein:/srv/exports/priv /media/priv "
+					</command>
+				</action>
+			</item>	
+			<item label="mount fat32">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo mount -t fat32 /dev/sde1 /media/me/kingston"
+					</command>
+				</action>
+			</item>	
+			<item label="umount priv">
+			<action name="Execute">
+					<command>
+						xdotool type "sudo umount /media/priv"
+					</command>
+				</action>
+			</item>
+			<item label="prev com prefixed with sudo">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo !!"
+					</command>
+				</action>
+			</item>
+			<item label="shutdown">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo shutdown -h 0"
+					</command>
+				</action>
+			</item>
+			<item label="sudo cp -r">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo cp -r"
+					</command>
+				</action>
+			</item>	
+			<item label="copy disc">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo cat /dev/sr0 > /home/me/?.iso"
+					</command>
+				</action>
+			</item>	
+			<item label="xbacklight set %">
+				<action name="Execute">
+					<command>
+						xdotool type "xbacklight -set ?"
+					</command>
+				</action>
+			</item>	
+			<item label="wavemon">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo wavemon"
+					</command>
+				</action>
+			</item>	
+		<separator label="Alternatives"/>
+			<item label="create generic app or add alternative">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo update-alternatives --install /usr/bin/x-file-manager x-file-manager /usr/bin/pcmanfm 90"
+					</command>
+				</action>
+			</item>
+			<item label="configure generic">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo update-alternatives --config ?" 
+					</command>
+				</action>
+			</item>
+			<item label="set default">
+				<action name="Execute">
+					<command>
+						xdotool type "sudo update-alternatives --set x-file-manager /bin/pcmanfm" 
+					</command>
+				</action>
+			</item>
+        <separator label="Information"/>
+			<item label="chaining operators">
+				<action name="Execute">
+					<command>
+						x-www-browser http://www.tecmint.com/chaining-operators-in-linux-with-practical-examples/
+					</command>
+				</action>
+			</item>
+			<item label="dpkg info">
+				<action name="Execute">
+					<command>
+						x-www-browser http://www.cyberciti.biz/howto/question/linux/dpkg-cheat-sheet.php
+					</command>
+				</action>
+			</item>
+			<item label="fstab info">
+				<action name="Execute">
+					<command>
+						x-www-browser http://pclosmag.com/html/issues/200709/page07.html
+					</command>
+				</action>
+			</item>
+			<item label="history terminal">
+				<action name="Execute">
+					<command>
+						xdotool type "history"
+					</command>
+				</action>
+			</item>
+			<item label="history command ?">
+				<action name="Execute">
+					<command>
+						xdotool type "history | grep ?" 
+					</command>
+				</action>
+			</item>
+			<item label="history command number x reissue">
+				<action name="Execute">
+					<command>
+						xdotool type "!x"
+					</command>
+				</action>
+			</item>
+			<item label="pclinux cheat">
+				<action name="Execute">
+					<command>
+						x-www-browser http://cli.learncodethehardway.org/bash_cheat_sheet.pdf
+					</command>
+				</action>
+			</item>
+			<item label="which ?">
+				<action name="Execute">
+					<command>
+						xdotool type "which 'app'"
+					</command>
+				</action>
+			</item>
+		</menu>
+</openbox_menu>

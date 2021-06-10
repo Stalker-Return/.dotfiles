@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=DropBox
+Comment=DropBox
+Exec=$HOME/.dropbox-dist/dropboxd
+Icon=/home/ed/.local/share/icons/apps/dropbox.svg
+Terminal=false
+StartupNotify=false
+GenericName=Description
+Path=

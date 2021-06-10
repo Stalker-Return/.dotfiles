@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Tor Browser (en-US)
+Exec=/usr/bin/tor-browser %u
+Icon=/home/ed/.local/share/icons/apps/tor.svg
+Categories=Network;
+Comment=Anonymous browsing using Firefox and Tor

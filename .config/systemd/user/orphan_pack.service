@@ -1,0 +1,6 @@
+[Unit]
+Description=Clean orphan packages
+
+[Service]
+Type=simple
+ExecStart=/home/ed/bin/orphan_pack.sh

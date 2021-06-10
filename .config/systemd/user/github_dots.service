@@ -1,0 +1,8 @@
+[Unit]
+Description=Update github dotfiles
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/ed/bin/github_dots.sh

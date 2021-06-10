@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Openbox Logout Menu -->	
+<exit_openbox_menu>
+	<menu id="exit-menu" label="Logout Session">
+			
+			<item label="Shutdown" icon=".local/share/icons/apps/system-shutdown.svg">
+				<action name="Execute"><command>sh ~/scripts/lout.sh -f shd </command></action>
+			</item>
+			<item label="Restart" icon=".local/share/icons/apps/system-reboot.svg">
+				<action name="Execute"><command>sh ~/scripts/lout.sh -f reb </command></action>
+			</item>
+			<item label="Suspend" icon=".local/share/icons/apps/system-suspend.svg">
+				<action name="Execute"><command>sh ~/scripts/lout.sh -f ssp </command></action>
+			</item>
+			<item label="Hibernate" icon=".local/share/icons/apps/system-suspend-hibernate.svg">
+				<action name="Execute"><command>sh ~/scripts/lout.sh -f hbr </command></action>
+			</item>
+			<item label="Log Out" icon=".local/share/icons/apps/system-log-out.svg">
+				<action name="Execute"><command>sh ~/scripts/lout.sh -f opex </command></action>
+			</item>
+
+	</menu> <!-- the end of root menu / "Logout Session" -->
+
+</exit_openbox_menu> <!-- the end of Main Menu-->

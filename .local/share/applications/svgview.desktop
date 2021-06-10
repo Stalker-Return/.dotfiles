@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=svgview
+Name[en_US]=svgview
+GenericName=Image viewer
+GenericName[en_US]=Image viewer
+Comment=Image viewer and cataloguer
+Exec=feh --conversion-timeout 1 %f
+Terminal=false
+MimeType=image/svg+xml
+Type=Application
+Icon=/home/ed/.local/share/icons/apps/picture.svg
+Categories=Other;
+NoDisplay=true

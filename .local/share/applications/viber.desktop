@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Viber
+Comment=Viber VoIP and messenger
+Exec=viber %u
+Icon=/home/ed/.local/share/icons/apps/viber.svg
+Terminal=false
+Type=Application
+Categories=Network;InstantMessaging;P2P;
+MimeType=x-scheme-handler/viber;

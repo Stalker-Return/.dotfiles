@@ -1,0 +1,6 @@
+[Unit]
+Description=Clean journal directory
+
+[Service]
+Type=simple
+ExecStart=/home/ed/bin/clean_journal.sh

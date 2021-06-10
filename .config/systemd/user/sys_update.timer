@@ -1,0 +1,11 @@
+[Unit]
+Description=Full system update daily timer
+
+[Timer]
+OnCalendar=daily
+#OnCalendar=*-*-* 09:35:00
+#OnActiveSec=15min
+Persistent=true
+
+[Install]
+WantedBy=timers.target

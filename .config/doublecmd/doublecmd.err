@@ -1,0 +1,95 @@
+--------------- 10-12-2020, 12:56:41 ---------------
+| DC v0.9.9 beta Rev. 9478 -- x86_64-Linux-qt5
+| Arch Linux -- Qt 5.15.2, libQt5Pas 5.6.1 | PID 21590
+Unhandled exception: EAccessViolation: Access violation
+  Stack trace:
+  $00007F6A482CF4D2 in /usr/lib/libQt5XcbQpa.so.5
+
+--------------- 28-12-2020, 22:34:35 ---------------
+| DC v0.9.9 beta Rev. 9478 -- x86_64-Linux-qt5
+| Arch Linux -- Qt 5.15.2, libQt5Pas 5.6.1 | PID 741811
+Unhandled exception: EAccessViolation: Access violation
+  Stack trace:
+  $00007FDA89EF6D40 in /usr/lib/libQt5Pas.so.1
+  $000000000070C91F line 17584, column 3 of qtwidgets.pas in /usr/lib/doublecmd/doublecmd
+  $000000000043876B in /usr/lib/doublecmd/doublecmd
+  $00000000006E8C3E line 2270, column 3 of qtwidgets.pas in /usr/lib/doublecmd/doublecmd
+  $00000000006E8C81 line 2276, column 3 of qtwidgets.pas in /usr/lib/doublecmd/doublecmd
+  $00007FDA89F33D7B in /usr/lib/libQt5Pas.so.1
+  $00007FDA886D4020 in /usr/lib/libQt5Core.so.5
+
+--------------- 28-12-2020, 22:34:36 ---------------
+| DC v0.9.9 beta Rev. 9478 -- x86_64-Linux-qt5
+| Arch Linux -- Qt 5.15.2, libQt5Pas 5.6.1 | PID 741811
+Unhandled exception: EAccessViolation: Access violation
+  Stack trace:
+  $00007FDA89EF6D40 in /usr/lib/libQt5Pas.so.1
+  $000000000070C91F line 17584, column 3 of qtwidgets.pas in /usr/lib/doublecmd/doublecmd
+  $000000000043876B in /usr/lib/doublecmd/doublecmd
+  $00000000006E8C3E line 2270, column 3 of qtwidgets.pas in /usr/lib/doublecmd/doublecmd
+  $00000000007BF76D line 208, column 24 of qtwscontrols.pp in /usr/lib/doublecmd/doublecmd
+  $000000000065017E line 7861, column 26 of include/wincontrol.inc in /usr/lib/doublecmd/doublecmd
+  $0000000000662BC5 line 47, column 3 of include/customcontrol.inc in /usr/lib/doublecmd/doublecmd
+  $000000000064A2BF line 5313, column 5 of include/wincontrol.inc in /usr/lib/doublecmd/doublecmd
+  $000000000064A2A7 line 5309, column 11 of include/wincontrol.inc in /usr/lib/doublecmd/doublecmd
+  $000000000064D18A line 6606, column 5 of include/wincontrol.inc in /usr/lib/doublecmd/doublecmd
+  $0000000000662B4E line 40, column 3 of include/customcontrol.inc in /usr/lib/doublecmd/doublecmd
+  $00000000004B060E line 316, column 3 of include/scrollingwincontrol.inc in /usr/lib/doublecmd/doublecmd
+  $00000000004B2026 line 212, column 5 of include/customform.inc in /usr/lib/doublecmd/doublecmd
+  $000000000043876B in /usr/lib/doublecmd/doublecmd
+  $00000000004AD3B6 line 1934, column 3 of forms.pp in /usr/lib/doublecmd/doublecmd
+
+--------------- 09-02-2021, 17:39:19 ---------------
+| DC v0.9.10 beta Rev. 9640 -- x86_64-Linux-qt5
+| Arch Linux -- Qt 5.15.2, libQt5Pas 5.6.1 | PID 8814
+Unhandled exception: EAccessViolation: Access violation
+  Stack trace:
+  $0000000000A3769B line 207, column 5 of kaspathedit.pas in /usr/lib/doublecmd/doublecmd
+  $0000000000A372DA line 162, column 3 of kaspathedit.pas in /usr/lib/doublecmd/doublecmd
+  $000000000057D4DF line 315, column 18 of lazmethodlist.pas in /usr/lib/doublecmd/doublecmd
+  $00000000004C0C5A line 719, column 3 of include/application.inc in /usr/lib/doublecmd/doublecmd
+  $00000000004C2B04 line 1455, column 5 of include/application.inc in /usr/lib/doublecmd/doublecmd
+  $00000000004C4509 line 1991, column 5 of include/application.inc in /usr/lib/doublecmd/doublecmd
+  $0000000000524228 line 851, column 9 of qtobject.inc in /usr/lib/doublecmd/doublecmd
+  $00007F93C384F6B6 in /usr/lib/libQt5Core.so.5
+
+--------------- 09-02-2021, 17:39:25 ---------------
+| DC v0.9.10 beta Rev. 9640 -- x86_64-Linux-qt5
+| Arch Linux -- Qt 5.15.2, libQt5Pas 5.6.1 | PID 8814
+Unhandled exception: EAccessViolation: Access violation
+  Stack trace:
+  $0000000000A3769B line 207, column 5 of kaspathedit.pas in /usr/lib/doublecmd/doublecmd
+  $0000000000A372DA line 162, column 3 of kaspathedit.pas in /usr/lib/doublecmd/doublecmd
+  $000000000057D4DF line 315, column 18 of lazmethodlist.pas in /usr/lib/doublecmd/doublecmd
+  $00000000004C0C5A line 719, column 3 of include/application.inc in /usr/lib/doublecmd/doublecmd
+  $00000000004C2B04 line 1455, column 5 of include/application.inc in /usr/lib/doublecmd/doublecmd
+  $00000000004C4509 line 1991, column 5 of include/application.inc in /usr/lib/doublecmd/doublecmd
+  $0000000000524228 line 851, column 9 of qtobject.inc in /usr/lib/doublecmd/doublecmd
+  $00007F93C384F6B6 in /usr/lib/libQt5Core.so.5
+
+--------------- 09-02-2021, 17:39:45 ---------------
+| DC v0.9.10 beta Rev. 9640 -- x86_64-Linux-qt5
+| Arch Linux -- Qt 5.15.2, libQt5Pas 5.6.1 | PID 8814
+Unhandled exception: EAccessViolation: Access violation
+  Stack trace:
+  $0000000002CF2620 in 
+  $0000000000A372DA line 162, column 3 of kaspathedit.pas in /usr/lib/doublecmd/doublecmd
+  $000000000057D4DF line 315, column 18 of lazmethodlist.pas in /usr/lib/doublecmd/doublecmd
+  $00000000004C0C5A line 719, column 3 of include/application.inc in /usr/lib/doublecmd/doublecmd
+  $00000000004C2B04 line 1455, column 5 of include/application.inc in /usr/lib/doublecmd/doublecmd
+  $00000000004C4509 line 1991, column 5 of include/application.inc in /usr/lib/doublecmd/doublecmd
+  $0000000000524228 line 851, column 9 of qtobject.inc in /usr/lib/doublecmd/doublecmd
+  $00007F93C384F6B6 in /usr/lib/libQt5Core.so.5
+
+--------------- 01-06-2021, 13:26:20 ---------------
+| DC v0.9.10 beta Rev. 9640 -- x86_64-Linux-qt5
+| Arch Linux -- Qt 5.15.2, libQt5Pas 5.6.1 | PID 2068
+Unhandled exception: EAccessViolation: Access violation
+  Stack trace:
+  $0000000000A8BA40 line 515, column 20 of frames/foptionsdirectoryhotlist.pas in /usr/lib/doublecmd/doublecmd
+  $00000000006AAEB9 line 246, column 13 of include/customaction.inc in /usr/lib/doublecmd/doublecmd
+  $000000000046E0A2 in /usr/lib/doublecmd/doublecmd
+  $00000000006A3C3A line 293, column 5 of include/menuitem.inc in /usr/lib/doublecmd/doublecmd
+  $0000000000438D0A in /usr/lib/doublecmd/doublecmd
+  $00007FB1BE803D62 in /usr/lib/libQt5Core.so.5
+

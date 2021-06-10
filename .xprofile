@@ -1,0 +1,3 @@
+pcmanfm --desktop &
+#pcmanfm --daemon-mode &
+powerkit &

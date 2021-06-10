@@ -1,0 +1,6 @@
+[Unit]
+Description=Delete ~/.cache/* 
+
+[Service]
+Type=simple
+ExecStart=/home/ed/bin/del_cache.sh

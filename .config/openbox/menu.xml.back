@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://openbox.org/">
+  <menu id="root-menu" label="Applications">
+    <item label="File Manager" icon="/root/.config/obmenu-generator/icons/a384074033dfc3ebebb1a8a39d2be8a6.png"><action name="Execute"><command><![CDATA[xdg-open .]]></command></action></item>
+    <item label="Terminal" icon="/root/.config/obmenu-generator/icons/4bba506b8ff42c4bfb64152ae0997ac9.png"><action name="Execute"><command><![CDATA[xterm]]></command></action></item>
+    <item label="Web Browser" icon="/root/.config/obmenu-generator/icons/0fd14be8770af75716427df2c3a3194a.png"><action name="Execute"><command><![CDATA[xdg-open http://]]></command></action></item>
+    <item label="Run command" icon="/root/.config/obmenu-generator/icons/ad396476a3d8b534bcfed5108874abe3.png"><action name="Execute"><command><![CDATA[gmrun]]></command></action></item>
+  <separator label="Categories"/>
+  <menu id="0.0951324869683994" icon="/root/.config/obmenu-generator/icons/14ccfd60064d61cfc7da4145731d45f2.png" label="Accessories">
+    <item label="compton" icon="/root/.config/obmenu-generator/icons/79706a0a3833a8b5a372c19635a63d02.png"><action name="Execute"><command><![CDATA[compton]]></command></action></item>
+    <item label="File Manager PCManFM" icon="/root/.config/obmenu-generator/icons/a384074033dfc3ebebb1a8a39d2be8a6.png"><action name="Execute"><command><![CDATA[pcmanfm]]></command></action></item>
+    <item label="KeePassXC" icon="/root/.config/obmenu-generator/icons/efdf3b89e9ee63d4ce8a8f4175a1fd1f.png"><action name="Execute"><command><![CDATA[keepassxc]]></command></action></item>
+    <item label="Leafpad" icon="/root/.config/obmenu-generator/icons/f646522c4c5244610926693a4560f7e2.png"><action name="Execute"><command><![CDATA[leafpad]]></command></action></item>
+    <item label="Parcellite" icon="/root/.config/obmenu-generator/icons/60c669e98574fa87f8a42138459b87c2.png"><action name="Execute"><command><![CDATA[parcellite]]></command></action></item>
+    <item label="Vim" icon="/root/.config/obmenu-generator/icons/9f954f62b318e85d9716dec7d44b1f3b.png"><action name="Execute"><command><![CDATA[xterm -e 'vim']]></command></action></item>
+    <item label="Xarchiver" icon="/root/.config/obmenu-generator/icons/42cb7ee09a39565e99c45e27fe6dce84.png"><action name="Execute"><command><![CDATA[xarchiver]]></command></action></item>
+  </menu>
+  <menu id="0.293444901096763" icon="/root/.config/obmenu-generator/icons/b5452f3ed0957329aa07d91117ae9b54.png" label="Education">
+    <item label="LibreOffice Math" icon="/root/.config/obmenu-generator/icons/91ab676fc942dc96d15c868480dbdcf0.png"><action name="Execute"><command><![CDATA[libreoffice --math]]></command></action></item>
+  </menu>
+  <menu id="0.0884363281458143" icon="/root/.config/obmenu-generator/icons/eac7ac9b799a361f360a5c6592277f77.png" label="Graphics">
+    <item label="LibreOffice Draw" icon="/root/.config/obmenu-generator/icons/98a0a28f171d63dc2be3910835bb4dad.png"><action name="Execute"><command><![CDATA[libreoffice --draw]]></command></action></item>
+    <item label="Obsession Logout" icon="/root/.config/obmenu-generator/icons/bf87db83279ebc068844eb20778ef24b.png"><action name="Execute"><command><![CDATA[obsession-logout]]></command></action></item>
+    <item label="Okular" icon="/root/.config/obmenu-generator/icons/15caf14e9cbcf8c050e8053cc452fadb.png"><action name="Execute"><command><![CDATA[okular]]></command></action></item>
+    <item label="Ristretto Image Viewer" icon="/root/.config/obmenu-generator/icons/8e70b64ed6dd1526a5b2080b9fb9d70e.png"><action name="Execute"><command><![CDATA[ristretto]]></command></action></item>
+  </menu>
+  <menu id="0.96898928247078" icon="/root/.config/obmenu-generator/icons/88d45fe59e05c5b23cc06c0dce0f8952.png" label="Multimedia">
+    <item label="PulseAudio Volume Control" icon="/root/.config/obmenu-generator/icons/2eea2378cb3ea6ab5652225217137f86.png"><action name="Execute"><command><![CDATA[pavucontrol]]></command></action></item>
+    <item label="Volti" icon="/root/.config/obmenu-generator/icons/2eea2378cb3ea6ab5652225217137f86.png"><action name="Execute"><command><![CDATA[volti]]></command></action></item>
+  </menu>
+  <menu id="0.10348390358293" icon="/root/.config/obmenu-generator/icons/5e2944a03dc82bfaea4f718d2d3f6083.png" label="Network">
+    <item label="Chromium Web Browser" icon="/root/.config/obmenu-generator/icons/fe8cbaa1d5859e29b29c05e1c04ebc84.png"><action name="Execute"><command><![CDATA[/usr/bin/chromium]]></command></action></item>
+    <item label="MEGAsync" icon="/root/.config/obmenu-generator/icons/3922324bb5fd84b1748a78b39fd5c9c4.png"><action name="Execute"><command><![CDATA[megasync]]></command></action></item>
+    <item label="Skype" icon="/root/.config/obmenu-generator/icons/00c9118987765d7224a14c2583a2eb48.png"><action name="Execute"><command><![CDATA[/usr/bin/skypeforlinux]]></command></action></item>
+    <item label="TeamViewer" icon="/root/.config/obmenu-generator/icons/23bf45a8c7a00be9207fea8220ab0563.png"><action name="Execute"><command><![CDATA[/opt/teamviewer/tv_bin/script/teamviewer]]></command></action></item>
+    <item label="Wicd Network Manager" icon="/root/.config/obmenu-generator/icons/9c2e821047d9f3f713a080b634063f0e.png"><action name="Execute"><command><![CDATA[wicd-gtk --no-tray]]></command></action></item>
+  </menu>
+  <menu id="0.799672641311176" icon="/root/.config/obmenu-generator/icons/334c78f78ee31b6cfa75b142a2a17622.png" label="Office">
+    <item label="LibreOffice Base" icon="/root/.config/obmenu-generator/icons/afea34f0b24fa2f34fc8906593709122.png"><action name="Execute"><command><![CDATA[libreoffice --base]]></command></action></item>
+    <item label="LibreOffice Calc" icon="/root/.config/obmenu-generator/icons/b0274d20f7796518393a76740eb788c1.png"><action name="Execute"><command><![CDATA[libreoffice --calc]]></command></action></item>
+    <item label="LibreOffice Draw" icon="/root/.config/obmenu-generator/icons/98a0a28f171d63dc2be3910835bb4dad.png"><action name="Execute"><command><![CDATA[libreoffice --draw]]></command></action></item>
+    <item label="LibreOffice Impress" icon="/root/.config/obmenu-generator/icons/a98e2fc5dd7feeb02a6c7b73b0ce3799.png"><action name="Execute"><command><![CDATA[libreoffice --impress]]></command></action></item>
+    <item label="LibreOffice Math" icon="/root/.config/obmenu-generator/icons/91ab676fc942dc96d15c868480dbdcf0.png"><action name="Execute"><command><![CDATA[libreoffice --math]]></command></action></item>
+    <item label="LibreOffice Writer" icon="/root/.config/obmenu-generator/icons/1d7385cff54d381548576cf6a7c98701.png"><action name="Execute"><command><![CDATA[libreoffice --writer]]></command></action></item>
+    <item label="LibreOffice" icon="/root/.config/obmenu-generator/icons/39d497cac0e7189934ac1649594c0d41.png"><action name="Execute"><command><![CDATA[libreoffice]]></command></action></item>
+    <item label="Okular" icon="/root/.config/obmenu-generator/icons/15caf14e9cbcf8c050e8053cc452fadb.png"><action name="Execute"><command><![CDATA[okular]]></command></action></item>
+  </menu>
+  <menu id="0.714904718004927" icon="/root/.config/obmenu-generator/icons/fc3f239d041b05a6f4b03e3f805b52b2.png" label="Settings">
+    <item label="Customize Look and Feel" icon="/root/.config/obmenu-generator/icons/e78761fff5163d9375641f2e09fc0d77.png"><action name="Execute"><command><![CDATA[lxappearance]]></command></action></item>
+    <item label="Desktop Preferences" icon="/root/.config/obmenu-generator/icons/6861e1669e46ab273f4d728d09b07317.png"><action name="Execute"><command><![CDATA[pcmanfm --desktop-pref]]></command></action></item>
+    <item label="IBus Preferences" icon="/root/.config/obmenu-generator/icons/cac6102fa91066f6e4ac324d7484f550.png"><action name="Execute"><command><![CDATA[ibus-setup]]></command></action></item>
+    <item label="Input Method" icon="/root/.config/obmenu-generator/icons/605c824ef9d26198547fa37acfa99b09.png"><action name="Execute"><command><![CDATA[im-config]]></command></action></item>
+    <item label="Openbox Configuration Manager" icon="/root/.config/obmenu-generator/icons/61f3de6fd06f9847e869878302ba1980.png"><action name="Execute"><command><![CDATA[obconf]]></command></action></item>
+    <item label="Power Manager" icon="/root/.config/obmenu-generator/icons/1857bb27be3a897eed96186580c63120.png"><action name="Execute"><command><![CDATA[xfce4-power-manager-settings]]></command></action></item>
+    <item label="Synaptic Package Manager" icon="/root/.config/obmenu-generator/icons/cef56a14d80497596ab527dd5bb10e57.png"><action name="Execute"><command><![CDATA[xterm -e 'sudo synaptic-pkexec']]></command></action></item>
+    <item label="Tint2 Settings" icon="/root/.config/obmenu-generator/icons/e25fa831dcfce3d855f67af87e68537f.png"><action name="Execute"><command><![CDATA[tint2conf]]></command></action></item>
+  </menu>
+  <menu id="0.304221181472791" icon="/root/.config/obmenu-generator/icons/d7f5bec41effc66a0e54da9f8b7d1ea9.png" label="System">
+    <item label="File Manager PCManFM" icon="/root/.config/obmenu-generator/icons/a384074033dfc3ebebb1a8a39d2be8a6.png"><action name="Execute"><command><![CDATA[pcmanfm]]></command></action></item>
+    <item label="gmrun" icon="/root/.config/obmenu-generator/icons/23c4f106af4c23099a7f9eed6df0c0cd.png"><action name="Execute"><command><![CDATA[gmrun]]></command></action></item>
+    <item label="LXTerminal" icon="/root/.config/obmenu-generator/icons/1fc73518425ab06d5b20f4eb3f74b3db.png"><action name="Execute"><command><![CDATA[lxterminal]]></command></action></item>
+    <item label="MEGAsync" icon="/root/.config/obmenu-generator/icons/3922324bb5fd84b1748a78b39fd5c9c4.png"><action name="Execute"><command><![CDATA[megasync]]></command></action></item>
+    <item label="Synaptic Package Manager" icon="/root/.config/obmenu-generator/icons/cef56a14d80497596ab527dd5bb10e57.png"><action name="Execute"><command><![CDATA[xterm -e 'sudo synaptic-pkexec']]></command></action></item>
+    <item label="Tint2" icon="/root/.config/obmenu-generator/icons/83b0b3f21b72873742a7fc29d35bb049.png"><action name="Execute"><command><![CDATA[tint2]]></command></action></item>
+  </menu>
+  <separator/>
+  <menu id="0.352636717716823" icon="/root/.config/obmenu-generator/icons/1d04abde9d640cde340f7ede0fb1f823.png" label="Advanced Settings">
+    <item label="Conky RC" icon="/root/.config/obmenu-generator/icons/4e24f630325b42f6a3338a0d8a447112.png"><action name="Execute"><command><![CDATA[geany ~/.conkyrc]]></command></action></item>
+    <item label="Tint2 Panel" icon="/root/.config/obmenu-generator/icons/4e24f630325b42f6a3338a0d8a447112.png"><action name="Execute"><command><![CDATA[geany ~/.config/tint2/tint2rc]]></command></action></item>
+  <menu id="0.835950010515035" icon="/root/.config/obmenu-generator/icons/8ff4b3d65cf1c3a91431edca5430a860.png" label="Obmenu-Generator">
+    <item label="Menu Schema" icon="/root/.config/obmenu-generator/icons/4e24f630325b42f6a3338a0d8a447112.png"><action name="Execute"><command><![CDATA[geany ~/.config/obmenu-generator/schema.pl]]></command></action></item>
+    <item label="Menu Config" icon="/root/.config/obmenu-generator/icons/4e24f630325b42f6a3338a0d8a447112.png"><action name="Execute"><command><![CDATA[geany ~/.config/obmenu-generator/config.pl]]></command></action></item>
+  <separator/>
+    <item label="Generate a static menu" icon="/root/.config/obmenu-generator/icons/8ff4b3d65cf1c3a91431edca5430a860.png"><action name="Execute"><command><![CDATA[obmenu-generator -s -c]]></command></action></item>
+    <item label="Generate a static menu with icons" icon="/root/.config/obmenu-generator/icons/8ff4b3d65cf1c3a91431edca5430a860.png"><action name="Execute"><command><![CDATA[obmenu-generator -s -i -c]]></command></action></item>
+  <separator/>
+    <item label="Generate a dynamic menu" icon="/root/.config/obmenu-generator/icons/8ff4b3d65cf1c3a91431edca5430a860.png"><action name="Execute"><command><![CDATA[obmenu-generator -p]]></command></action></item>
+    <item label="Generate a dynamic menu with icons" icon="/root/.config/obmenu-generator/icons/8ff4b3d65cf1c3a91431edca5430a860.png"><action name="Execute"><command><![CDATA[obmenu-generator -p -i]]></command></action></item>
+  <separator/>
+    <item label="Refresh cache" icon="/root/.config/obmenu-generator/icons/d44f4889cf4d02ebed9acbed60fb0e31.png"><action name="Execute"><command><![CDATA[obmenu-generator -d]]></command></action></item>
+  </menu>
+  <menu id="0.551736912706286" icon="/root/.config/obmenu-generator/icons/cbd33e85d4e0834359519a4e282b2aeb.png" label="Openbox">
+    <item label="Openbox Autostart" icon="/root/.config/obmenu-generator/icons/4e24f630325b42f6a3338a0d8a447112.png"><action name="Execute"><command><![CDATA[geany ~/.config/openbox/autostart]]></command></action></item>
+    <item label="Openbox RC" icon="/root/.config/obmenu-generator/icons/4e24f630325b42f6a3338a0d8a447112.png"><action name="Execute"><command><![CDATA[geany ~/.config/openbox/rc.xml]]></command></action></item>
+    <item label="Openbox Menu" icon="/root/.config/obmenu-generator/icons/4e24f630325b42f6a3338a0d8a447112.png"><action name="Execute"><command><![CDATA[geany ~/.config/openbox/menu.xml]]></command></action></item>
+    <item label="Reconfigure Openbox" icon="/root/.config/obmenu-generator/icons/cbd33e85d4e0834359519a4e282b2aeb.png"><action name="Execute"><command><![CDATA[openbox --reconfigure]]></command></action></item>
+  </menu>
+  </menu>
+  <separator/>
+    <item label="Lock" icon="/root/.config/obmenu-generator/icons/4c8321a75ca583aed86fefc054a0d4cf.png"><action name="Execute"><command><![CDATA[xscreensaver-command -lock]]></command></action></item>
+    <item label="Exit" icon="/root/.config/obmenu-generator/icons/5a284e6fec46e2093edaa3e4e92ae710.png"><action name="Exit"/></item>
+  </menu>
+</openbox_menu>

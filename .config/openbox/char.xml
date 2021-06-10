@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu xmlns="http://openbox.org/"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://openbox.org/
+    file:///usr/share/doc/openbox/menu.xsd">
+  <menu id="char-menu" label="Characters" icon="/usr/share/icons/ascii.png">
+    <item label="&#224;" icon="/usr/share/icons/characters/01.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#224;
+          </execute>
+       </action>
+    </item>
+    <item label="&#225;" icon="/usr/share/icons/characters/02.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#225;
+          </execute>
+       </action>
+    </item>
+    <item label="&#226;" icon="/usr/share/icons/characters/03.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#226;
+          </execute>
+       </action>
+    </item>
+    <item label="&#228;" icon="/usr/share/icons/characters/04.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#228;
+          </execute>
+       </action>
+    </item>
+    <item label="&#232;" icon="/usr/share/icons/characters/05.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#232;
+          </execute>
+       </action>
+    </item>
+    <item label="&#233;" icon="/usr/share/icons/characters/06.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#233;
+          </execute>
+       </action>
+    </item>
+    <item label="&#234;" icon="/usr/share/icons/characters/07.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#234;
+          </execute>
+       </action>
+    </item>
+    <item label="&#235;" icon="/usr/share/icons/characters/08.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#235;
+          </execute>
+       </action>
+    </item>
+    <item label="&#236;" icon="/usr/share/icons/characters/09.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#236;
+          </execute>
+       </action>
+    </item>
+    <item label="&#237;" icon="/usr/share/icons/characters/10.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#237;
+          </execute>
+       </action>
+    </item>
+    <item label="&#238;" icon="/usr/share/icons/characters/11.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#238;
+          </execute>
+       </action>
+    </item>
+    <item label="&#239;" icon="/usr/share/icons/characters/12.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#239;
+          </execute>
+       </action>
+    </item>
+   <item label="&#242;" icon="/usr/share/icons/characters/13.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#242;
+          </execute>
+       </action>
+    </item>
+    <item label="&#243;" icon="/usr/share/icons/characters/14.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#243;
+          </execute>
+       </action>
+    </item>
+    <item label="&#244;" icon="/usr/share/icons/characters/15.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#244;
+          </execute>
+       </action>
+    </item>
+    <item label="&#245;" icon="/usr/share/icons/characters/16.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#245;
+          </execute>
+       </action>
+    </item>
+    <item label="&#249;" icon="/usr/share/icons/characters/17.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#249;
+          </execute>
+       </action>
+    </item>
+    <item label="&#250;" icon="/usr/share/icons/characters/18.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#250;
+          </execute>
+       </action>
+    </item>
+    <item label="&#251;" icon="/usr/share/icons/characters/19.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#251;
+          </execute>
+       </action>
+    </item>
+    <item label="&#252;" icon="/usr/share/icons/characters/20.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#252;
+          </execute>
+       </action>
+    </item>
+   <item label="&#230;" icon="/usr/share/icons/characters/21.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#230;
+          </execute>
+       </action>
+    </item>
+    <item label="&#231;" icon="/usr/share/icons/characters/22.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#231;
+          </execute>
+       </action>
+    </item>
+    <item label="&#8800;" icon="/usr/share/icons/characters/bg.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#8800;
+          </execute>
+       </action>
+    </item>
+    <item label="&#8804;" icon="/usr/share/icons/characters/bg.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#8804;
+          </execute>
+       </action>
+    </item>
+    <item label="&#8805;" icon="/usr/share/icons/characters/bg.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#8805;
+          </execute>
+       </action>
+    </item>
+    <item label="&#177;" icon="/usr/share/icons/characters/bg.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#177;
+          </execute>
+       </action>
+    </item>
+    <item label="&#8734;" icon="/usr/share/icons/characters/bg.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#8734;
+          </execute>
+       </action>
+    </item>
+    <item label="&#9650;" icon="/usr/share/icons/characters/bg.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#9650;
+          </execute>
+       </action>
+    </item>
+    <item label="&#9660;" icon="/usr/share/icons/characters/bg.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#9660;
+          </execute>
+       </action>
+    </item>
+    <item label="&#8730;" icon="/usr/share/icons/characters/bg.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#8730;
+          </execute>
+       </action>
+    </item>
+    <item label="&#8747;" icon="/usr/share/icons/characters/bg.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#8747;
+          </execute>
+       </action>
+    </item>
+    <item label="&#8721;" icon="/usr/share/icons/characters/bg.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#8721;
+          </execute>
+       </action>
+    </item>
+    <item label="&#8719;" icon="/usr/share/icons/characters/bg.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#8719;
+          </execute>
+       </action>
+    </item>
+    <item label="&#60;" icon="/usr/share/icons/characters/less.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#60;
+          </execute>
+       </action>
+    </item>
+    <item label="&#62;" icon="/usr/share/icons/characters/greater.png">
+       <action name="Execute">
+          <execute>
+             xdotool type &#62;
+          </execute>
+       </action>
+    </item>
+    <item label="Ascii-char" icon="/usr/share/icons/ascii.png">>
+       <action name="Execute">
+          <execute>
+    wine /home/me/.wine/drive_c/"Program Files"/"RJ Ascii"/Ascii.exe           </execute>
+       </action>
+    </item>
+</menu>
+</openbox_menu>

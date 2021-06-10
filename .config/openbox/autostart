@@ -1,0 +1,46 @@
+# Screen resolution:
+#xrandr --output LVDS1 --mode 1366x768 &
+#xrandr --output Virtual1 --mode 1360x768 &
+
+# Screen locker
+#xautolock -time 12 -locker "systemctl suspend" -detectsleep &
+#xautolock -time 8 -locker "sh ~/scripts/i3lock.sh" -detectsleep &
+
+# System tray applet for PulseAudio
+pasystray &
+
+# System tray for battery
+#cbatticon -u 20 -i standard -c "poweroff" -l 15 -r 3 &
+
+# Tint-2 panel:
+tint2 $HOME/.config/tint2/tint2rc &
+#tint2 $HOME/.config/tint2/tint2rc-left &
+#tint2 $HOME/.config/tint2/tint2rc-top &
+
+# Wallpapers:
+#sh ~/scripts/feh_background.sh &
+sh ~/.fehbg
+#feh --no-fehbg --bg-scale .local/share/wallpapers/gritty.png
+
+# Keyboard map settings:
+setxkbmap -option grp:switch,grp:ctrl_shift_toggle,grp_led:scroll us,ru,ua
+#setxkbmap -option grp:switch,grp:alt_shift_toggle,grp_led:scroll us,ru,ua
+
+# Keyboard layout indicator:
+fbxkb &
+
+# Set network connection:
+nm-applet &
+
+# Manage user directories
+xdg-user-dirs-update
+
+# Compositor
+#picom -f &
+
+# Power Manager:
+#powerkit &
+
+# Default desktop manager:
+#pcmanfm --desktop &
+#pcmanfm --daemon-mode &
