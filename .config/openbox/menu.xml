@@ -174,7 +174,6 @@
 			<item label="Obs Studio" icon=".local/share/icons/apps/green-recorder.svg">
 				<action name="Execute"><execute>obs </execute></action>
 			</item>
-			kdenlive
 			<item label="Kdenlive" icon=".local/share/icons/apps/kdenlive.svg">
 				<action name="Execute"><execute>~/portable/kdenlive-21.04.1-x86_64.appimage </execute></action>
 			</item>
