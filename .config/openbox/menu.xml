@@ -317,6 +317,9 @@
 				<item label="GIMP" icon=".local/share/icons/apps/gimp.svg">
 					<action name="Execute"><execute>/usr/bin/gimp-2.10 </execute></action>
 				</item>
+				<item label="Flameshot" icon=".local/share/icons/apps/flameshot.svg">
+					<action name="Execute"><execute>flameshot </execute></action>
+				</item>
 			</menu> <!-- the end of Graphics -->
 
 			<separator/>
@@ -382,6 +385,9 @@
 				</item>
 				<item label="Sysytem Services List" icon=".local/share/icons/apps/ccsm.svg">
 					<action name="Execute"><execute>lxterminal --geometry=131x45 --title=SYSTEM_Services -e systemctl list-units --type=service </execute></action>
+				</item>
+				<item label="Disk usage analyzer" icon=".local/share/icons/apps/disk-usage-analyzer.svg">
+					<action name="Execute"><execute>lxterminal --geometry=60x30 --title=SYSTEM_Services -e ncdu  </execute></action>
 				</item>
 			</menu> <!-- the end of Sys Info -->
 
