@@ -84,7 +84,7 @@
     <FileType>
       <Name>pack</Name>
       <IconFile>$HOME/.local/share/icons/apps/nvvp.svg</IconFile>
-      <ExtensionList>arj|zip</ExtensionList>
+      <ExtensionList>arj|zip|rar|tar.bz2|tar.gz|bz2|tar|gz|tbz2|tgz|7z|deb|tar.xz|tar.zst</ExtensionList>
       <Actions>
         <Action>
           <Name>Open</Name>
