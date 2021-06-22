@@ -264,8 +264,8 @@
   </Toolbars>
   <MainWindow>
     <Position Save="True">
-      <Left>55</Left>
-      <Top>106</Top>
+      <Left>174</Left>
+      <Top>74</Top>
       <Width>1061</Width>
       <Height>560</Height>
       <PixelsPerInch>96</PixelsPerInch>
@@ -319,7 +319,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/</Path>
+                  <Path>/home/ed/.config/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -343,7 +343,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/Clouds/Bureau/Transit/Chelovek-Pauk.3.(2007).BDRip-AVC/</Path>
+                  <Path>/home/ed/Clouds/Bureau/Transit/</Path>
                 </Paths>
               </Entry>
             </History>
