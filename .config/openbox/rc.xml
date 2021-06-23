@@ -337,8 +337,8 @@
     </keybind>
     <!-- hotkeys list -->
     <keybind key="W-e">
-      <action name="ShowMenu">
-        <menu>feh -B black -g -z 730x380 $HOME/.icons/hotkeys.png </menu>
+      <action name="Execute">
+        <menu>feh -B black -g -z $HOME/.local/share/icons/hotkeys.png </menu>
       </action>
     </keybind>
     <!-- Show desktop, means iconify all windows -->

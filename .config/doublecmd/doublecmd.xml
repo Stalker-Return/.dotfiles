@@ -264,8 +264,8 @@
   </Toolbars>
   <MainWindow>
     <Position Save="True">
-      <Left>174</Left>
-      <Top>74</Top>
+      <Left>184</Left>
+      <Top>39</Top>
       <Width>1061</Width>
       <Height>560</Height>
       <PixelsPerInch>96</PixelsPerInch>
@@ -319,7 +319,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/.config/</Path>
+                  <Path>/home/ed/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -343,7 +343,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/Clouds/Bureau/Transit/</Path>
+                  <Path>/home/ed/Clouds/Dropbox/BackUps/Linux/install/stable/</Path>
                 </Paths>
               </Entry>
             </History>

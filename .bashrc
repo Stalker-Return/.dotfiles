@@ -40,6 +40,8 @@ ext ()
   fi
 }
 
+eval "$(starship init bash)"
+
 ### ALIASES ###
 alias grep='grep --color=auto'
 alias ls='exa -al --color=always --group-directories-first' # my preferred listing

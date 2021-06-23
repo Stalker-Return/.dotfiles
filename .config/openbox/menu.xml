@@ -522,11 +522,14 @@
 			<item label="Screensaver" icon=".local/share/icons/apps/preferences-desktop-screensaver.svg">
 				<action name="Execute"><execute>xscreensaver-demo </execute></action>
 			</item>
-			<item label="Desktop Preferences" icon=".local/share/applications/desktop-profiler.svg">
+			<item label="Desktop Preferences" icon=".local/share/icons/apps/desktop-profiler.svg">
 				<action name="Execute"><execute>pcmanfm --desktop-pref </execute></action>
 			</item>
-			<item label="Desktop Session Settings" icon=".local/share/applications/preferences-system.svg">
+			<item label="Desktop Session Settings" icon=".local/share//icons/apps/preferences-system.svg">
 				<action name="Execute"><execute>lxsession-edit </execute></action>
+			</item>
+			<item label="Lightdm-GTK-Greeter Settings" icon=".local/share/icons/apps/security-medium.svg">
+				<action name="Execute"><execute>sudo lightdm-gtk-greeter-settings </execute></action>
 			</item>
 			<item label="ARandR" icon=".local/share/icons/devices/computer-laptop.svg">
 				<action name="Execute"><execute>arandr</execute></action>
