@@ -40,7 +40,7 @@ ext ()
   fi
 }
 
-eval "$(starship init bash)"
+# eval "$(starship init bash)"
 
 ### ALIASES ###
 alias grep='grep --color=auto'

@@ -516,6 +516,9 @@
 			<item label="GParted" icon=".local/share/icons/devices/gparted.png">
 				<action name="Execute"><execute>sudo /usr/bin/gparted </execute></action>
 			</item>
+			<item label="Disks" icon=".local/share/icons/apps/gnome-disks.svg">
+				<action name="Execute"><execute>sudo gnome-disks </execute></action>
+			</item>
 			<item label="Grub Customizer" icon=".local/share/icons/apps/grub-customizer.svg">
 				<action name="Execute"><execute>sudo grub-customizer</execute></action>
 			</item>

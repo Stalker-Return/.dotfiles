@@ -2,8 +2,14 @@
       <item label="Archive Manager">
        <action name="Execute"><execute>file-roller </execute></action>
      </item>
+      <item label="Disks">
+       <action name="Execute"><execute>gnome-disks</execute></action>
+     </item>
       <item label="Double Commander" icon="/usr/share/pixmaps/doublecmd.png">
        <action name="Execute"><execute>doublecmd </execute></action>
+     </item>
+      <item label="FreeFileSync" icon="///opt/FreeFileSync/Resources/FreeFileSync.png">
+       <action name="Execute"><execute>"/opt/FreeFileSync/FreeFileSync" </execute></action>
      </item>
       <item label="Galculator" icon="/usr/share/icons/hicolor/48x48/apps/galculator.png">
        <action name="Execute"><execute>galculator</execute></action>
@@ -17,6 +23,9 @@
       <item label="Leafpad" icon="/usr/share/icons/hicolor/16x16/apps/leafpad.png">
        <action name="Execute"><execute>leafpad </execute></action>
      </item>
+      <item label="RealTimeSync" icon="///opt/FreeFileSync/Resources/RealTimeSync.png">
+       <action name="Execute"><execute>"/opt/FreeFileSync/RealTimeSync" </execute></action>
+     </item>
       <item label="Vim" icon="/usr/share/icons/hicolor/48x48/apps/gvim.png">
        <action name="Execute"><execute>xterm -e vim </execute></action>
      </item>
@@ -27,6 +36,9 @@
      </item>
  </menu> <!-- Education -->
  <menu id="Graphics" label="Graphics">
+      <item label="Flameshot" icon="/usr/share/icons/hicolor/48x48/apps/org.flameshot.Flameshot.png">
+       <action name="Execute"><execute>flameshot</execute></action>
+     </item>
       <item label="GNU Image Manipulation Program" icon="/usr/share/icons/hicolor/16x16/apps/gimp.png">
        <action name="Execute"><execute>gimp-2.10 </execute></action>
      </item>
@@ -35,6 +47,9 @@
      </item>
  </menu> <!-- Graphics -->
  <menu id="Internet" label="Internet">
+      <item label="AnyDesk" icon="/usr/share/pixmaps/anydesk.svg">
+       <action name="Execute"><execute>/usr/bin/anydesk </execute></action>
+     </item>
       <item label="Avahi SSH Server Browser">
        <action name="Execute"><execute>/usr/bin/bssh</execute></action>
      </item>
@@ -44,11 +59,11 @@
       <item label="Brave" icon="/usr/share/pixmaps/brave-desktop.png">
        <action name="Execute"><execute>brave </execute></action>
      </item>
-      <item label="Chromium" icon="/usr/share/icons/hicolor/16x16/apps/chromium.png">
-       <action name="Execute"><execute>/usr/bin/chromium </execute></action>
-     </item>
       <item label="Firefox" icon="/usr/share/icons/hicolor/16x16/apps/firefox.png">
        <action name="Execute"><execute>/usr/lib/firefox/firefox </execute></action>
+     </item>
+      <item label="Google Chrome" icon="/usr/share/icons/hicolor/16x16/apps/google-chrome.png">
+       <action name="Execute"><execute>/usr/bin/google-chrome-stable </execute></action>
      </item>
       <item label="MEGAsync" icon="/usr/share/icons/hicolor/16x16/apps/mega.png">
        <action name="Execute"><execute>megasync</execute></action>
@@ -64,6 +79,9 @@
      </item>
       <item label="Telegram Desktop" icon="/usr/share/icons/hicolor/16x16/apps/telegram.png">
        <action name="Execute"><execute>telegram-desktop -- </execute></action>
+     </item>
+      <item label="Thunderbird" icon="/usr/share/icons/hicolor/16x16/apps/thunderbird.png">
+       <action name="Execute"><execute>/usr/lib/thunderbird/thunderbird </execute></action>
      </item>
       <item label="Viber" icon="/usr/share/icons/hicolor/16x16/apps/viber.png">
        <action name="Execute"><execute>viber </execute></action>
@@ -108,6 +126,9 @@
       <item label="Geany" icon="/usr/share/icons/hicolor/16x16/apps/geany.png">
        <action name="Execute"><execute>geany </execute></action>
      </item>
+      <item label="Icon Browser" icon="/usr/share/icons/hicolor/16x16/apps/yad.png">
+       <action name="Execute"><execute>yad-icon-browser</execute></action>
+     </item>
       <item label="Qt Assistant" icon="/usr/share/icons/hicolor/32x32/apps/assistant.png">
        <action name="Execute"><execute>assistant</execute></action>
      </item>
@@ -124,9 +145,6 @@
  <menu id="Sound &amp; Video" label="Sound &amp; Video">
       <item label="DeaDBeeF" icon="/usr/share/icons/hicolor/16x16/apps/deadbeef.png">
        <action name="Execute"><execute>deadbeef </execute></action>
-     </item>
-      <item label="Kdenlive" icon="/usr/share/icons/hicolor/16x16/apps/kdenlive.png">
-       <action name="Execute"><execute>kdenlive </execute></action>
      </item>
       <item label="PulseAudio System Tray" icon="/usr/share/pixmaps/pasystray.png">
        <action name="Execute"><execute>pasystray</execute></action>
@@ -150,6 +168,9 @@
      </item>
       <item label="Avahi Zeroconf Browser">
        <action name="Execute"><execute>/usr/bin/avahi-discover</execute></action>
+     </item>
+      <item label="Bulk Rename" icon="/usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png">
+       <action name="Execute"><execute>thunar --bulk-rename </execute></action>
      </item>
       <item label="File Manager PCManFM">
        <action name="Execute"><execute>pcmanfm </execute></action>
@@ -180,6 +201,9 @@
      </item>
       <item label="Task Manager">
        <action name="Execute"><execute>lxtask</execute></action>
+     </item>
+      <item label="Thunar File Manager" icon="/usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png">
+       <action name="Execute"><execute>thunar </execute></action>
      </item>
       <item label="Tint2">
        <action name="Execute"><execute>tint2</execute></action>
