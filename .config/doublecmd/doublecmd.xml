@@ -319,7 +319,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/Pictures/</Path>
+                  <Path>/run/media/ed/TOSHIBA EXT/Clouds/gDrive/Photos/Katerina 2021/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -343,7 +343,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/</Path>
+                  <Path>/home/ed/Pictures/</Path>
                 </Paths>
               </Entry>
             </History>
