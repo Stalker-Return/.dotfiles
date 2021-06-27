@@ -8,8 +8,11 @@
 .config/lxpanel/ .config/lxsession/ .config/dunst/ .config/doublecmd/ .config/conky/ .config/nyxt/ \
 .config/systemd/ .config/tint2/ .config/powerkit/ .config/openbox/ .config/pcmanfm/ .config/alacritty/ \
 .config/Thunar/ .config/FreeFileSync/
-
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -m "Initial upload"
+exitcode1=$?
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -m "Dayly upload"
+exitcode2=$?
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME push -u
+exitcode3=$?
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME status
-echo "github-tools updated: $(date)" >> $HOME/.local/share/log-files/github_dots.log
+exitcode4=$?
+echo "github-tools updated: $(date), exit codes:$exitcode1:$exitcode2:$exitcode3:$exitcode4" >> $HOME/.local/share/log-files/github_dots.log
