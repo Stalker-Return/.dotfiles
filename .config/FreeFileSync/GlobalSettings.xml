@@ -34,23 +34,23 @@
         <ConfigPanel ScrollPos="0" SyncOverdue="7" SortByColumn="Name" SortAscending="true">
             <Configurations MaxSize="100" LastSelected="/home/ed/.config/FreeFileSync/onedrive.ffs_gui">
                 <Item Result="Stopped" Config="/home/ed/.config/FreeFileSync/LastRun.ffs_gui" LastSync="0" Log="" Color="DDDDDD"/>
+                <Item Result="Success" Config="/home/ed/.config/FreeFileSync/gdrive.ffs_gui" LastSync="1624811511" Log="/home/ed/.config/FreeFileSync/Logs/gdrive 2021-06-27 183151.066.html"/>
                 <Item Result="Success" Config="/home/ed/.config/FreeFileSync/onedrive.ffs_gui" LastSync="1624778807" Log="/home/ed/.config/FreeFileSync/Logs/onedrive 2021-06-27 092647.540.html"/>
-                <Item Result="Success" Config="/home/ed/.config/FreeFileSync/gdrive.ffs_gui" LastSync="1624772498" Log="/home/ed/.config/FreeFileSync/Logs/gdrive 2021-06-27 074138.617.html"/>
             </Configurations>
             <LastUsed>
-                <Item>/home/ed/.config/FreeFileSync/onedrive.ffs_gui</Item>
+                <Item>/home/ed/.config/FreeFileSync/gdrive.ffs_gui</Item>
             </LastUsed>
         </ConfigPanel>
         <OverviewPanel ShowPercentage="true" SortByColumn="Bytes" SortAscending="false"/>
         <FilePanel ShowIcons="true" IconSize="Small" SashOffset="0" FolderPairsMax="6" PathFormatLeft="Relative" PathFormatRight="Relative">
             <FolderHistoryLeft LastSelected="/home/ed/onedrive/OneDriveData">
-                <Item>/home/ed/onedrive/OneDriveData</Item>
                 <Item>/home/ed/gdrive</Item>
+                <Item>/home/ed/onedrive/OneDriveData</Item>
                 <Item>/home/ed/onedrive</Item>
             </FolderHistoryLeft>
             <FolderHistoryRight LastSelected="/home/ed/Clouds/OneDrive/OneDriveData">
-                <Item>/home/ed/Clouds/OneDrive/OneDriveData</Item>
                 <Item>/home/ed/Clouds/gDrive</Item>
+                <Item>/home/ed/Clouds/OneDrive/OneDriveData</Item>
                 <Item>/home/ed/Clouds/OneDrive</Item>
             </FolderHistoryRight>
         </FilePanel>
