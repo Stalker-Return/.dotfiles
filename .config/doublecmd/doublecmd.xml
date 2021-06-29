@@ -311,7 +311,7 @@
           <FileView Type="columns">
             <Sortings>
               <Sorting>
-                <Direction>1</Direction>
+                <Direction>2</Direction>
                 <Function>7</Function>
               </Sorting>
             </Sortings>
@@ -335,15 +335,15 @@
           <FileView Type="columns">
             <Sortings>
               <Sorting>
-                <Direction>1</Direction>
-                <Function>12</Function>
+                <Direction>2</Direction>
+                <Function>7</Function>
               </Sorting>
             </Sortings>
             <History>
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/Downloads/</Path>
+                  <Path>/home/ed/Clouds/Shared/Zivnostnik/Documents/</Path>
                 </Paths>
               </Entry>
             </History>
