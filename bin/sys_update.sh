@@ -1,7 +1,12 @@
 #!/bin/bash
 
-# notify-send --urgency=normal --expire-time=2000 "The system upgrade has begun"
+source ~/bin/exit_control.sh
 yay -Syu --noconfirm
 exitcode=$?
-echo "Full system update: $(date), exit code: $exitcode" >> $HOME/.local/share/log-files/sys_update.log
+exitcontrol
+echo "Full system update: $(date), exit code = $exitcode: $codedescription" >> $HOME/.local/share/log-files/sys_update.log
+
+exit
+
 # notify-send --urgency=low --expire-time=2000 "The system upgrade has completed"
+# notify-send --urgency=normal --expire-time=2000 "The system upgrade has begun"

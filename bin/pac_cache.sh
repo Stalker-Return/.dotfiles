@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# sudo pacman -Scc --noconfirm
+source ~/bin/exit_control.sh
 ( echo "y"; echo "y" ) | sudo pacman -Scc
 exitcode=$?
-echo "Package cache cleaned: $(date), exit code: $exitcode" >> $HOME/.local/share/log-files/pac_cache.log
+exitcontrol
+echo "Package cache cleaned: $(date), exit code = $exitcode, $codedescription" >> $HOME/.local/share/log-files/pac_cache.log
