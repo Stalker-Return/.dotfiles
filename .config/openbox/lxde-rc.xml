@@ -177,11 +177,19 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
+    <!-- Exit Openbox -->
+    <keybind key="C-A-q">
+      <action name="Exit">
+        <prompt>yes</prompt>
+      </action>
+    </keybind>
+    <!-- Go To Desktop 1 -->
     <keybind key="W-1">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
     </keybind>
+    <!-- Go To Desktop 2 -->
     <keybind key="W-2">
       <action name="GoToDesktop">
         <to>2</to>
@@ -238,9 +246,9 @@
     </keybind>
     -->
     <!-- Keybindings for windows -->
-    <!-- Close the windows -->
-    <keybind key="A-F4">
-      <action name="Close"/>
+    <!-- Decorate / Undecorate the windows -->
+    <keybind key="A-S-d">
+      <action name="ToggleDecorations"/>
     </keybind>
     <!-- Show the windows menu -->
     <keybind key="A-space">
@@ -273,6 +281,17 @@
         </position>
       </action>
     </keybind>
+    <!-- root-menu 2 -->
+    <keybind key="A-S-o">
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
+        <position>
+          <x>3</x>
+          <y>454</y>
+          <monitor>1</monitor>
+        </position>
+      </action>
+    </keybind>
     <!-- exit-menu -->
     <keybind key="W-q">
       <action name="ShowMenu">
@@ -300,8 +319,8 @@
         <command>killall conky</command>
       </action>
     </keybind>
-    <!-- bpytop -->
-    <keybind key="W-y">
+    <!-- thunar -->
+    <keybind key="W-u">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -314,6 +333,12 @@
     <keybind key="W-w">
       <action name="ShowMenu">
         <menu>client-list-combined-menu</menu>
+      </action>
+    </keybind>
+    <!-- hotkeys list -->
+    <keybind key="W-e">
+      <action name="Execute">
+        <menu>feh -B black -g -z $HOME/.local/share/icons/hotkeys.png </menu>
       </action>
     </keybind>
     <!-- Show desktop, means iconify all windows -->
@@ -407,7 +432,6 @@
         <direction>down</direction>
       </action>
     </keybind>
-    <!-- Keybindings for running applications -->
     <!-- Keybindings for running PCManFM -->
     <keybind key="W-p">
       <action name="Execute">
@@ -427,7 +451,7 @@
     <!-- Launch Task Manager with Ctrl+Alt+Del -->
     <keybind key="A-C-Delete">
       <action name="Execute">
-        <command>lxtask</command>
+        <command>sh ~/scripts/lout.sh -f reb </command>
       </action>
     </keybind>
     <!-- Keybindings for running lxterminal -->
@@ -512,10 +536,10 @@
         <command>thunderbird</command>
       </action>
     </keybind>
-    <!-- Keybindings for running Terminator -->
+    <!-- Keybindings for running lxtask -->
     <keybind key="A-C-t">
       <action name="Execute">
-        <command>terminator </command>
+        <command>lxtask </command>
       </action>
     </keybind>
     <!-- Keybindings for running Tint2 - left -->
@@ -527,7 +551,13 @@
     <!-- Keybindings for running Google Chrome -->
     <keybind key="A-C-g">
       <action name="Execute">
-        <command>/usr/bin/google-chrome-beta %U </command>
+        <command>/usr/bin/google-chrome-stable %U </command>
+      </action>
+    </keybind>
+    <!-- Keybindings for running Desktop -->
+    <keybind key="A-C-d">
+      <action name="Execute">
+        <command>pcmanfm --desktop </command>
       </action>
     </keybind>
     <!-- Keybindings for running Firefox -->
@@ -540,6 +570,18 @@
     <keybind key="A-C-v">
       <action name="Execute">
         <command>viber %u</command>
+      </action>
+    </keybind>
+    <!-- Keybindings for running Brave -->
+    <keybind key="A-C-e">
+      <action name="Execute">
+        <command>brave %U</command>
+      </action>
+    </keybind>
+    <!-- Keybindings for running NYXT -->
+    <keybind key="A-C-y">
+      <action name="Execute">
+        <command>nyxt </command>
       </action>
     </keybind>
     <!-- Keybindings for running Telegramm -->
