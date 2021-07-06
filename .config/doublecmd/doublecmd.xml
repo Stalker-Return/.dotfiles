@@ -264,8 +264,8 @@
   </Toolbars>
   <MainWindow>
     <Position Save="True">
-      <Left>157</Left>
-      <Top>140</Top>
+      <Left>171</Left>
+      <Top>69</Top>
       <Width>1061</Width>
       <Height>560</Height>
       <PixelsPerInch>96</PixelsPerInch>
@@ -340,7 +340,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/.local/share/log-files/</Path>
+                  <Path>/home/ed/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -364,7 +364,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/bin/</Path>
+                  <Path>/home/ed/Clouds/Dropbox/BackUps/Linux/install/stable/</Path>
                 </Paths>
               </Entry>
             </History>
