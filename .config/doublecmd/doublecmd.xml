@@ -340,7 +340,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/</Path>
+                  <Path>/run/media/ed/ARTIX_202104/</Path>
                 </Paths>
               </Entry>
             </History>
