@@ -340,7 +340,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/run/media/ed/TOSHIBA EXT1/</Path>
+                  <Path>/home/ed/Clouds/Dropbox/BackUps/Linux/install/devel/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -364,7 +364,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/Downloads/</Path>
+                  <Path>/home/ed/Clouds/Dropbox/BackUps/Linux/install/stable/</Path>
                 </Paths>
               </Entry>
             </History>
