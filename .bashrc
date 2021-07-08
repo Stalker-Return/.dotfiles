@@ -1,7 +1,7 @@
 #
 # ~/.bashrc
 #
-
+# ver 2.04 Jul.08, 2021
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
