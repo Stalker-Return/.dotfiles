@@ -373,20 +373,26 @@
 
 			<!-- rootmenu / System / Sys Info-->
 			<menu id="sysinfo-75" label="System Info" icon=".local/share/icons/places/folder-blue-open.svg">
-				<item label="about system" icon=".local/share/icons/status/dialog-question.svg">
-					<action name="Execute"><execute>xterm -e ~/scripts/about.sh </execute></action>
-				</item>
 				<item label="User Timers List" icon=".local/share/icons/apps/clock.svg">
 					<action name="Execute"><execute>lxterminal --geometry=131x20 --title=USER_Timers -e systemctl --user --all list-timers </execute></action>
 				</item>
 				<item label="System Timers List" icon=".local/share/icons/apps/clock.svg">
-					<action name="Execute"><execute>lxterminal --geometry=131x20 --title=SYSTEM_Timers -e systemctl list-timers </execute></action>
+					<action name="Execute"><execute>lxterminal --geometry=120x25 --title=USER_Timers -e systemctl --user --all list-timers </execute></action>
 				</item>
 				<item label="Sysytem Services List" icon=".local/share/icons/apps/ccsm.svg">
 					<action name="Execute"><execute>lxterminal --geometry=131x45 --title=SYSTEM_Services -e systemctl list-units --type=service </execute></action>
 				</item>
 				<item label="Disk usage analyzer" icon=".local/share/icons/apps/disk-usage-analyzer.svg">
 					<action name="Execute"><execute>lxterminal --geometry=60x30 --title=SYSTEM_Services -e ncdu  </execute></action>
+				</item>
+				<item label="Temperature Sensors" icon=".local/share/icons/devices/psensor_hot.svg">
+					<action name="Execute"><execute>psensor </execute></action>
+				</item>
+				<item label="about system" icon=".local/share/icons/status/dialog-question.svg">
+					<action name="Execute"><execute>xterm -e ~/scripts/about.sh </execute></action>
+				</item>
+				<item label="Info" icon=".local/share/icons/emblems/emblem-question.svg">
+					<action name="Execute"><execute>lxterminal -e info</execute></action>
 				</item>
 			</menu> <!-- the end of Sys Info -->
 
@@ -444,9 +450,6 @@
 			</item>
 			<item label="xterm" icon=".local/share/icons/apps/frogr.svg">
 				<action name="Execute"><execute>xterm</execute></action>
-			</item>
-			<item label="Info" icon=".local/share/icons/emblems/emblem-question.svg">
-				<action name="Execute"><execute>lxterminal -e info</execute></action>
 			</item>
 		</menu> <!-- the end of System -->
 

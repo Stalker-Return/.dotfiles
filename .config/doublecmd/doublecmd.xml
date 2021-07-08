@@ -340,7 +340,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/Clouds/Dropbox/BackUps/Linux/install/devel/</Path>
+                  <Path>/home/ed/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -364,7 +364,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/Clouds/Dropbox/BackUps/Linux/install/stable/</Path>
+                  <Path>/home/ed/Templates/</Path>
                 </Paths>
               </Entry>
             </History>

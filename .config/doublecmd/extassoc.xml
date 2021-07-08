@@ -14,7 +14,7 @@
     <FileType>
       <Name>SpreadSheet</Name>
       <IconFile>$HOME/.local/share/icons/apps/x-office-spreadsheet.svg</IconFile>
-      <ExtensionList>xlsx|csv|xls</ExtensionList>
+      <ExtensionList>xlsx|csv|xls|ots</ExtensionList>
       <Actions>
         <Action>
           <Name>Open</Name>

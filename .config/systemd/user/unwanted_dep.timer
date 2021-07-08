@@ -1,8 +1,8 @@
 [Unit]
-Description=Cache delete daily timer
+Description=Clean orphan packages monthly
 
 [Timer]
-OnCalendar=daily
+OnCalendar=weekly
 Persistent=true
 
 [Install]

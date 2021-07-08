@@ -8,5 +8,3 @@ echo "Full system update: $(date), exit code = $exitcode: $codedescription" >> $
 
 exit
 
-# notify-send --urgency=low --expire-time=2000 "The system upgrade has completed"
-# notify-send --urgency=normal --expire-time=2000 "The system upgrade has begun"
