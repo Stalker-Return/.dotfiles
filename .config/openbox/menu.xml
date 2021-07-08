@@ -388,8 +388,11 @@
 				<item label="Temperature Sensors" icon=".local/share/icons/devices/psensor_hot.svg">
 					<action name="Execute"><execute>psensor </execute></action>
 				</item>
+				<item label="Mirror List" icon=".local/share/icons/apps/ccsm.svg">
+					<action name="Execute"><execute>sh ~/scripts/show_mirrors.sh </execute></action>
+				</item>
 				<item label="about system" icon=".local/share/icons/status/dialog-question.svg">
-					<action name="Execute"><execute>xterm -e ~/scripts/about.sh </execute></action>
+					<action name="Execute"><execute>lxterminal --geometry=80x25 --title=SYS_INFO -e ~/scripts/about.sh </execute></action>
 				</item>
 				<item label="Info" icon=".local/share/icons/emblems/emblem-question.svg">
 					<action name="Execute"><execute>lxterminal -e info</execute></action>

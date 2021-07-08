@@ -1,7 +1,7 @@
 #!/bin/sh
 
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add \
-.bashrc .xprofile .xinitrc .fehbg README.md scripts/ bin/ \
+.bashrc .xprofile .xinitrc .fehbg README.md scripts/ bin/ Templates/ \
 .local/share/icons/ .local/share/log-files/ .local/share/wallpapers/ .local/share/applications/ \
 .config/mimeapps.list .config/pavucontrol.ini \
 .config/geany/ .config/gtk-2.0/ .config/gtk-3.0/ .config/lxterminal/ .config/libreoffice/ .config/pulse/ \
