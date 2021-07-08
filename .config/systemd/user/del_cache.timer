@@ -2,6 +2,7 @@
 Description=Cache delete daily timer
 
 [Timer]
+#OnCalendar=*-*-* 16:30:00
 OnCalendar=daily
 Persistent=true
 
