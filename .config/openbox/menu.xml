@@ -434,7 +434,7 @@
 				<action name="Execute"><execute>lxterminal -e vim %F</execute></action>
 			</item>
 			<item label="System Maintenance" icon=".local/share/icons/apps/system-software-update.svg">
-				<action name="Execute"><execute>lxterminal -e sudo sh ~/scripts/sys_maintenance.sh</execute></action>
+				<action name="Execute"><execute>lxterminal -e sudo sh ~/bin/wtf.sh</execute></action>
 			</item>
 			<item label="System backups" icon=".local/share/icons/apps/system-software-update.svg">
 				<action name="Execute"><execute>lxterminal -e sudo sh ~/scripts/backups.sh</execute></action>

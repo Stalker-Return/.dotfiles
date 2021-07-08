@@ -1,20 +1,39 @@
 #!/bin/bash
 #
-# ezarcher maintenance
-# Inspired by EF Tech Made Simple ( https://youtu.be/wwSkFi3h2nI )
-# Revision: 2021.01.30 -- by eznix (https://sourceforge.net/projects/ezarch/)
-# (GNU/General Public License version 3.0)
+# Ver 1.03 Lul.08, 2021
 #
+function exitcontrol()
+{
+	case $exitcode in
+		"0" )
+		codedescription="'Success'"
+		;;
+		"1" )
+		codedescription="'Catchall for general errors'"
+		;;
+		"2" )
+		codedescription="'Misuse of shell builtins'"
+		;;
+		"126" )
+		codedescription="'Command invoked cannot execute'"
+		;;
+		"127" )
+		codedescription="'Command not found'"
+		;;
+		"128" )
+		codedescription="'Invalid argument to exit command'"
+		;;
+		"130" )
+		codedescription="'Bash script terminated by Control-C'"
+		;;
+		* )
+		codedescription="'Unknown exit code'"
+		;;
+	esac
+
+}
 #
-#
-# ---------------------------------------
-# Define Functions:
-# ---------------------------------------
-#
-#
-source exit_control.sh
-#
-handlerror () {
+checherror () {
   clear
   set -uo pipefail
   trap 's=$?; echo "$0: Error on line "$LINENO": $BASH_COMMAND"; exit $s' ERR
@@ -25,15 +44,15 @@ welcomer () {
   clear
   echo "==================================================="
   echo "=                                                 ="
-  echo "=     <What the fuck> Script                      ="
+  echo "=     <What-The-Fuck> Script                      ="
   echo "=                                                 ="
   echo "=     A simle helper for maintenance              ="
   echo "=     Arch based system                           ="
   echo "=                                                 ="
   echo -e "=================================================== \n"
-  sleep 1
+  sleep 2
 }
-#1
+#1 full system update
 sysupdate () {
   clear
   yay -Syu --noconfirm
@@ -42,50 +61,62 @@ sysupdate () {
   clear
   echo -e "\n"
   echo "Full system update: $(date)"
-  echo "Exit Code = :$exitcode: Result = $codedescription"
-  sleep 2
+  echo "Exit Code = :$exitcode:, Result = $codedescription"
+  sleep 3
   clear
 }
-#2
+#2 clean package cache
 pkgsccache () {
   clear
-  pacman -Scc
+  ( echo "y"; echo "y"; echo "y" ) | yay -Scc
+  exitcode=$?
+  exitcontrol
   clear
   echo -e "\n"
-  echo "Package cache cleaned"
-  sleep 1
+  echo "Package cache cleaned: $(date)"
+  echo "Exit Code = :$exitcode:, Result = $codedescription"
+  sleep 3
   clear
 }
-#3
+#3 clean HOME directory cache
 clnhomecache () {
   clear
   rm -rf ~/.cache/*
+  exitcode=$?
+  exitcontrol
   clear
   echo -e "\n"
-  echo "HOME directory cache cleaned"
-  sleep 1
+  echo "HOME directory cache cleaned: $(date)"
+  echo "Exit Code = :$exitcode:, Result = $codedescription"
+  sleep 3
+  clear
 }
-#4
+#4 cvlean orphan packages
 orphancln () {
   clear
   pacman -Rns $(pacman -Qtdq)
+  exitcode=$?
+  exitcontrol
   clear
   echo -e "\n"
-  echo "Orphan packages cleaned"
-  sleep 1
+  echo "Orphan packages cleaned: $(date)"
+  echo "Exit Code = :$exitcode:, Result = $codedescription"
+  sleep 3
   clear
 }
-#5
+#5 clean journal directory 
 journalcln () {
   clear
   journalctl --vacuum-time=2weeks
+  exitcode=$?
+  exitcontrol
   clear
   echo -e "\n"
-  echo "Journal directory cleaned"
-  sleep 1
-  clear
+  echo "Journal directory cleaned: $(date)"
+  echo "Exit Code = :$exitcode:, Result = $codedescription"
+  sleep 3
 }
-#6
+#6 check journal logs
 journalchk () {
   clear
   journalctl -p 3 -xb > /tmp/journalchk
@@ -95,7 +126,7 @@ journalchk () {
   rm /tmp/journalchk
   clear
 }
-#7
+#7 chech failed systemd services
 failedsrvs () {
   clear
   systemctl --failed > /tmp/failedsrvs
@@ -105,18 +136,21 @@ failedsrvs () {
   rm /tmp/failedsrvs
   clear
 }
-#8
+#8 mirrorlist regeneration
 runreflector () {
   clear
   reflector --country 'Russia' --age 6 --protocol https --save /etc/pacman.d/mirrorlist
+  exitcode=$?
+  exitcontrol
   clear
   echo -e "\n"
-  echo "Mirrorlist regenerated"
-  sleep 2
+  echo "Mirrorlist regenerated: $(date)"
+  echo "Exit Code = :$exitcode:, Result = $codedescription"
+  sleep 3
   clear
 }
 #
-mainmenu () { while true
+wtfuw () { while true
 do
   clear
   echo "-------------------------------------"
@@ -150,7 +184,6 @@ do
 done
 }
 #
-#
 ROOTUSER () {
   if [[ "$EUID" = 0 ]]; then
     continue
@@ -161,28 +194,9 @@ ROOTUSER () {
   fi
 }
 #
-#
 ROOTUSER
-handlerror
+checherror
 welcomer
-mainmenu
-#
+wtfuw
 #
 done
-#
-#
-# Disclaimer:
-#
-# THIS SOFTWARE IS PROVIDED BY EZNIX “AS IS” AND ANY EXPRESS OR IMPLIED
-# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
-# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
-# EVENT SHALL EZNIX BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-# EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
-# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
-# IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-# POSSIBILITY OF SUCH DAMAGE.
-#
-# END
-#

@@ -6,6 +6,7 @@ rsync -ar --delete /home/ed/Documents "/run/media/ed/TOSHIBA EXT/Storage/Linux/A
 rsync -ar --delete /home/ed/Downloads "/run/media/ed/TOSHIBA EXT/Storage/Linux/Arch Linux/garbage"
 rsync -ar --delete /home/ed/scripts "/run/media/ed/TOSHIBA EXT/Storage/Linux/Arch Linux/openbox"
 rsync -ar --delete /home/ed/bin "/run/media/ed/TOSHIBA EXT/Storage/Linux/Arch Linux/openbox"
+rsync -ar --delete /home/ed/Templates "/run/media/ed/TOSHIBA EXT/Storage/Linux/Arch Linux/openbox"
 rsync -ar --delete /home/ed/.local "/run/media/ed/TOSHIBA EXT/Storage/Linux/Arch Linux/openbox"
 rsync -ar --delete /home/ed/.config "/run/media/ed/TOSHIBA EXT/Storage/Linux/Arch Linux/openbox"
 rsync -ar --delete /home/ed/.bashrc "/run/media/ed/TOSHIBA EXT/Storage/Linux/Arch Linux/openbox"
