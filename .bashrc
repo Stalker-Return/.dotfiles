@@ -8,8 +8,11 @@
 PS1='[\u@\h \W]\$ '
 
 ### Exports
-export PATH=$PATH:$HOME/scripts
-export PATH=$PATH:$HOME/bin
+[ -d "$HOME/scripts" ] && PATH="$HOME/scripts:$PATH"
+[ -d "$HOME/bin" ] && PATH="$HOME/bin:$PATH"
+
+# export PATH=$PATH:$HOME/scripts
+# export PATH=$PATH:$HOME/bin
 # export EDITOR=nano
 # export VISUAL=nano
 

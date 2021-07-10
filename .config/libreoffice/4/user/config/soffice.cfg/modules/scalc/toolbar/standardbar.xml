@@ -3,11 +3,11 @@
 <toolbar:toolbar xmlns:toolbar="http://openoffice.org/2001/toolbar" xmlns:xlink="http://www.w3.org/1999/xlink">
  <toolbar:toolbaritem xlink:href=".uno:OpenUrl" toolbar:visible="false"/>
  <toolbar:toolbaritem xlink:href=".uno:AddDirect"/>
- <toolbar:toolbaritem xlink:href=".uno:NewDoc" toolbar:visible="false"/>
+ <toolbar:toolbaritem xlink:href=".uno:NewDoc"/>
  <toolbar:toolbaritem xlink:href=".uno:OpenFromCalc"/>
  <toolbar:toolbaritem xlink:href=".uno:OpenRemote" toolbar:visible="false"/>
  <toolbar:toolbaritem xlink:href=".uno:Save"/>
- <toolbar:toolbaritem xlink:href=".uno:SaveAs" toolbar:visible="false"/>
+ <toolbar:toolbaritem xlink:href=".uno:SaveAs"/>
  <toolbar:toolbaritem xlink:href=".uno:SendMail" toolbar:visible="false"/>
  <toolbar:toolbarseparator/>
  <toolbar:toolbaritem xlink:href=".uno:EditDoc"/>
@@ -45,7 +45,7 @@
  <toolbar:toolbaritem xlink:href=".uno:SortAscending"/>
  <toolbar:toolbaritem xlink:href=".uno:SortDescending"/>
  <toolbar:toolbaritem xlink:href=".uno:DataFilterAutoFilter"/>
- <toolbar:toolbaritem xlink:href=".uno:DataFilterStandardFilter" toolbar:visible="false"/>
+ <toolbar:toolbaritem xlink:href=".uno:DataFilterStandardFilter"/>
  <toolbar:toolbaritem xlink:href=".uno:DataFilterSpecialFilter" toolbar:visible="false"/>
  <toolbar:toolbaritem xlink:href=".uno:GoalSeekDialog" toolbar:visible="false"/>
  <toolbar:toolbarseparator/>
@@ -61,7 +61,7 @@
  <toolbar:toolbaritem xlink:href=".uno:CharmapControl"/>
  <toolbar:toolbaritem xlink:href=".uno:HyperlinkDialog"/>
  <toolbar:toolbaritem xlink:href=".uno:InsertAnnotation"/>
- <toolbar:toolbaritem xlink:href=".uno:DrawText" toolbar:visible="false"/>
+ <toolbar:toolbaritem xlink:href=".uno:DrawText"/>
  <toolbar:toolbaritem xlink:href=".uno:EditHeaderAndFooter"/>
  <toolbar:toolbarseparator/>
  <toolbar:toolbaritem xlink:href=".uno:DefinePrintArea"/>
@@ -70,13 +70,13 @@
  <toolbar:toolbaritem xlink:href=".uno:FreezePanes"/>
  <toolbar:toolbaritem xlink:href=".uno:SplitWindow"/>
  <toolbar:toolbarseparator/>
- <toolbar:toolbaritem xlink:href=".uno:Line" toolbar:visible="false"/>
+ <toolbar:toolbaritem xlink:href=".uno:Line"/>
  <toolbar:toolbaritem xlink:href=".uno:BasicShapes"/>
  <toolbar:toolbaritem xlink:href=".uno:InsertDraw"/>
  <toolbar:toolbarseparator/>
  <toolbar:toolbaritem xlink:href=".uno:ViewDataSourceBrowser" toolbar:visible="false"/>
- <toolbar:toolbaritem xlink:href=".uno:Zoom"/>
+ <toolbar:toolbaritem xlink:href=".uno:Zoom" toolbar:visible="false"/>
  <toolbar:toolbarseparator/>
  <toolbar:toolbaritem xlink:href=".uno:HelpIndex"/>
- <toolbar:toolbaritem xlink:href=".uno:ExtendedHelp"/>
+ <toolbar:toolbaritem xlink:href=".uno:ExtendedHelp" toolbar:visible="false"/>
 </toolbar:toolbar>

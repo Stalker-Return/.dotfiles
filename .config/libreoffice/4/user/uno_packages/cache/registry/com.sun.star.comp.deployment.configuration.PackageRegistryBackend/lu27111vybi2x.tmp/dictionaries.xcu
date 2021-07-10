@@ -4,7 +4,7 @@
     <node oor:name="Dictionaries">
         <node oor:name="HunSpellDic_en-GB" oor:op="fuse">
             <prop oor:name="Locations" oor:type="oor:string-list">
-                <value>vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu11513uh7if6.tmp_/dict-en-20210701.oxt/en_GB.aff vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu11513uh7if6.tmp_/dict-en-20210701.oxt/en_GB.dic</value>
+                <value>vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu27111vybi2w.tmp_/dict-en-20210701.oxt/en_GB.aff vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu27111vybi2w.tmp_/dict-en-20210701.oxt/en_GB.dic</value>
             </prop>
             <prop oor:name="Format" oor:type="xs:string">
                 <value>DICT_SPELL</value>
@@ -15,7 +15,7 @@
         </node>
         <node oor:name="HunSpellDic_en-ZA" oor:op="fuse">
             <prop oor:name="Locations" oor:type="oor:string-list">
-                <value>vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu11513uh7if6.tmp_/dict-en-20210701.oxt/en_ZA.aff vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu11513uh7if6.tmp_/dict-en-20210701.oxt/en_ZA.dic</value>
+                <value>vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu27111vybi2w.tmp_/dict-en-20210701.oxt/en_ZA.aff vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu27111vybi2w.tmp_/dict-en-20210701.oxt/en_ZA.dic</value>
             </prop>
             <prop oor:name="Format" oor:type="xs:string">
                 <value>DICT_SPELL</value>
@@ -26,7 +26,7 @@
         </node>
         <node oor:name="HunSpellDic_en-US" oor:op="fuse">
             <prop oor:name="Locations" oor:type="oor:string-list">
-                <value>vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu11513uh7if6.tmp_/dict-en-20210701.oxt/en_US.aff vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu11513uh7if6.tmp_/dict-en-20210701.oxt/en_US.dic</value>
+                <value>vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu27111vybi2w.tmp_/dict-en-20210701.oxt/en_US.aff vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu27111vybi2w.tmp_/dict-en-20210701.oxt/en_US.dic</value>
             </prop>
             <prop oor:name="Format" oor:type="xs:string">
                 <value>DICT_SPELL</value>
@@ -37,7 +37,7 @@
         </node>
     	<node oor:name="HunSpellDic_en-AU" oor:op="fuse">
             <prop oor:name="Locations" oor:type="oor:string-list">
-                <value>vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu11513uh7if6.tmp_/dict-en-20210701.oxt/en_AU.aff vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu11513uh7if6.tmp_/dict-en-20210701.oxt/en_AU.dic</value>
+                <value>vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu27111vybi2w.tmp_/dict-en-20210701.oxt/en_AU.aff vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu27111vybi2w.tmp_/dict-en-20210701.oxt/en_AU.dic</value>
             </prop>
             <prop oor:name="Format" oor:type="xs:string">
                 <value>DICT_SPELL</value>
@@ -48,7 +48,7 @@
         </node>
         <node oor:name="HunSpellDic_en-CA" oor:op="fuse">
             <prop oor:name="Locations" oor:type="oor:string-list">
-                <value>vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu11513uh7if6.tmp_/dict-en-20210701.oxt/en_CA.aff vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu11513uh7if6.tmp_/dict-en-20210701.oxt/en_CA.dic</value>
+                <value>vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu27111vybi2w.tmp_/dict-en-20210701.oxt/en_CA.aff vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu27111vybi2w.tmp_/dict-en-20210701.oxt/en_CA.dic</value>
             </prop>
             <prop oor:name="Format" oor:type="xs:string">
                 <value>DICT_SPELL</value>
@@ -59,7 +59,7 @@
         </node>
         <node oor:name="HyphDic_en-GB" oor:op="fuse">
             <prop oor:name="Locations" oor:type="oor:string-list">
-                <value>vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu11513uh7if6.tmp_/dict-en-20210701.oxt/hyph_en_GB.dic</value>
+                <value>vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu27111vybi2w.tmp_/dict-en-20210701.oxt/hyph_en_GB.dic</value>
             </prop>
             <prop oor:name="Format" oor:type="xs:string">
                 <value>DICT_HYPH</value>
@@ -70,7 +70,7 @@
         </node>
         <node oor:name="ThesDic_en-US" oor:op="fuse">
             <prop oor:name="Locations" oor:type="oor:string-list">
-                <value>vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu11513uh7if6.tmp_/dict-en-20210701.oxt/th_en_US_v2.dat</value>
+                <value>vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu27111vybi2w.tmp_/dict-en-20210701.oxt/th_en_US_v2.dat</value>
             </prop>
             <prop oor:name="Format" oor:type="xs:string">
                 <value>DICT_THES</value>
@@ -81,7 +81,7 @@
         </node>
         <node oor:name="HyphDic_en-US" oor:op="fuse">
             <prop oor:name="Locations" oor:type="oor:string-list">
-                <value>vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu11513uh7if6.tmp_/dict-en-20210701.oxt/hyph_en_US.dic</value>
+                <value>vnd.sun.star.expand:$UNO_USER_PACKAGES_CACHE/uno_packages/lu27111vybi2w.tmp_/dict-en-20210701.oxt/hyph_en_US.dic</value>
             </prop>
             <prop oor:name="Format" oor:type="xs:string">
                 <value>DICT_HYPH</value>
