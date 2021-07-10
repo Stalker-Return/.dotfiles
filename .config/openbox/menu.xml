@@ -373,11 +373,28 @@
 
 			<!-- rootmenu / System / Sys Info-->
 			<menu id="sysinfo-75" label="System Info" icon=".local/share/icons/places/folder-blue-open.svg">
-				<item label="Info of your choice" icon=".local/share/icons/apps/clock.svg">
+				<item label="Info of your choice" icon=".local/share/icons/apps/tuxpuck.svg">
 					<action name="Execute"><execute>lxterminal --geometry=110x40 --title=SYS_INFO -e sudo ~/scripts/sys_about.sh -f menu </execute></action>
 				</item>
-				<item label="Basic System Info" icon=".local/share/icons/apps/clock.svg">
-					<action name="Execute"><execute>lxterminal --geometry=110x20 --title=SYS_INFO -e sudo ~/scripts/sys_about.sh -f basic </execute></action>
+				<item label="Basic System Info" icon=".local/share/icons/apps/tuxpuck.svg">
+					<action name="Execute"><execute>lxterminal --geometry=110x24 --title=Basic_INFO -e sudo ~/scripts/sys_about.sh -f basic </execute></action>
+				</item>
+				<item label="Processes" icon=".local/share/icons/apps/tuxpuck.svg">
+					<action name="Execute"><execute>lxterminal --geometry=110x36 --title=PROCESSES -e sudo ~/scripts/sys_about.sh -f proc </execute></action>
+				</item>
+				<item label="WAN IP address and local interfaces" icon=".local/share/icons/apps/tuxpuck.svg">
+					<action name="Execute"><execute>lxterminal --geometry=110x16 --title=PARTITIONS -e sudo ~/scripts/sys_about.sh -f ip </execute></action>
+				</item>
+				<item label="Graphics info" icon=".local/share/icons/apps/tuxpuck.svg">
+					<action name="Execute"><execute>lxterminal --geometry=110x14 --title=GRAPHICS -e sudo ~/scripts/sys_about.sh -f graph </execute></action>
+				</item>
+				<separator/>
+				
+				<item label="Sysytem Services List" icon=".local/share/icons/apps/ccsm.svg">
+					<action name="Execute"><execute>lxterminal --geometry=131x45 --title=SYSTEM_Services -e systemctl list-units --type=service </execute></action>
+				</item>
+				<item label="System Timers List" icon=".local/share/icons/apps/clock.svg">
+					<action name="Execute"><execute>lxterminal --geometry=120x25 --title=USER_Timers -e systemctl --user --all list-timers </execute></action>
 				</item>
 				<item label="User Timers List" icon=".local/share/icons/apps/clock.svg">
 					<action name="Execute"><execute>lxterminal -e systemctl --user list-timers </execute></action>
@@ -385,12 +402,8 @@
 				<item label="reload user daemon" icon=".local/share/icons/apps/ccsm.svg">
 					<action name="Execute"><execute>lxterminal -e systemctl --user daemon-reload </execute></action>
 				</item>
-				<item label="System Timers List" icon=".local/share/icons/apps/clock.svg">
-					<action name="Execute"><execute>lxterminal --geometry=120x25 --title=USER_Timers -e systemctl --user --all list-timers </execute></action>
-				</item>
-				<item label="Sysytem Services List" icon=".local/share/icons/apps/ccsm.svg">
-					<action name="Execute"><execute>lxterminal --geometry=131x45 --title=SYSTEM_Services -e systemctl list-units --type=service </execute></action>
-				</item>
+				<separator/>
+
 				<item label="Disk usage analyzer" icon=".local/share/icons/apps/disk-usage-analyzer.svg">
 					<action name="Execute"><execute>lxterminal --geometry=60x30 --title=SYSTEM_Services -e ncdu  </execute></action>
 				</item>
@@ -402,12 +415,6 @@
 				</item>
 				<item label="wireless network devices" icon=".local/share/icons/devices/network-wireless-hotspot.svg">
 					<action name="Execute"><execute>lxterminal -e wavemon </execute></action>
-				</item>
-				<item label="about system" icon=".local/share/icons/status/dialog-question.svg">
-					<action name="Execute"><execute>lxterminal --geometry=80x25 --title=SYS_INFO -e ~/scripts/about.sh </execute></action>
-				</item>
-				<item label="Info" icon=".local/share/icons/emblems/emblem-question.svg">
-					<action name="Execute"><execute>lxterminal -e info</execute></action>
 				</item>
 			</menu> <!-- the end of Sys Info -->
 
