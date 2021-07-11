@@ -1,111 +1,110 @@
 #!/bin/bash
 #
-# Losd sources
-if [[ -f /home/ed/scripts/standardfunc.sh ]]
-	then 	source /home/ed/scripts/standardfunc.sh;
-	else 	echo -e "\e[1;31mFile standardfunc.sh doesn't exist. Press any key to exit...\e[0m" && read
-			exit;
-fi
 # Check if root
-checkroot
+if [ "$EUID" -ne 0 ]
+  then	echo "Permission denied ..."
+		echo "Please run as root"
+		sleep 2
+  exit
+fi
 #1 Ful system information
 inxifull () {
 clear
-echo -e "\e[1;15mFul system information\e[0m"
+echo -e "\e[1;15mOption 1: Ful system information\e[0m"
 echo -e "\n"
 inxi -c 24 -F
 echo -e "\n"
-read -p "Press Enter to continue..."
+read -rsn1 -p "Press any key to continue... "; echo
 }
 #2 Basic system information
 inxibasic () {
 clear
-echo -e "\e[1;15mBasic system information\e[0m"
+echo -e "\e[1;15mOption 2: Basic system information\e[0m"
 echo -e "\n"
 inxi -c 24 --basic
 echo -e "\n"
-read -p "Press Enter to continue..."
+read -rsn1 -p "Press any key to continue... "; echo
 }
 #3 Processes
 inxiproc () {
 clear
-echo -e "\e[1;15mProcesses\e[0m"
+echo -e "\e[1;15mOption 3: Processes\e[0m"
 echo -e "\n"
 inxi -c 24 -t cm10 -pu
 echo -e "\n"
-read -p "Press Enter to continue..."
+read -rsn1 -p "Press any key to continue... "; echo
 }
-#4 CPU information
+#C CPU information
 inxicpu () {
 clear
-echo -e "\e[1;15mCPU Info\e[0m"
+echo -e "\e[1;15mOption <C>: CPU Info\e[0m"
 echo -e "\n"
 inxi -c 24 --cpu
 echo -e "\n"
-read -p "Press Enter to continue..."
+read -rsn1 -p "Press any key to continue... "; echo
 }
-#5 Memory (RAM) data
+#R Memory (RAM) data
 inxiram () {
 clear
-echo -e "\e[1;15mRAM data\e[0m"
+echo -e "\e[1;15mOption <R>: RAM data\e[0m"
 echo -e "\n"
 inxi -c 24 --memory
 echo -e "\n"
-read -p "Press Enter to continue..."
+read -rsn1 -p "Press any key to continue... "; echo
 }
 #6 full disk information
 inxidisk () {
 clear
-echo -e "\e[1;15mFull disk information\e[0m"
+echo -e "\e[1;15mOption 6: Full disk information\e[0m"
 echo -e "\n"
 inxi -c 24 --disk-full
 echo -e "\n"
-read -p "Press Enter to continue..."
+read -rsn1 -p "Press any key to continue... "; echo
 }
 #7 partition + uuids
 inxiuuid () {
 clear
-echo -e "\e[1;15mPartition + UUIDsn\e[0m"
+echo -e "\e[1;15mOption 7: Partition + UUIDs\e[0m"
 echo -e "\n"
 inxi -c 24 -u -pu
 echo -e "\n"
-read -p "Press Enter to continue..."
+read -rsn1 -p "Press any key to continue... "; echo
 }
 #8 machine data
 inximach () {
 clear
-echo -e "\e[1;15mMachine data\e[0m"
+echo -e "\e[1;15mOption 8: Machine data\e[0m"
 echo -e "\n"
 inxi -c 24 --machine
 echo -e "\n"
-read -p "Press Enter to continue..."
+read -rsn1 -p "Press any key to continue... "; echo
 }
 #9 Advanced Network device info
 inxinet () {
 clear
-echo -e "\e[1;15mNetwork device infon\e[0m"
+echo -e "\e[1;15mOption 9: Network device information\e[0m"
 echo -e "\n"
 inxi -c 24 --network-advanced
 echo -e "\n"
-read -p "Press Enter to continue..."
+read -rsn1 -p "Press any key to continue... "; echo
 }
-#10 Graphics info
+#4 Graphics info
 inxigraph () {
 clear
-echo -e "\e[1;15mGraphics infon\e[0m"
+echo -e "\e[1;15mOption 4: Graphics infon\e[0m"
 echo -e "\n"
 inxi -c 24 --graphics
 echo -e "\n"
-read -p "Press Enter to continue..."
+read -rsn1 -p "Press any key to continue... "; echo
 }
-#11 WAN IP address and local interfaces
+#5 WAN IP address and local interfaces
 inxiip () {
 clear
-echo -e "\e[1;15mWAN IP address and local interfacesn\e[0m"
+echo -e "\e[1;15mOption 5: WAN IP address and local interfacesn\e[0m"
 echo -e "\n"
 inxi -c 24 --ip
 echo -e "\n"
-read -p "Press Enter to continue..."
+read -rsn1 -p "Press any key to continue... "; echo
 }
 #
 makeyourchoice () { while true
@@ -113,31 +112,40 @@ do
   clear
   echo ""
   echo ""
-  echo "   A simple script to deliver System Information, based on <inxi> options"
+  echo "  A simple script to deliver System Information, based on <inxi> options"
   echo ""
-  echo "  (1) Ful system information"
-  echo "  (2) Basic system information"
-  echo "  (3) Processes"
-  echo "  (4) CPU"
-  echo "  (5) RAM"
-  echo "  (6) Full disk information" 
-  echo "  (7) Partition + UUIDs"
-  echo "  (8) Machine data"
-  echo "  (9) Network"
-  echo ""
-  echo "  (X) Exit"
+  echo "     cfdisk                ip a            alias       -'      "
+  echo "         grep                                         'man/     "
+  echo " xorg           awk                   systemd        '+arch:     "
+  echo "                                                    '+>_sudo:     "
+  echo "  (1) Ful system information                       '-openbox+:    "
+  echo "  (2) Basic system information                    '/:-:pacman+:    "
+  echo "  (3) Processes                                  '/+git/++clone:    "
+  echo "  (4) Graphics info                             '/lxde+kde+xfce+:    "
+  echo "  (5) WAN IP address                           '/+++ls~/.config+/'    "
+  echo "  (6) Full disk information                   ./exit$#cd++whoami+o+'    "
+  echo "  (7) Partition + UUIDs                      .neofetch-''''/pcmanfm+'    "
+  echo "  (8) Machine data                          -inxi#ssh.      :.bashrc+.    "
+  echo "  (9) Network                              :makepkg$/        mkfs.ext2.    "
+  echo "                                          /mount/mnt/        +cat|mkdir    "
+  echo "  (c) CPU                               '/fuck_ms+/:-        -:/+nano#o+-    "
+  echo "  (r) RAM                              '+vim+:-'                 '.-/\feh:    "
+  echo "                                      'i3:.                           '-/+/     "
+  echo "  (x) Exit                           '.'                                  ' \    "
   echo -e "\n"
-  read -p "  Enter your choice: " optionA
+  read -n 1 -r -p "  Enter your choice (1-9), 'C', 'R' or 'X' for exit: " optionA
   case $optionA in
     1 ) inxifull ;;
     2 ) inxibasic ;;
     3 ) inxiproc ;;
-    4 ) inxicpu ;;
-    5 ) inxiram ;;
+    4 ) inxigraph ;;
+    5 ) inxiip ;;
     6 ) inxidisk ;;
     7 ) inxiuuid ;;    
     8 ) inximach ;;
     9 ) inxinet ;;
+    c|C ) inxicpu;;
+    r|R ) inxiram;;
     x|X ) exit;;
     * ) invalid ;;
   esac
@@ -157,7 +165,7 @@ while getopts :f: opt; do
 			"uuid")		inxiuuid ;;
 			"net")		inxinet ;;
 			"graph")	inxigraph ;;
-			"ip")	inxiip ;;
+			"ip")		inxiip ;;
 			"menu") 	makeyourchoice ;;
 			*) echo "invalid option $REPLY";;
 		esac

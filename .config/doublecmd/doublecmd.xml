@@ -264,8 +264,8 @@
   </Toolbars>
   <MainWindow>
     <Position Save="True">
-      <Left>172</Left>
-      <Top>83</Top>
+      <Left>150</Left>
+      <Top>49</Top>
       <Width>1061</Width>
       <Height>560</Height>
       <PixelsPerInch>96</PixelsPerInch>

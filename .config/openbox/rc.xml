@@ -985,7 +985,7 @@
       <decor>yes</decor>
     </application>
     <!-- but give decorations back to Thunar  -->
-    <application name="Thunar">
+    <application name="thunar">
       <decor>yes</decor>
     </application>
     <!--

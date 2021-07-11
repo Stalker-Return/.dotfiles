@@ -77,7 +77,7 @@
         <Item Label="Browse directory">xdg-open "$(dirname "%local_path%")"</Item>
         <Item Label="Open with default application">xdg-open "%local_path%"</Item>
     </ExternalApps>
-    <LastOnlineCheck>1625055999</LastOnlineCheck>
+    <LastOnlineCheck>1625944520</LastOnlineCheck>
     <LastOnlineVersion>11.11</LastOnlineVersion>
     <DpiLayouts>
         <Layout Scale="100%">

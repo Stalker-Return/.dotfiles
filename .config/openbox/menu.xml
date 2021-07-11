@@ -416,6 +416,9 @@
 				<item label="wireless network devices" icon=".local/share/icons/devices/network-wireless-hotspot.svg">
 					<action name="Execute"><execute>lxterminal -e wavemon </execute></action>
 				</item>
+				<item label="pstree" icon=".local/share/icons/apps/mlgui.svg">
+					<action name="Execute"><execute>lxterminal -e /usr/bin/pstree.x11</execute></action>
+				</item>
 			</menu> <!-- the end of Sys Info -->
 
 			<separator/>
@@ -460,9 +463,6 @@
 			</item>
 			<item label="Top" icon=".local/share/icons/apps/veyon-configurator.svg">
 			    <action name="Execute"><execute>lxterminal -e top</execute></action>
-			</item>
-			<item label="pstree" icon=".local/share/icons/apps/mlgui.svg">
-				<action name="Execute"><execute>lxterminal -e /usr/bin/pstree.x11</execute></action>
 			</item>
 			<item label="alacritty" icon=".local/share/icons/apps/alacritty.svg">
 				<action name="Execute"><execute>alacritty </execute></action>
