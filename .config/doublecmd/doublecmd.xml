@@ -340,7 +340,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/bin/</Path>
+                  <Path>/home/ed/</Path>
                 </Paths>
               </Entry>
             </History>
