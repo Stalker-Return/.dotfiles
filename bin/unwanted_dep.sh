@@ -1,7 +1,16 @@
 #!/bin/bash
 
-source ~/bin/exit_control.sh
+# External source
+source /home/ed/scripts/external_func.sh
+#
 yay -Yc --noconfirm
 exitcode=$?
 exitcontrol
-echo "Unwanted dependancies cleaned: $(date), exit code = $exitcode, $codedescription" >> $HOME/.local/share/log-files/unwanted_dep.log
+#
+# log-file record
+echo "Unwanted dependancies has cleaned: $(date), exit code = $exitcode, $codedescription" >> $HOME/.local/share/log-files/unwanted_dep.log
+#
+# Send notification
+notify-send --urgency=critical --expire-time=3000 "Unwanted dependancies has cleaned"
+
+exit

@@ -1,12 +1,8 @@
 #!/bin/bash
-#
-# Check if root
-if [ "$EUID" -ne 0 ]
-  then	echo "Permission denied ..."
-		echo "Please run as root"
-		sleep 2
-  exit
-fi
+# External source
+source /home/ed/scripts/external_func.sh
+# Check if root (look at external_func.sh)
+checkroot
 #1 Ful system information
 inxifull () {
 clear

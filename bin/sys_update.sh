@@ -1,10 +1,16 @@
 #!/bin/bash
 
-source ~/bin/exit_control.sh
+# External source
+source /home/ed/scripts/external_func.sh
+#
 yay -Syu --noconfirm
 exitcode=$?
 exitcontrol
-echo "Full system update: $(date), exit code = $exitcode: $codedescription" >> $HOME/.local/share/log-files/sys_update.log
+
+# log-file record
+echo "Full System Update has completed: $(date), exit code = $exitcode: $codedescription" >> $HOME/.local/share/log-files/sys_update.log
+
+# Send notification
+notify-send --urgency=critical --expire-time=3000 "Full System Update has completed"
 
 exit
-

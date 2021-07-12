@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# External source
+source /home/ed/scripts/external_func.sh
+#
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add \
 .bashrc .xprofile .xinitrc .fehbg README.md scripts/ bin/ Templates/ \
 .local/share/icons/ .local/share/log-files/ .local/share/wallpapers/ .local/share/applications/ \
@@ -15,4 +18,11 @@ exitcode2=$?
 exitcode3=$?
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME status
 exitcode4=$?
-echo "github-tools updated: $(date), exit codes:$exitcode1:$exitcode2:$exitcode3:$exitcode4" >> $HOME/.local/share/log-files/github_dots.log
+#
+# log-file record
+echo "Github .dotfiles has updated: $(date), exit codes:$exitcode1:$exitcode2:$exitcode3:$exitcode4" >> $HOME/.local/share/log-files/github_dots.log
+#
+# Send notification
+notify-send --urgency=critical --expire-time=3000 "Github .dotfiles has updated"
+
+exit
