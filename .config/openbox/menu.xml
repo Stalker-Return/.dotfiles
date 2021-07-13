@@ -391,13 +391,13 @@
 				<separator/>
 				
 				<item label="Sysytem Services List" icon=".local/share/icons/apps/ccsm.svg">
-					<action name="Execute"><execute>lxterminal --geometry=131x45 --title=SYSTEM_Services -e systemctl list-units --type=service </execute></action>
+					<action name="Execute"><execute>lxterminal --geometry=131x45 --title=SYSTEM_Services -e sudo systemctl list-units --type=service </execute></action>
 				</item>
 				<item label="System Timers List" icon=".local/share/icons/apps/clock.svg">
-					<action name="Execute"><execute>lxterminal --geometry=120x25 --title=USER_Timers -e systemctl --user --all list-timers </execute></action>
+					<action name="Execute"><execute>lxterminal --geometry=131x25 --title=SYS_Timers -e sudo systemctl list-timers </execute></action>
 				</item>
 				<item label="User Timers List" icon=".local/share/icons/apps/clock.svg">
-					<action name="Execute"><execute>lxterminal -e systemctl --user list-timers </execute></action>
+					<action name="Execute"><execute>lxterminal --geometry=131x25 --title=USER_Timers -e systemctl --user --all list-timers </execute></action>
 				</item>
 				<item label="reload user daemon" icon=".local/share/icons/apps/ccsm.svg">
 					<action name="Execute"><execute>lxterminal -e systemctl --user daemon-reload </execute></action>
