@@ -1,6 +1,0 @@
-[Unit]
-Description=Test 
-
-[Service]
-Type=simple
-ExecStart=/home/ed/bin/test.sh

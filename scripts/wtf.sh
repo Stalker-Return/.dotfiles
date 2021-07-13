@@ -99,7 +99,8 @@ failedsrvs () {
 #8 mirrorlist regeneration
 runreflector () {
   clear
-  reflector --country 'Russia' --age 6 --protocol https --save /etc/pacman.d/mirrorlist
+  sudo reflector -f 10 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist
+  # reflector --country 'Russia' --age 6 --protocol https --save /etc/pacman.d/mirrorlist
   exitcode=$?
   exitcontrol
   clear

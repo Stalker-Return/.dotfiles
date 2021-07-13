@@ -1,8 +1,8 @@
 [Unit]
-Description=Test timer
+Description=Mirrorlist update weekly timer
 
 [Timer]
-OnCalendar=hourly
+OnCalendar=weekly
 Persistent=true
 
 [Install]
