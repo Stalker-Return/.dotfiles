@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=pCloud
+Comment=pCloud Drive Client built using electron and node.js. Distributed with AppImage.
+Exec=env DESKTOPINTEGRATION=false /usr/bin/pcloud
+Terminal=false
+Type=Application
+Icon=/home/ed/.local/share/icons/apps/pcloud.svg
+StartupWMClass=pcloud
+X-AppImage-Version=1.9.1
+Categories=Network;
+X-AppImage-BuildId=1pbeZm9yDj7QHE08YikMH00mPzb

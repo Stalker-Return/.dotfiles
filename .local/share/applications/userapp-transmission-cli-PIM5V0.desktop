@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=transmission
+Exec=transmission-cli %f
+Categories=Other;
+NoDisplay=true
+MimeType=application/x-bittorrent
+Terminal=true
+X-KeepTerminal=true
+Icon=/home/ed/.local/share/icons/apps/transmission.svg

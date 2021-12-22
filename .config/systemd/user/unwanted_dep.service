@@ -1,0 +1,8 @@
+[Unit]
+Description=Clean orphan packages
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/ed/bin/unwanted_dep.sh

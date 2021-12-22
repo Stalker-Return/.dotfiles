@@ -1,0 +1,12 @@
+[Unit]
+Description=Github dotfiles update daily timer
+Wants=network.target
+After=network.target
+
+[Timer]
+#OnCalendar=*-*-* 00:47:00
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Hotkeys
+Name[en_US]=Hotkeys
+GenericName=Hot Keys
+GenericName[en_US]=Image viewer
+Comment=Image viewer and cataloguer
+Exec=feh -B black -g -z $HOME/.local/share/icons/hotkeys.png
+Terminal=false
+Type=Application
+Icon=/home/ed/.local/share/icons/apps/khotkeys.svg
+Categories=Graphics;2DGraphics;Viewer;
+MimeType=image/bmp;image/gif;image/jpeg;image/jpg;image/pjpeg;image/png;image/tiff;image/webp;image/x-bmp;image/x-pcx;image/x-png;image/x-portable-anymap;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-tga;image/x-xbitmap;
+NoDisplay=true
+Comment[en_US]=Hot Keys

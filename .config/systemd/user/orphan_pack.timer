@@ -1,0 +1,10 @@
+[Unit]
+Description=Clean orphan packages monthly
+
+[Timer]
+OnCalendar=weekly
+#OnCalendar=*-*-* 08:45:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

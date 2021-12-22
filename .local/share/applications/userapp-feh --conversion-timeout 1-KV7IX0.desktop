@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Icon=/home/ed/.local/share/icons/apps/picture.svg
+Name=svgviewer
+Exec=feh --conversion-timeout 1 %f
+Categories=Other;
+NoDisplay=true
+MimeType=image/svg+xml
+Terminal=false

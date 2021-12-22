@@ -1,0 +1,10 @@
+[Unit]
+Description=Github tools update daily timer
+
+[Timer]
+#OnCalendar=*-*-* 19:18:00
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target 

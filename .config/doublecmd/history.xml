@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doublecmd>
+  <History>
+    <FileMask>
+      <Item>balena-etcher-electron</Item>
+      <Item>IMG_7101.*</Item>
+      <Item>deadbeef</Item>
+      <Item>dead</Item>
+      <Item>Captain America  The Winter Soldier by_IVAN@.190282.mkv</Item>
+      <Item>xdg-menu.xml</Item>
+      <Item>*.xml</Item>
+      <Item>*.sh</Item>
+      <Item>*.desktop</Item>
+      <Item>*.service, *.sh</Item>
+      <Item>*.service *.sh</Item>
+      <Item>*.service</Item>
+      <Item>*.sh; *.service</Item>
+      <Item>*</Item>
+      <Item>config.rasi</Item>
+      <Item>Peterson</Item>
+      <Item>*.*</Item>
+    </FileMask>
+  </History>
+</doublecmd>

@@ -1,0 +1,11 @@
+[Unit]
+Description=AUR apps update daily timer
+
+[Timer]
+OnCalendar=daily
+#OnCalendar=*-*-* 11:22:00
+#OnActiveSec=15min
+Persistent=true
+
+[Install]
+WantedBy=timers.target

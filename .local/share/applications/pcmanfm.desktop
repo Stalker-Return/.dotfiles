@@ -1,0 +1,11 @@
+[Desktop Entry]
+Categories=System;FileTools;FileManager;Utility;Core;GTK;
+Comment=Browse the file system and manage the files
+Exec=pcmanfm %U
+GenericName=File Manager
+Icon=/home/ed/.local/share/icons/apps/system-file-manager.svg
+MimeType=inode/directory;
+Name=File Manager PCManFM-2
+StartupNotify=true
+Terminal=false
+Type=Application

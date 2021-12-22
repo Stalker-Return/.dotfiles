@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Icon=/home/ed/.local/share/icons/devices/computer.svg
+Name=setbackground
+Exec=/home/ed/scripts/set_background.sh %f
+Categories=Other;
+NoDisplay=true
+MimeType=image/png
+Terminal=false

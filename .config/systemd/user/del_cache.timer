@@ -1,0 +1,12 @@
+[Unit]
+Description=Cache delete daily timer
+
+[Timer]
+[Timer]
+#OnBootSec=2min
+#OnUnitActiveSec=1d
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target

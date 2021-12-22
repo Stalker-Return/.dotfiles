@@ -1,0 +1,10 @@
+[Unit]
+Description=Clean journal directory weekly timer
+
+[Timer]
+OnCalendar=weekly
+Persistent=true
+AccuracySec=12h
+
+[Install]
+WantedBy=timers.target

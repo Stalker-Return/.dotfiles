@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=PDFsam
+Comment=A free open source tool to split and merge pdf documents
+Exec=pdfsam
+Icon=/home/ed/.local/share/icons/apps/pdfsam.svg
+Terminal=false
+StartupNotify=false
+Categories=Office;

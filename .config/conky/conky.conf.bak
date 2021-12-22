@@ -1,0 +1,68 @@
+conky.config = {
+    alignment = 'top_right',
+    background = true,
+    border_width = 1,
+    cpu_avg_samples = 2,
+    default_color = 'white',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+    double_buffer = true,
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    extra_newline = false,
+    font = 'Ubuntu:size=8',
+    gap_x = 5,
+    gap_y = 5,
+    minimum_height = 5,
+    minimum_width = 5,
+    net_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_ncurses = false,
+    out_to_stderr = false,
+    out_to_x = true,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_type = 'desktop',
+    show_graph_range = false,
+    show_graph_scale = false,
+    stippled_borders = 0,
+    update_interval = 1.0,
+    uppercase = false,
+    use_spacer = 'none',
+    use_xft = true,
+}
+
+conky.text = [[
+${voffset 8}$color${font Cantarell:size=16}${time %A}$font${voffset -8}$alignr${color 109567}${font Cantarell:size=32}${time %e}$font
+$color${voffset -30}$color${font Cantarell:size=16}${time %B}$font${voffset -3} $color${font Cantarell:size=13}${time %Y}$font
+#${voffset 10}$alignr$color Kraków (PL) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ EPKK temperature temperature 15}°C
+#
+${voffset 10}${goto 12}${color3}${font Cantarell:size=9:bold}CPU$alignr${color2}${font}$cpu%
+$color2${goto 12}${cpubar 4,200}
+${voffset 5}${goto 12}$font$color2${top name 1}$alignr$color${top cpu 1}%
+${goto 12}$color2${top name 2}$alignr$color${top cpu 2}%
+${goto 12}$color2${top name 3}$alignr$color${top cpu 3}%
+${goto 12}$color2${top name 4}$alignr$color${top cpu 4}%
+#
+${voffset 10}${goto 12}${color3}${font Cantarell:size=9:bold}RAM$alignr${color2}${font}$mem/$memmax
+$color2${goto 12}${membar 4,200}
+${goto 12}${voffset 5}$color2${top_mem name 1}$alignr$color${top_mem mem_res 1}
+${goto 12}$color2${top_mem name 2}$alignr$color${top_mem mem_res 2}
+${goto 12}$color2${top_mem name 3}$alignr$color${top_mem mem_res 3}
+${goto 12}$color2${top_mem name 4}$alignr$color${top_mem mem_res 4}
+#
+${voffset 10}$alignr disk ${color2}${fs_used /} - ${fs_size /}
+$alignr$color memory ${color2}$mem - $memmax
+#${alignr}${color2}${font Cantarell:size=9}swap $swapmax - $swap
+${voffset 10}$alignr${execi 1200 whoami}@${nodename}
+${alignr}${color2}${font Cantarell:size=9}uptime ${color}${uptime_short}
+$alignr${color} Openbox Arch Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
+${alignr}${color2}${font Cantarell:size=9}${alignr}kernel ${color}${kernel}
+${alignr}${color2}${font Cantarell:size=9}${alignr}filesystem ${color}${fs_type}
+${voffset 10}${alignr}${color} packages installed: ${color2}${execi 10000 pacman -Q | wc -l}
+${alignr}${color} available updates ${color CC2A2E}${font Cantarell:bold:size=10}${execpi 10800 checkupdates | wc -l}${font}${color}
+${alignr}${color} last updated on: ${font Cantarell:size=8}${color2}${execi 10000 grep "starting full system upgrade" /var/log/pacman.log | tail -n1| cut --bytes=2-17}
+]]

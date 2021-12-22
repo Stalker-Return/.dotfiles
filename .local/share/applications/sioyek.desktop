@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+MimeType=application/pdf;
+Name=Sioyek
+Exec=sioyek
+Icon=/home/ed/.local/share/icons/apps/sioyek-icon-linux.png
+Categories=Development;

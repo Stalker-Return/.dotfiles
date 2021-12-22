@@ -1,0 +1,32 @@
+#xrandr --output LVDS1 --mode 1366x768 &					# set the screen resolution 1366x768
+#xrandr --output Virtual1 --mode 1360x768 &					# set the screen resolution 1360x768 (virtual mode)
+
+#pasystray &												# system tray applet for PulseAudio
+
+#cbatticon -u 20 -i standard -c "poweroff" -l 15 -r 3 &		# system tray for battery
+
+#pcmanfm --desktop &										# enable management of the desktop for Openbox
+#pcmanfm --daemon-mode &										# run PCManFM in the background
+
+sh ~/.fehbg													# set wallpapers
+#sh ~/.setbg												# set random wallpapers
+
+sudo mkdir -p /run/media/ed/DATA							# make DATA folder to mount volumes
+sudo mkdir -p /run/media/ed/usb1							# make usb1 folder to mount volumes
+sudo mkdir -p /run/media/ed/usb2							# make usb2 folder to mount volumes
+
+tint2 $HOME/.config/tint2/tint2rc &							# bottom panel for Xorg
+#tint2 $HOME/.config/tint2/tint2rc-left &					# left panel for Xorg
+#tint2 $HOME/.config/tint2/tint2rc-top &					# top panel for Xorg
+
+setxkbmap -option grp:switch,grp:ctrl_shift_toggle,grp_led:scroll us,ru,ua		# keyboard map settings
+perWindowLayoutD											# keeps per window keyboard layout
+#fbxkb &													# keyboard layout indicator
+
+#nm-applet &												# GTK 3 front-end for systray
+
+#xdg-user-dirs-update										# manage "well known" user directories
+
+### Set hot corners
+#xdotool behave_screen_edge top-left exec pcmanfm &
+#xdotool behave_screen_edge top-right exec xterm &

@@ -1,0 +1,9 @@
+[Unit]
+Description=Mirrorlist update weekly timer
+
+[Timer]
+OnCalendar=weekly
+Persistent=true
+
+[Install]
+WantedBy=timers.target

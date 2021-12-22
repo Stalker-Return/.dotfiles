@@ -1,0 +1,9 @@
+[Unit]
+Description=AUR packages update
+Wants=network-online.target
+Requires=sys_update.service
+After=sys_update.service
+	
+[Service]
+Type=simple
+ExecStart=/home/ed/bin/aur_update.sh

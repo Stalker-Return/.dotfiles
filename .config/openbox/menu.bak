@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Openbox Menu -->	
+<openbox_menu>
+	<menu id="root-menu" label="OpenBox 3">
+		<!-- this is a menu header
+		<separator label="Root Menu"/> --> 
+			<item label="Web Browser" icon=".local/share/icons/apps/internet-web-browser.svg">
+				<action name="Execute"><execute>brave %U </execute></action>
+			</item>
+			<item label="File Manager" icon=".local/share/icons/apps/system-file-manager.svg">
+				<action name="Execute"><execute>pcmanfm </execute></action>
+			</item>
+			<item label="Terminal" icon=".local/share/icons/apps/utilities-terminal.svg">
+				<action name="Execute"><execute>lxterminal</execute></action>
+			</item>
+			<menu execute="~/scripts/date-menu.py" id="datetime" label="Time and Date" icon=".local/share/icons/apps/clock.svg"/>
+		<separator/>
+
+		<!-- rootmenu / Favorites -->
+		<menu id="favorites-menu" label="Favorites" icon=".local/share/icons/places/folder-blue-wine.svg">
+
+			<item label="LibreOffice" icon=".local/share/icons/apps/libreoffice-main.svg">
+				<action name="Execute"><execute>libreoffice </execute></action>
+			</item>
+			<item label="LibreOffice Calc" icon=".local/share/icons/apps/libreoffice-calc.svg">
+				<action name="Execute"><execute>libreoffice --calc </execute></action>
+			</item>
+			<item label="LibreOffice Writer" icon=".local/share/icons/apps/libreoffice-writer.svg">
+				<action name="Execute"><execute>libreoffice --writer </execute></action>
+			</item>
+			<item label="LibreOffice Impress" icon=".local/share/icons/apps/libreoffice-impress.svg">
+				<action name="Execute"><execute>libreoffice --impress </execute></action>
+			</item>
+			<item label="LibreOffice Math" icon=".local/share/icons/apps/libreoffice-math.svg">
+				<action name="Execute"><execute>libreoffice --math </execute></action>
+			</item>
+			<item label="LibreOffice Base" icon=".local/share/icons/apps/libreoffice-base.svg">
+				<action name="Execute"><execute>libreoffice --base </execute></action>
+			</item>
+			<item label="LibreOffice Draw" icon=".local/share/icons/apps/libreoffice-draw.svg">
+				<action name="Execute"><execute>libreoffice --draw </execute></action>
+			</item>
+			</menu> <!-- the end of Office -->
+
+		<!-- rootmenu / Development -->
+		<menu id="1" label="Development" icon=".local/share/icons/places/folder-blue-script.svg">
+
+			<!-- autodenerated pipe-menu: XDG-Menu, look at: /etc/xdg/menus/arch-applications.menu 		-->
+			<menu id="applications" label="XDG-Menu" execute="xdg_menu --format openbox3-pipe --root-menu /etc/xdg/menus/arch-applications.menu" />
+
+			<separator/>
+
+			<item label="Python" icon=".local/share/icons/apps/python.svg">
+				<action name="Execute"><execute>xterm -e python</execute></action>
+			</item>
+			<item label="Python (v2.7)" icon=".local/share/icons/apps/python.svg">
+				<action name="Execute"><execute>xterm -e python2.7</execute></action>
+			</item>
+			<item label="Qt Designer" icon=".local/share/icons/apps/qtdesigner.svg">
+				<action name="Execute"><execute>designer</execute></action>
+			</item>
+			<item label="Qt Linguist" icon=".local/share/icons/apps/qtlinguist.svg">
+				<action name="Execute"><execute>linguist</execute></action>
+			</item>
+			<item label="Qt QDbusViewer" icon=".local/share/icons/apps/qtconfig.svg">
+				<action name="Execute"><execute>qdbusviewer</execute></action>
+			</item>
+		</menu> <!-- the end of Development -->
+
+		<!-- pipe-menu / Places -->
+		<menu id="places" label="Places" icon=".local/share/icons/places/folder-blue-recent.svg"  execute="./scripts/places-menu.sh ~/" />
+
+		<!-- pipe-menu / Recent Files -->
+		<menu id="recent" label="Recent Files" icon=".local/share/icons/places/folder-blue-recent.svg" execute="~/scripts/obrecent.sh ~/" />
+
+		<!-- rootmenu / Bookmarks -->
+		<menu id="root-menu-151830" label="Bookmarks" icon=".local/share/icons/places/folder-blue-favorites.svg">
+			<!-- rootmenu / Bookmarks / File System -->
+			<menu id="88" label="File System" icon=".local/share/icons/places/folder-blue-linux.svg">
+				<item label="root" icon=".local/share/icons/places/folder-blue-linux.svg">
+					<action name="Execute"><execute>pcmanfm -n  /</execute></action>
+				</item>
+				<item label="X11/xorg.conf.d" icon=".local/share/icons/places/folder-blue-code.svg">
+					<action name="Execute"><execute>pcmanfm -n /etc/X11/xorg.conf.d </execute></action>
+				</item>
+				<item label="applications" icon=".local/share/icons/places/folder-blue-code.svg">
+					<action name="Execute"><execute>pcmanfm -n /usr/share/applications </execute></action>
+				</item>
+			</menu> <!-- the end of Bookmarks / File System -->
+			<!-- rootmenu / Bookmarks / Settings -->			
+			<menu id="61" label="Settings" icon=".local/share/icons/places/folder-blue-activities.svg">
+				<item label="openbox" icon=".local/share/icons/places/folder-blue-important.svg">
+					<action name="Execute"><execute>pcmanfm -n ~/.config/openbox</execute></action>
+				</item>
+				<item label="config" icon=".local/share/icons/places/folder-blue-code.svg">
+					<action name="Execute"><execute>pcmanfm -n ~/.config</execute></action>
+				</item>
+				<item label="local" icon=".local/share/icons/places/folder-blue-visiting.svg">
+					<action name="Execute"><execute>pcmanfm -n ~/.local/share</execute></action>
+				</item>
+			</menu> <!-- the end of Bookmarks / Settings -->
+			<!-- rootmenu / Bookmarks / Clouds -->
+			<menu id="places-clouds-599400" label="Clouds" icon=".local/share/icons/places/folder-blue-sync.svg">
+				<item label="Bureau" icon=".local/share/icons/places/folder-blue-mega.svg">
+					<action name="Execute"><execute>pcmanfm -n ~/Clouds/Bureau </execute></action>
+				</item>
+				<item label="BackUps" icon=".local/share/icons/places/folder-blue-dropbox.svg">
+					<action name="Execute"><execute>pcmanfm -n ~/Clouds/Dropbox/BackUps </execute></action>
+				</item>
+				<item label="gDrive" icon=".local/share/icons/places/folder-blue-google-drive.svg">
+					<action name="Execute"><execute>pcmanfm -n ~/Clouds/gDrive </execute></action>
+				</item>
+				<item label="Study" icon=".local/share/icons/places/folder-blue-books.svg">
+					<action name="Execute"><execute>pcmanfm -n ~/Clouds/Shared/Study </execute></action>
+				</item>
+				<item label="Zivnostnik" icon=".local/share/icons/places/folder-blue-documents-open.svg">
+					<action name="Execute"><execute>pcmanfm -n ~/Clouds/Shared/Zivnostnik </execute></action>
+				</item>
+				<item label="Transit" icon=".local/share/icons/places/folder-blue-yandex-disk.svg">
+					<action name="Execute">	<execute>pcmanfm -n ~/Clouds/Bureau/Transit </execute></action>
+				</item>
+				<item label="OneDrive" icon=".local/share/icons/places/folder-blue-onedrive.svg">
+					<action name="Execute"><execute>pcmanfm -n ~/Clouds/OneDrive </execute></action>
+				</item>
+				<item label="Repository" icon=".local/share/icons/places/folder-blue-pcloud.svg">
+					<action name="Execute"><execute>pcmanfm -n ~/Clouds/Repository </execute></action>
+				</item>
+			</menu> <!-- the end of Bookmarks / Clouds -->
+
+			<separator/>
+			
+			<item label="Home" icon=".local/share/icons/places/folder-blue.svg">
+				<action name="Execute"><execute>pcmanfm -n ~/</execute></action>
+			</item>
+			<item label="Downloads" icon=".local/share/icons/places/folder-blue-download-open.svg">
+				<action name="Execute"><execute>pcmanfm -n ~/Downloads</execute></action>
+			</item>
+			<item label="Documents" icon=".local/share/icons/places/folder-blue-documents-open.svg">
+				<action name="Execute"><execute>pcmanfm -n ~/Documents</execute></action>
+			</item>
+			<item label="Music" icon=".local/share/icons/places/folder-blue-music.svg">
+				<action name="Execute"><execute>pcmanfm -n ~/Music </execute></action>
+			</item>
+			<item label="Pictures" icon=".local/share/icons/places/folder-blue-pictures.svg">
+				<action name="Execute"><execute>pcmanfm -n ~/Pictures</execute></action>
+			</item>
+			<item label="tools" icon=".local/share/icons/places/folder-blue-important.svg">
+				<action name="Execute"><execute>pcmanfm -n ~/Clouds/Dropbox/BackUps/Linux/tools</execute></action>
+			</item>
+			<item label="Scripts" icon=".local/share/icons/places/folder-blue-script.svg">
+				<action name="Execute">	<execute>pcmanfm -n ~/scripts</execute></action>
+			</item>
+		</menu> <!-- the end of Places -->
+
+		<!-- rootmenu / Documents -->
+		<menu id="root-menu-399301" label="Documents" icon=".local/share/icons/places/folder-blue-documents.svg">
+				<item label="Faktura" icon=".local/share/icons/apps/google-agenda.svg">
+					<action name="Execute"><execute>libreoffice --calc ~/Clouds/Shared/Zivnostnik/Faktura/2021/Faktura_2021.xlsx </execute></action>
+				</item>
+				<item label="Exercises" icon=".local/share/icons/apps/poezio.svg">
+					<action name="Execute"><execute>libreoffice --calc ~/Clouds/Bureau/Math/Exercises.xlsx</execute></action>
+				</item>
+				<item label="New Words" icon=".local/share/icons/apps/libreoffice-writer.svg">
+					<action name="Execute"><execute>libreoffice --writer ~/Clouds/Shared/Study/English/eng-rus-dictionary.docx </execute></action>
+				</item>
+				<item label="Peterson" icon=".local/share/icons/apps/gnome-books.svg">
+					<action name="Execute"><execute>/opt/master-pdf-editor-4/masterpdfeditor4 ~/Clouds/Shared/Study/Mathematics/Rus/4_class/Peterson_4.pdf </execute></action>
+				</item>
+				<item label="Bash Scripting Guide" icon=".local/share/icons/apps/gnome-books.svg">
+					<action name="Execute"><execute>/opt/master-pdf-editor-4/masterpdfeditor4 ~/Clouds/Repository/Books/Advanced_Bash_Scripting_Guide.pdf </execute></action>
+				</item>
+				<item label="Harry Potter" icon=".local/share/icons/apps/gnome-books.svg">
+					<action name="Execute"><execute>/opt/master-pdf-editor-4/masterpdfeditor4 ~/Clouds/Shared/Study/English/Books/Harry_Potter/01_Sorcerers_Stone.pdf </execute></action>
+				</item>
+				<item label="Alice" icon=".local/share/icons/apps/gnome-books.svg">
+					<action name="Execute"><execute>/opt/master-pdf-editor-4/masterpdfeditor4 ~/Clouds/Bureau/English/English-Maryna/Books/Alice_Adventures_in_Wonderland/Alice_Adventures_in_Wonderland.pdf </execute></action>
+				</item>
+				<item label="1984" icon=".local/share/icons/apps/gnome-books.svg">
+					<action name="Execute">
+						<execute>
+						/opt/master-pdf-editor-4/masterpdfeditor4 ~/Clouds/Repository/Books/1984.pdf 
+						</execute></action>
+				</item>
+				<item label="lxde-rc.xml" icon=".local/share/icons/apps/openoffice4-writer.svg">
+					<action name="Execute"><execute>geany ~/.config/openbox/lxde-rc.xml</execute></action>
+				</item>
+				<item label="autostart" icon=".local/share/icons/apps/openoffice4-writer.svg">
+					<action name="Execute"><execute>geany ~/.config/openbox/autostart</execute></action>
+				</item>
+				<item label=".bashrc" icon=".local/share/icons/apps/openoffice4-writer.svg">
+					<action name="Execute"><execute>geany ~/.bashrc </execute></action>
+				</item>
+		</menu> <!-- the end of Documents -->
+
+		<!-- rootmenu / Multimedia -->	
+		<menu id="7" label="Multimedia" icon=".local/share/icons/places/folder-blue-music.svg">
+			<item label="VLC" icon=".local/share/icons/apps/vlc.svg">
+				<action name="Execute"><execute>/usr/bin/vlc </execute></action>
+			</item>
+			<item label="Deadbeef" icon=".local/share/icons/apps/deadbeef.svg">
+				<action name="Execute"><execute>/usr/bin/deadbeef </execute></action>
+			</item>
+			<item label="OBS Studio" icon=".local/share/icons/apps/obs.svg">
+				<action name="Execute"><execute>obs </execute></action>
+			</item>
+			<item label="Kdenlive" icon=".local/share/icons/apps/kdenlive.svg">
+				<action name="Execute"><execute>~/portable/kdenlive-21.04.1-x86_64.appimage </execute></action>
+			</item>
+			<item label="Audacity" icon=".local/share/icons/apps/audacity.svg">
+				<action name="Execute"><execute>env UBUNTU_MENUPROXY=0 audacity </execute></action>
+			</item>
+			<item label="PulseAudio Volume Control" icon=".local/share/icons/apps/veyon-configurator.svg">
+				<action name="Execute"><execute>pavucontrol </execute></action>
+			</item>
+			<item label="ALSA mixer" icon=".local/share/icons/apps/ao-app.svg">
+				<action name="Execute"><execute>lxterminal -e alsamixer </execute></action>
+			</item>
+			<item label="Pragha" icon=".local/share/icons/apps/pragha.svg">
+				<action name="Execute"><execute>pragha </execute></action>
+			</item>
+			<item label="Qt V4L2 test Utility" icon=".local/share/icons/apps/qtconfig.svg">
+				<action name="Execute"><execute>qv4l2 </execute></action>
+			</item>
+			<item label="Qt V4L2 video capture utility" icon=".local/share/icons/apps/qtemu.svg">
+				<action name="Execute"><execute>qvidcap </execute></action>
+			</item>
+		</menu> <!-- the end of Multimedia -->
+		
+		<!-- rootmenu / Office -->
+		<menu id="3" label="Office" icon=".local/share/icons/places/folder-blue-wine.svg">
+
+			<item label="LibreOffice" icon=".local/share/icons/apps/libreoffice-main.svg">
+				<action name="Execute"><execute>libreoffice </execute></action>
+			</item>
+			<item label="LibreOffice Calc" icon=".local/share/icons/apps/libreoffice-calc.svg">
+				<action name="Execute"><execute>libreoffice --calc </execute></action>
+			</item>
+			<item label="LibreOffice Writer" icon=".local/share/icons/apps/libreoffice-writer.svg">
+				<action name="Execute"><execute>libreoffice --writer </execute></action>
+			</item>
+			<item label="LibreOffice Impress" icon=".local/share/icons/apps/libreoffice-impress.svg">
+				<action name="Execute"><execute>libreoffice --impress </execute></action>
+			</item>
+			<item label="LibreOffice Math" icon=".local/share/icons/apps/libreoffice-math.svg">
+				<action name="Execute"><execute>libreoffice --math </execute></action>
+			</item>
+			<item label="LibreOffice Base" icon=".local/share/icons/apps/libreoffice-base.svg">
+				<action name="Execute"><execute>libreoffice --base </execute></action>
+			</item>
+			<item label="LibreOffice Draw" icon=".local/share/icons/apps/libreoffice-draw.svg">
+				<action name="Execute"><execute>libreoffice --draw </execute></action>
+			</item>
+			</menu> <!-- the end of Office -->
+
+		<!-- rootmenu / Internet -->			
+		<menu id="5" label="Internet" icon=".local/share/icons/places/folder-blue-yandex-disk.svg">
+			<!-- rootmenu / Clouds -->
+			<menu id="18" label="Clouds" icon=".local/share/icons/places/folder-blue-sync.svg">
+				<item label="Megasync" icon=".local/share/icons/apps/mega.svg">
+					<action name="Execute"><execute>megasync </execute></action>
+				</item>
+				<item label="DropBox" icon=".local/share/icons/apps/dropbox.svg">
+					<action name="Execute"><execute>~/.dropbox-dist/dropboxd </execute></action>
+				</item>
+				<item label="pCloud" icon=".local/share/icons/apps/pcloud.svg">
+					<action name="Execute"><execute>env DESKTOPINTEGRATION=false /usr/bin/pcloud </execute></action>
+				</item>
+				<item label="Mount gDrive" icon=".local/share/icons/apps/google-drive.svg">
+					<action name="Execute"><execute>~/scripts/mountgd.sh </execute></action>
+				</item>
+				<item label="Mount OneDrive" icon=".local/share/icons/apps/ms-onedrive.svg">
+					<action name="Execute"><execute>~/scripts/mountod.sh </execute></action>
+				</item>
+				<item label="Github-gots update" icon=".local/share/icons/apps/github.svg">
+					<action name="Execute"><execute>~/bin/github_dots.sh </execute></action>
+				</item>
+				<item label="Github-tools update" icon=".local/share/icons/apps/gitlab.svg">
+					<action name="Execute"><execute>~/bin/github_tools.sh </execute></action>
+				</item>
+				<item label="Github-install update" icon=".local/share/icons/apps/github.svg">
+					<action name="Execute"><execute>~/bin/github_install.sh </execute></action>
+				</item>
+			</menu> <!-- the end of Clouds -->
+			
+			<!-- rootmenu / Internet / Messengers -->		
+			<menu id="12" label="Messengers" icon=".local/share/icons/places/folder-blue-image-people.svg">
+				<item label="Signal" icon=".local/share/icons/apps/signal-desktop.svg">
+					<action name="Execute"><execute>signal-desktop </execute></action>
+				</item>
+				<item label="Telegram" icon=".local/share/icons/apps/telegram.svg">
+					<action name="Execute"><execute>telegram-desktop -- %u </execute></action>
+				</item>
+				<item label="Viber" icon=".local/share/icons/apps/viber.svg">
+					<action name="Execute"><execute>/usr/bin/viber %u </execute></action>
+				</item>
+				<item label="Skype" icon=".local/share/icons/apps/skype.svg">
+					<action name="Execute"><execute>/usr/bin/skypeforlinux %U </execute></action>
+				</item>
+				<item label="Whatsapp" icon=".local/share/icons/apps/whatsapp.svg">
+					<action name="Execute"><execute>whatsapp-for-linux </execute></action>
+				</item>
+				<item label="Zoom" icon=".local/share/icons/apps/Zoom.svg">
+					<action name="Execute"><execute>/usr/bin/zoom %U </execute></action>
+				</item>
+			</menu> <!-- the end of Messengers -->
+
+			<separator/>
+
+			<item label="FireFox" icon=".local/share/icons/apps/firefox.svg">
+				<action name="Execute"><execute>firefox </execute></action>
+			</item>
+			<item label="AnyDesk" icon=".local/share/icons/apps/anydesk.svg">
+				<action name="Execute"><execute>env GTK2_RC_FILES=/usr/share/themes/Adwaita/gtk-2.0/gtkrc /usr/bin/anydesk %u </execute></action>
+			</item>
+			<item label="Thunderbird" icon=".local/share/icons/apps/thunderbird.svg">
+				<action name="Execute"><execute>thunderbird </execute></action>
+			</item>
+			<item label="Google Chrome" icon=".local/share/icons/apps/google-chrome.svg">
+				<action name="Execute"><execute>/usr/bin/google-chrome-stable %U </execute></action>
+			</item>
+			<item label="Brave Browser" icon=".local/share/icons/apps/brave.svg">
+				<action name="Execute"><execute>brave %U </execute></action>
+			</item>
+			<item label="Opera" icon=".local/share/icons/apps/opera.svg">
+				<action name="Execute"><execute>opera </execute></action>
+			</item>
+			<item label="Nyxt" icon=".local/share/icons/apps/nyxt.png">
+				<action name="Execute"><execute>nyxt </execute></action>
+			</item>
+			<item label="Tor Browser" icon=".local/share/icons/apps/tor.svg">
+				<action name="Execute"><execute>sh -c '"/home/ed/portable/tor-browser_en-US/Browser/start-tor-browser" --detach || ([ !  -x "/home/ed/portable/tor-browser_en-US/Browser/start-tor-browser" ] && "$(dirname "$*")"/Browser/start-tor-browser --detach)' dummy %k </execute></action>
+			</item>
+		</menu> <!-- the end of Internet -->
+
+		<!-- rootmenu / Applications -->
+		<menu id="19" label="Applications" icon=".local/share/icons/places/folder-blue-linux.svg">
+			<!-- rootmenu / Applications / Graphics -->	
+			<menu id="6" label="Graphics" icon=".local/share/icons/places/folder-blue-pictures.svg">
+				<item label="PDF-Editor" icon=".local/share/icons/apps/masterpdfeditor.svg">
+					<action name="Execute"><execute>/opt/master-pdf-editor-4/masterpdfeditor4 </execute></action>
+				</item>
+				<item label="FBReader" icon=".local/share/icons/apps/fbreader.svg">
+					<action name="Execute"><execute>FBReader </execute></action>
+				</item>
+				<item label="LibreOffice Draw" icon=".local/share/icons/apps/libreoffice-draw.svg">
+					<action name="Execute"><execute>libreoffice --draw </execute></action>
+				</item>
+				<item label="GIMP" icon=".local/share/icons/apps/gimp.svg">
+					<action name="Execute"><execute>/usr/bin/gimp-2.10 </execute></action>
+				</item>
+				<item label="Flameshot" icon=".local/share/icons/apps/flameshot.svg">
+					<action name="Execute"><execute>flameshot </execute></action>
+				</item>
+			</menu> <!-- the end of Graphics -->
+
+			<separator/>
+
+			<item label="VirtualBox" icon=".local/share/icons/apps/virtualbox.svg">
+				<action name="Execute"><execute>VirtualBox %U </execute></action>
+			</item>
+			<item label="KeePassXC" icon=".local/share/icons/apps/keepassxc.svg">
+				<action name="Execute"><execute>keepassxc </execute></action>
+			</item>
+			<item label="Double Commander" icon=".local/share/icons/apps/doublecmd.svg">
+				<action name="Execute"><execute>doublecmd </execute></action>
+			</item>
+			<item label="Geany" icon=".local/share/icons/apps/google-docs.svg">
+				<action name="Execute"><execute>geany %F </execute></action>
+			</item>
+			<item label="Leafpad" icon=".local/share/icons/apps/leafpad.svg">
+				<action name="Execute"><execute>leafpad %f </execute></action>
+			</item>
+			<item label="Stacer" icon=".local/share/icons/apps/stacer.svg">
+				<action name="Execute"><execute>stacer </execute></action>
+			</item>
+			<item label="PCManFM" icon=".local/share/icons/apps/system-file-manager.svg">
+				<action name="Execute"><execute>pcmanfm </execute></action>
+			</item>
+			<item label="Thunar" icon=".local/share/icons/apps/thunar.svg">
+				<action name="Execute"><execute>thunar </execute></action>
+			</item>
+			<item label="FreeFileSync" icon=".local/share/icons/apps/freefilesync.svg">
+				<action name="Execute"><execute>/opt/FreeFileSync/FreeFileSync </execute></action>
+			</item>
+			<item label="Galculator" icon=".local/share/icons/apps/gnome-calculator.svg">
+				<action name="Execute"><execute>galculator </execute></action>
+			</item>
+			<item label="ViFM" icon=".local/share/icons/apps/vifm.svg">
+				<action name="Execute"><execute>lxterminal -e vifm </execute></action>
+			</item>
+		</menu> <!-- the end of Applications -->
+		
+		<!-- rootmenu / System -->
+		<menu id="system-tools-menu" label="Tools" icon=".local/share/icons/places/folder-blue-code.svg">
+
+			<!-- rootmenu / System / Conky-->
+			<menu id="38" label="Conky" icon=".local/share/icons/places/folder-blue-open.svg">
+				<item label="Conky on" icon=".local/share/icons/apps/conky.svg">
+					<action name="Execute"><execute>conky --config=.config/conky/conky.conf </execute></action>
+				</item>
+				<item label="Conky off" icon=".local/share/icons/apps/system-error.svg">
+					<action name="Execute"><execute>killall conky </execute></action>
+				</item>
+			</menu> <!-- the end of Conky -->
+
+			<!-- rootmenu / System / Sys Info-->
+			<menu id="sysinfo-75" label="System Info" icon=".local/share/icons/places/folder-blue-open.svg">
+				<item label="Info of your choice" icon=".local/share/icons/apps/tuxpuck.svg">
+					<action name="Execute"><execute>xterm -T Sys_Info -geometry 90x28+30+20 -e 'tput civis; sudo ~/scripts/sys_about.sh -f menu' </execute></action>
+				</item>
+				<item label="Basic System Info" icon=".local/share/icons/apps/tuxpuck.svg">
+					<action name="Execute"><execute>xterm -T Basic_Info -geometry 120x22+320+250 -e 'echo -e "\033[5mBasic system information\033[0m"; echo -e "\n"; sudo inxi -c 7 --basic; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo' </execute></action>
+				</item>
+				<item label="Processes" icon=".local/share/icons/apps/tuxpuck.svg">
+					<action name="Execute"><execute>xterm -T PROCESSES -geometry 130x38+300+100 -e 'echo -e "\033[5mProcesses in progress\033[0m"; echo -e "\n"; sudo inxi -c 7 -t cm10 -pu; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo' </execute></action>
+				</item>
+				<item label="WAN IP address and local interfaces" icon=".local/share/icons/apps/tuxpuck.svg">
+					<action name="Execute"><execute>lxterminal --geometry=110x16 --title=PARTITIONS -e sudo ~/scripts/sys_about.sh -f ip </execute></action>
+				</item>
+				<item label="Graphics info" icon=".local/share/icons/apps/tuxpuck.svg">
+					<action name="Execute"><execute>lxterminal --geometry=110x14 --title=GRAPHICS -e sudo ~/scripts/sys_about.sh -f graph </execute></action>
+				</item>
+				<item label="Sysytem Sensors" icon=".local/share/icons/apps/tuxpuck.svg">
+					<action name="Execute"><execute>xterm -T Sensors -geometry 60x10+800+610 -e 'sudo clear; echo -e "\033[5mSysytem sensors\033[0m"; echo -e "\n"; inxi -c 7 --sensors; echo -e "\n"; read -rsn1 -p "Press any key to exit... "; echo' </execute></action>
+				</item>
+				<separator/>
+				
+				<item label="Sysytem Services List" icon=".local/share/icons/apps/ccsm.svg">
+					<action name="Execute"><execute>xterm -bg gray9 -fg snow -T SYSTEM_Services -geometry 170x44+345+168 -e sudo systemctl list-units --type=service </execute></action>
+				</item>
+				<item label="System Timers List" icon=".local/share/icons/apps/clock.svg">
+					<action name="Execute"><execute>xterm -bg gray9 -fg snow -T System_Timers -geometry 130x21+580+467 -e sudo systemctl list-timers </execute></action>
+				</item>
+				<item label="User Services List" icon=".local/share/icons/apps/ccsm.svg">
+					<action name="Execute"><execute>xterm -bg gray9 -fg snow -T User_Services -geometry 135x24+555+430 -e systemctl --user --all list-units --type=service </execute></action>
+				</item>
+				<item label="User Timers List" icon=".local/share/icons/apps/clock.svg">
+					<action name="Execute"><execute>xterm -bg gray9 -fg snow -T User_Timers -geometry 110x21+700+0 -e systemctl --user --all list-timers </execute></action>
+				</item>
+				<item label="reload user daemon" icon=".local/share/icons/apps/ccsm.svg">
+					<action name="Execute"><execute>xterm -bg gray9 -fg snow -e systemctl --user daemon-reload </execute></action>
+				</item>
+				<separator/>
+
+				<item label="Disk usage analyzer" icon=".local/share/icons/apps/disk-usage-analyzer.svg">
+					<action name="Execute"><execute>lxterminal --geometry=60x30 --title=SYSTEM_Services -e ncdu  </execute></action>
+				</item>
+				<item label="Temperature Sensors" icon=".local/share/icons/devices/psensor_hot.svg">
+					<action name="Execute"><execute>psensor </execute></action>
+				</item>
+				<item label="Mirror List" icon=".local/share/icons/apps/ccsm.svg">
+					<action name="Execute"><execute>sh ~/scripts/show_mirrors.sh </execute></action>
+				</item>
+				<item label="wireless network devices" icon=".local/share/icons/devices/network-wireless-hotspot.svg">
+					<action name="Execute"><execute>lxterminal -e wavemon </execute></action>
+				</item>
+				<item label="pstree" icon=".local/share/icons/apps/mlgui.svg">
+					<action name="Execute"><execute>lxterminal -e /usr/bin/pstree.x11</execute></action>
+				</item>
+			</menu> <!-- the end of Sys Info -->
+
+			<separator/>
+			<item label="Archive Manager" icon=".local/share/icons/apps/recoll.svg">
+				<action name="Execute"><execute>file-roller</execute></action>
+			</item>
+			<item label="Preferred Applications" icon=".local/share/icons/apps/preferences-desktop.svg">
+				<action name="Execute"><execute>libfm-pref-apps</execute></action>
+			</item>
+			<item label="Bluetooth Manager" icon=".local/share/icons/apps/preferences-system-bluetooth.svg">
+				<action name="Execute"><execute>blueman-manager</execute></action>
+			</item>
+			<item label="Bluetooth Adapters" icon=".local/share/icons/apps/preferences-system-bluetooth.svg">
+				<action name="Execute"><execute>blueman-adapters</execute></action>
+			</item>
+			<item label="PowerKit Configuration" icon=".local/share/icons/devices/battery.svg">
+				<action name="Execute"><execute>powerkit --config </execute></action>
+			</item>
+			<item label="Task Manager" icon=".local/share/icons/apps/applications-utilities.svg">
+				<action name="Execute"><execute>lxtask</execute></action>
+			</item>
+			<item label="Character Map" icon=".local/share/icons/apps/accessories-character-map.svg">
+				<action name="Execute"><execute>gucharmap</execute></action>
+			</item>
+			<item label="LXTerminal" icon=".local/share/icons/apps/utilities-terminal.svg">
+				<action name="Execute"><execute>lxterminal</execute></action>
+			</item>
+			<item label="Nano" icon=".local/share/icons/apps/google-slides.svg">
+				<action name="Execute"><execute>lxterminal -e nano</execute></action>
+			</item>
+			<item label="Vim" icon=".local/share/icons/apps/vim.svg">
+				<action name="Execute"><execute>lxterminal -e vim %F</execute></action>
+			</item>
+			<item label="System Maintenance" icon=".local/share/icons/apps/system-software-update.svg">
+				<action name="Execute"><execute>lxterminal --geometry=90x26 --title=Maintanance -e sudo sh ~/scripts/wtf.sh </execute></action>
+			</item>
+			<item label="System backups" icon=".local/share/icons/apps/system-software-update.svg">
+				<action name="Execute"><execute>xterm -bg red -fg black -T BackUp -geometry 60x4+0+0 -e 'sudo sh ~/scripts/spinner.sh ~/scripts/backups.sh' </execute></action>
+			</item>
+			<item label="System full update" icon=".local/share/icons/apps/update-manager.svg">
+				<action name="Execute"><execute>xterm -bg red -fg black -T SYS_Update -geometry 110x3+701+700 -e sh ~/bin/sys_update.sh </execute></action>
+			</item>
+			<item label="XDG-menu update" icon=".local/share/icons/apps/superproductivity.svg">
+				<action name="Execute"><execute>xterm -bg blue -fg yellow -T SYS_Update -geometry 90x7+821+648 -e 'xdg_menu --format openbox3 --root-menu /etc/xdg/menus/arch-applications.menu > $HOME/.config/openbox/xdg-menu.xml' </execute></action>
+			</item>
+			<item label="Htop" icon=".local/share/icons/apps/htop.svg">
+				<action name="Execute"><execute>lxterminal -e 'htop' -t</execute></action>
+			</item>
+			<item label="Top" icon=".local/share/icons/apps/veyon-configurator.svg">
+			    <action name="Execute"><execute>lxterminal -e top</execute></action>
+			</item>
+			<item label="alacritty" icon=".local/share/icons/apps/alacritty.svg">
+				<action name="Execute"><execute>alacritty </execute></action>
+			</item>
+			<item label="xterm" icon=".local/share/icons/apps/frogr.svg">
+				<action name="Execute"><execute>xterm</execute></action>
+			</item>
+		</menu> <!-- the end of System -->
+
+		<!-- rootmenu Settings-->
+		<menu id="system-settings-menu" label="Settings" icon=".local/share/icons/places/folder-blue-important.svg">
+			<!-- rootmenu / Settings / Dotfiles -->
+			<menu id="dotfiles-23" label="Dotfiles" icon=".local/share/icons/places/folder-blue-important.svg">
+				<item label="menu.xml" icon=".local/share/icons/apps/preferences-desktop.svg">
+					<action name="Execute"><execute>geany ~/.config/openbox/menu.xml</execute></action>
+				</item>
+				<item label="rc.xml" icon=".local/share/icons/apps/preferences-desktop.svg">
+					<action name="Execute"><execute>geany ~/.config/openbox/rc.xml</execute></action>
+				</item>
+				<item label="autostart" icon=".local/share/icons/apps/preferences-desktop.svg">
+					<action name="Execute"><execute>geany ~/.config/openbox/autostart</execute></action>
+				</item>
+				<item label=".bashrc" icon=".local/share/icons/apps/preferences-desktop.svg">
+					<action name="Execute"><execute>geany ~/.bashrc </execute></action>
+				</item>
+				<item label="tint2rc" icon=".local/share/icons/apps/preferences-desktop.svg">
+					<action name="Execute"><execute>geany ~/.config/tint2/tint2rc </execute></action>
+				</item>
+				<item label=".xprofile" icon=".local/share/icons/apps/preferences-desktop.svg">
+					<action name="Execute"><execute>geany ~/.xprofile </execute></action>
+				</item>
+			</menu>	<!-- the end of Dotfiles -->
+
+			<!-- rootmenu / Settings / Tint2 panel -->
+			<menu id="22" label="Tint2 panel" icon=".local/share/icons/places/folder-blue-code.svg">
+				<item label="Tint2-top start" icon=".local/share/icons/emblems/vcs-normal.svg">
+					<action name="Execute"><execute>tint2 ~/.config/tint2/tint2rc-top</execute></action>
+				</item>
+				<item label="Tint2-left  start" icon=".local/share/icons/emblems/vcs-normal.svg">
+					<action name="Execute"><execute>tint2 ~/.config/tint2/tint2rc-left</execute></action>
+				</item>	
+				<item label="Tint2-bottom  start" icon=".local/share/icons/emblems/vcs-normal.svg">
+					<action name="Execute"><execute>tint2 ~/.config/tint2/tint2rc</execute></action>
+				</item>
+				<item label="Tint2-top config" icon=".local/share/icons/emblems/vcs-update-required.svg">
+					<action name="Execute"><execute>tint2conf ~/.config/tint2/tint2rc-top</execute></action>
+				</item>
+				<item label="Tint2-left  config" icon=".local/share/icons/emblems/vcs-update-required.svg">
+					<action name="Execute"><execute>tint2conf ~/.config/tint2/tint2rc-left</execute></action>
+				</item>	
+				<item label="Tint2-bottom  config" icon=".local/share/icons/emblems/vcs-update-required.svg">
+					<action name="Execute"><execute>tint2conf ~/.config/tint2/tint2rc</execute></action>
+				</item>
+			</menu>	<!-- the end of Tint2 panel -->
+
+			<separator/>
+
+			<item label="Openbox Configuration Manager" icon=".local/share/icons/apps/preferences-system-windows.svg">
+				<action name="Execute"><execute>obconf</execute></action>
+			</item>
+			<item label="Customize Look and Feel" icon=".local/share/icons/apps/preferences-desktop-theme.svg">
+				<action name="Execute"><execute>lxappearance</execute></action>
+			</item>
+			<item label="Print settings" icon=".local/share/icons/devices/printer.svg">
+				<action name="Execute"><execute>system-config-printer </execute></action>
+			</item>
+			<item label="HP Device Manager" icon=".local/share/icons/apps/hp_logo.svg">
+				<action name="Execute"><execute>hp-toolbox </execute></action>
+			</item>
+			<item label="HP Scaner" icon=".local/share/icons/apps/scanner.svg">
+				<action name="Execute"><execute>/usr/bin/hp-uiscan </execute></action>
+			</item>
+			<item label="Openbox Key Editor" icon=".local/share/icons/devices/input-keyboard.svg">
+				<action name="Execute"><execute>obkey </execute></action>
+			</item>
+			<item label="GParted" icon=".local/share/icons/devices/gparted.png">
+				<action name="Execute"><execute>sudo /usr/bin/gparted </execute></action>
+			</item>
+			<item label="Disks" icon=".local/share/icons/apps/gnome-disks.svg">
+				<action name="Execute"><execute>sudo gnome-disks </execute></action>
+			</item>
+			<item label="Grub Customizer" icon=".local/share/icons/apps/grub-customizer.svg">
+				<action name="Execute"><execute>sudo grub-customizer</execute></action>
+			</item>
+			<item label="Screensaver" icon=".local/share/icons/apps/preferences-desktop-screensaver.svg">
+				<action name="Execute"><execute>xscreensaver-demo </execute></action>
+			</item>
+			<item label="Desktop Preferences" icon=".local/share/icons/apps/desktop-profiler.svg">
+				<action name="Execute"><execute>pcmanfm --desktop-pref </execute></action>
+			</item>
+			<item label="Desktop Session Settings" icon=".local/share//icons/apps/preferences-system.svg">
+				<action name="Execute"><execute>lxsession-edit </execute></action>
+			</item>
+			<item label="Lightdm-GTK-Greeter Settings" icon=".local/share/icons/apps/security-medium.svg">
+				<action name="Execute"><execute>sudo lightdm-gtk-greeter-settings </execute></action>
+			</item>
+			<item label="ARandR" icon=".local/share/icons/devices/computer-laptop.svg">
+				<action name="Execute"><execute>arandr</execute></action>
+			</item>
+			<item label="Advanced Network Configuration" icon=".local/share/icons/apps/preferences-system-network.svg">
+				<action name="Execute"><execute>nm-connection-editor</execute></action>
+			</item>
+			<item label="Widget Factory" icon=".local/share/icons/apps/applications-interfacedesign.svg">
+				<action name="Execute"><execute>gtk3-widget-factory</execute></action>
+			</item>
+			<item label="Icon Browser" icon=".local/share/icons/apps/preferences-desktop-icons.svg">
+				<action name="Execute"><execute>gtk3-icon-browser</execute></action>
+			</item>
+			<item label="Reconfigure OB" icon=".local/share/icons/emblems/vcs-update-required.svg">
+				<action name="Reconfigure"/>
+			</item>
+		</menu>	<!-- the end of Settings-->
+
+		<separator/>
+
+		<!-- rootmenu / Exit-->				
+		<menu id="exit-menu" label="Exit" icon=".local/share/icons/apps/system-shutdown.svg">
+			<item label="Shutdown" icon=".local/share/icons/apps/system-shutdown.svg">
+				<action name="Execute"><command>sh ~/scripts/lout.sh -f shd </command></action>
+			</item>
+			<item label="Restart" icon=".local/share/icons/apps/system-reboot.svg">
+				<action name="Execute"><command>sh ~/scripts/lout.sh -f reb </command></action>
+			</item>
+			<item label="Suspend" icon=".local/share/icons/apps/system-suspend.svg">
+				<action name="Execute"><command>sh ~/scripts/lout.sh -f ssp </command></action>
+			</item>
+			<item label="Hibernate" icon=".local/share/icons/apps/system-suspend-hibernate.svg">
+				<action name="Execute"><command>sh ~/scripts/lout.sh -f hbr </command></action>
+			</item>
+			<item label="Log Out" icon=".local/share/icons/apps/system-log-out.svg">
+				<action name="Execute"><command>sh ~/scripts/lout.sh -f opex </command></action>
+			</item>
+		</menu> <!-- the end of Exit -->				
+
+	</menu> <!-- the end of root menu / "OpenBox 3" -->
+
+</openbox_menu> <!-- the end of Main Menu-->

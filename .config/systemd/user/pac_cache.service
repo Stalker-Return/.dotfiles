@@ -1,0 +1,6 @@
+[Unit]
+Description=Clean package cache
+
+[Service]
+Type=simple
+ExecStart=/home/ed/bin/pac_cache.sh
