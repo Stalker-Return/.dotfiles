@@ -16,7 +16,7 @@ sudo mkdir -p /run/media/ed/usb1							# make usb1 folder to mount volumes
 sudo mkdir -p /run/media/ed/usb2							# make usb2 folder to mount volumes
 
 tint2 $HOME/.config/tint2/tint2rc &							# bottom panel for Xorg
-#tint2 $HOME/.config/tint2/tint2rc-left &					# left panel for Xorg
+tint2 $HOME/.config/tint2/tint2rc-left &					# left panel for Xorg
 #tint2 $HOME/.config/tint2/tint2rc-top &					# top panel for Xorg
 
 setxkbmap -option grp:switch,grp:ctrl_shift_toggle,grp_led:scroll us,ru,ua		# keyboard map settings
