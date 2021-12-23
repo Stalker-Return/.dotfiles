@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FreeFileSync XmlType="GLOBAL" XmlFormat="22">
+<FreeFileSync XmlType="GLOBAL" XmlFormat="23">
     <Language Name="English (U.S.)"/>
     <FailSafeFileCopy Enabled="true"/>
     <CopyLockedFiles Enabled="false"/>
@@ -9,7 +9,6 @@
     <LockDirectoriesDuringSync Enabled="true"/>
     <VerifyCopiedFiles Enabled="false"/>
     <LogFiles MaxAge="30" Format="HTML"/>
-    <NotificationSound CompareFinished="" SyncFinished="%ffs_resource%/bell.wav"/>
     <ProgressDialog AutoClose="true"/>
     <OptionalDialogs>
         <ConfirmStartSync Show="false"/>
@@ -29,28 +28,33 @@
         <WarnDirectoryLockFailed Show="true"/>
         <WarnVersioningFolderPartOfSync Show="true"/>
     </OptionalDialogs>
+    <Sounds>
+        <CompareFinished Path=""/>
+        <SyncFinished Path="%ffs_resource%/bell.wav"/>
+        <AlertPending Path="%ffs_resource%/remind.wav"/>
+    </Sounds>
     <MainDialog>
         <SearchPanel CaseSensitive="false"/>
         <ConfigPanel ScrollPos="0" SyncOverdue="7" SortByColumn="Name" SortAscending="true">
             <Configurations MaxSize="100" LastSelected="/home/ed/.config/FreeFileSync/onedrive.ffs_gui">
                 <Item Result="Stopped" Config="/home/ed/.config/FreeFileSync/LastRun.ffs_gui" LastSync="0" Log="" Color="DDDDDD"/>
-                <Item Result="Success" Config="/home/ed/.config/FreeFileSync/gdrive.ffs_gui" LastSync="1638795142" Log="/home/ed/.config/FreeFileSync/Logs/gdrive 2021-12-06 135222.955.html"/>
-                <Item Result="Success" Config="/home/ed/.config/FreeFileSync/onedrive.ffs_gui" LastSync="1638795074" Log="/home/ed/.config/FreeFileSync/Logs/onedrive 2021-12-06 135114.860.html"/>
+                <Item Result="Success" Config="/home/ed/.config/FreeFileSync/onedrive.ffs_gui" LastSync="1640193661" Log="/home/ed/.config/FreeFileSync/Logs/onedrive 2021-12-06 135114.860.html"/>
+                <Item Result="Success" Config="/home/ed/.config/FreeFileSync/gdrive.ffs_gui" LastSync="1640193656" Log="/home/ed/.config/FreeFileSync/Logs/gdrive 2021-12-22 182056.261.html"/>
             </Configurations>
             <LastUsed>
-                <Item>/home/ed/.config/FreeFileSync/gdrive.ffs_gui</Item>
+                <Item>/home/ed/.config/FreeFileSync/onedrive.ffs_gui</Item>
             </LastUsed>
         </ConfigPanel>
         <OverviewPanel ShowPercentage="true" SortByColumn="Bytes" SortAscending="false"/>
         <FilePanel ShowIcons="true" IconSize="Small" SashOffset="0" FolderPairsMax="6" PathFormatLeft="Relative" PathFormatRight="Relative">
             <FolderHistoryLeft LastSelected="/home/ed/onedrive/OneDriveData">
-                <Item>/home/ed/gdrive</Item>
                 <Item>/home/ed/onedrive/OneDriveData</Item>
+                <Item>/home/ed/gdrive</Item>
                 <Item>/home/ed/onedrive</Item>
             </FolderHistoryLeft>
             <FolderHistoryRight LastSelected="/home/ed/Clouds/OneDrive/OneDriveData">
-                <Item>/home/ed/Clouds/gDrive</Item>
                 <Item>/home/ed/Clouds/OneDrive/OneDriveData</Item>
+                <Item>/home/ed/Clouds/gDrive</Item>
                 <Item>/home/ed/Clouds/OneDrive</Item>
             </FolderHistoryRight>
         </FilePanel>
@@ -84,8 +88,8 @@
         <Item Label="Browse directory">xdg-open "$(dirname "%local_path%")"</Item>
         <Item Label="Open with default application">xdg-open "%local_path%"</Item>
     </ExternalApps>
-    <LastOnlineCheck>1638209639</LastOnlineCheck>
-    <LastOnlineVersion>11.14</LastOnlineVersion>
+    <LastOnlineCheck>1640193657</LastOnlineCheck>
+    <LastOnlineVersion>11.15</LastOnlineVersion>
     <DpiLayouts>
         <Layout Scale="100%">
             <MainDialog Width="1362" Height="729" PosX="3" PosY="2" Maximized="false">

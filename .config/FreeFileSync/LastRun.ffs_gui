@@ -25,8 +25,8 @@
     </Filter>
     <FolderPairs>
         <Pair>
-            <Left>/home/ed/gdrive</Left>
-            <Right>/home/ed/Clouds/gDrive</Right>
+            <Left>/home/ed/onedrive/OneDriveData</Left>
+            <Right>/home/ed/Clouds/OneDrive/OneDriveData</Right>
         </Pair>
     </FolderPairs>
     <Errors Ignore="false" Retry="0" Delay="5"/>

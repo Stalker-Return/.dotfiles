@@ -4,7 +4,7 @@ x-scheme-handler/http=brave-browser.desktop
 x-scheme-handler/https=brave-browser.desktop
 x-scheme-handler/about=brave-browser.desktop
 x-scheme-handler/unknown=brave-browser.desktop
-application/pdf=masterpdfeditor4.desktop
+application/pdf=xpdf.desktop
 application/xml=geany.desktop
 x-scheme-handler/viber=viber.desktop
 x-scheme-handler/tg=userapp-Telegram Desktop-JUTKD1.desktop
@@ -12,6 +12,6 @@ x-scheme-handler/etcher=balena-etcher-electron.desktop
 
 [Added Associations]
 application/x-trash=geany.desktop;
-application/pdf=masterpdfeditor4.desktop;
 application/xml=geany.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-JUTKD1.desktop;
+inode/directory=pcmanfm.desktop;

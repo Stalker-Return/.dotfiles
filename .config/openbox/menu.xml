@@ -111,85 +111,6 @@
 		<!-- pipe-menu / Recent Files -->
 		<menu id="recent" label="Recent Files" icon=".local/share/icons/places/folder-blue-recent.svg" execute="~/scripts/obrecent.sh ~/" />
 
-		<!-- rootmenu / Bookmarks -->
-		<menu id="root-menu-151830" label="Bookmarks" icon=".local/share/icons/places/folder-blue-favorites.svg">
-			<!-- rootmenu / Bookmarks / File System -->
-			<menu id="88" label="File System" icon=".local/share/icons/places/folder-blue-linux.svg">
-				<item label="root" icon=".local/share/icons/places/folder-blue-linux.svg">
-					<action name="Execute"><execute>pcmanfm -n  /</execute></action>
-				</item>
-				<item label="X11/xorg.conf.d" icon=".local/share/icons/places/folder-blue-code.svg">
-					<action name="Execute"><execute>pcmanfm -n /etc/X11/xorg.conf.d </execute></action>
-				</item>
-				<item label="applications" icon=".local/share/icons/places/folder-blue-code.svg">
-					<action name="Execute"><execute>pcmanfm -n /usr/share/applications </execute></action>
-				</item>
-			</menu> <!-- the end of Bookmarks / File System -->
-			<!-- rootmenu / Bookmarks / Settings -->			
-			<menu id="61" label="Settings" icon=".local/share/icons/places/folder-blue-activities.svg">
-				<item label="openbox" icon=".local/share/icons/places/folder-blue-important.svg">
-					<action name="Execute"><execute>pcmanfm -n ~/.config/openbox</execute></action>
-				</item>
-				<item label="config" icon=".local/share/icons/places/folder-blue-code.svg">
-					<action name="Execute"><execute>pcmanfm -n ~/.config</execute></action>
-				</item>
-				<item label="local" icon=".local/share/icons/places/folder-blue-visiting.svg">
-					<action name="Execute"><execute>pcmanfm -n ~/.local/share</execute></action>
-				</item>
-			</menu> <!-- the end of Bookmarks / Settings -->
-			<!-- rootmenu / Bookmarks / Clouds -->
-			<menu id="places-clouds-599400" label="Clouds" icon=".local/share/icons/places/folder-blue-sync.svg">
-				<item label="Bureau" icon=".local/share/icons/places/folder-blue-mega.svg">
-					<action name="Execute"><execute>pcmanfm -n ~/Clouds/Bureau </execute></action>
-				</item>
-				<item label="BackUps" icon=".local/share/icons/places/folder-blue-dropbox.svg">
-					<action name="Execute"><execute>pcmanfm -n ~/Clouds/Dropbox/BackUps </execute></action>
-				</item>
-				<item label="gDrive" icon=".local/share/icons/places/folder-blue-google-drive.svg">
-					<action name="Execute"><execute>pcmanfm -n ~/Clouds/gDrive </execute></action>
-				</item>
-				<item label="Study" icon=".local/share/icons/places/folder-blue-books.svg">
-					<action name="Execute"><execute>pcmanfm -n ~/Clouds/Shared/Study </execute></action>
-				</item>
-				<item label="Zivnostnik" icon=".local/share/icons/places/folder-blue-documents-open.svg">
-					<action name="Execute"><execute>pcmanfm -n ~/Clouds/Shared/Zivnostnik </execute></action>
-				</item>
-				<item label="Transit" icon=".local/share/icons/places/folder-blue-yandex-disk.svg">
-					<action name="Execute">	<execute>pcmanfm -n ~/Clouds/Bureau/Transit </execute></action>
-				</item>
-				<item label="OneDrive" icon=".local/share/icons/places/folder-blue-onedrive.svg">
-					<action name="Execute"><execute>pcmanfm -n ~/Clouds/OneDrive </execute></action>
-				</item>
-				<item label="Repository" icon=".local/share/icons/places/folder-blue-pcloud.svg">
-					<action name="Execute"><execute>pcmanfm -n ~/Clouds/Repository </execute></action>
-				</item>
-			</menu> <!-- the end of Bookmarks / Clouds -->
-
-			<separator/>
-			
-			<item label="Home" icon=".local/share/icons/places/folder-blue.svg">
-				<action name="Execute"><execute>pcmanfm -n ~/</execute></action>
-			</item>
-			<item label="Downloads" icon=".local/share/icons/places/folder-blue-download-open.svg">
-				<action name="Execute"><execute>pcmanfm -n ~/Downloads</execute></action>
-			</item>
-			<item label="Documents" icon=".local/share/icons/places/folder-blue-documents-open.svg">
-				<action name="Execute"><execute>pcmanfm -n ~/Documents</execute></action>
-			</item>
-			<item label="Music" icon=".local/share/icons/places/folder-blue-music.svg">
-				<action name="Execute"><execute>pcmanfm -n ~/Music </execute></action>
-			</item>
-			<item label="Pictures" icon=".local/share/icons/places/folder-blue-pictures.svg">
-				<action name="Execute"><execute>pcmanfm -n ~/Pictures</execute></action>
-			</item>
-			<item label="tools" icon=".local/share/icons/places/folder-blue-important.svg">
-				<action name="Execute"><execute>pcmanfm -n ~/Clouds/Dropbox/BackUps/Linux/tools</execute></action>
-			</item>
-			<item label="Scripts" icon=".local/share/icons/places/folder-blue-script.svg">
-				<action name="Execute">	<execute>pcmanfm -n ~/scripts</execute></action>
-			</item>
-		</menu> <!-- the end of Places -->
-
 		<!-- rootmenu / Documents -->
 		<menu id="root-menu-399301" label="Documents" icon=".local/share/icons/places/folder-blue-documents.svg">
 				<item label="Faktura" icon=".local/share/icons/apps/google-agenda.svg">
@@ -449,7 +370,7 @@
 
 		<!-- rootmenu / System-->
 		<menu id="sysinfo-menu" label="System" icon=".local/share/icons/places/folder-blue-open.svg">
-			<item label="System Information" icon=".local/share/icons/devices/hardinfo.png">
+			<item label="System Profiler and Benchmark" icon=".local/share/icons/devices/hardinfo.png">
 				<action name="Execute"><execute>/usr/bin/hardinfo </execute></action>
 			</item>
 			<item label="Info of your choice" icon=".local/share/icons/apps/tuxpuck.svg">
@@ -492,8 +413,8 @@
 			</item>
 			<separator/>
 
-			<item label="Package Updater" icon="/usr/share/icons/Papirus/24x24/apps/system-software-install.svg">
-				<action name="Execute"><execute>pamac-manager </execute></action>
+			<item label="Manage Systemd Units" icon=".local/share/icons/apps/utilities-tweak-tool.svg">
+				<action name="Execute"><execute>systemadm </execute></action>
 			</item>
 			<item label="System Maintenance" icon=".local/share/icons/apps/preferences-system.svg">
 				<action name="Execute"><execute>xterm -bg gray15 -fg snow -T Maintance -geometry 90x28+30+20 -e sudo sh ~/scripts/wtf.sh </execute></action>
@@ -544,6 +465,9 @@
 			</menu> <!-- the end of Conky -->
 
 			<separator/>
+			<item label="Package Updater" icon="/usr/share/icons/Papirus/24x24/apps/system-software-install.svg">
+				<action name="Execute"><execute>pamac-manager </execute></action>
+			</item>
 			<item label="Archive Manager" icon=".local/share/icons/apps/recoll.svg">
 				<action name="Execute"><execute>file-roller</execute></action>
 			</item>
@@ -699,6 +623,9 @@
 		</menu>	<!-- the end of Settings-->
 
 		<separator/>
+			<item label="Files search..." icon=".local/share/icons/apps/preferences-system-search.svg">
+				<action name="Execute"><execute>regexxer </execute></action>
+			</item>
 			<item label="Run Command..." icon=".local/share/icons/panel/superproductivity-tray-15.svg">
 				<action name="Execute"><execute>gmrun </execute></action>
 			</item>

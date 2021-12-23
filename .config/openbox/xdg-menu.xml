@@ -17,11 +17,17 @@
       <item label="Leafpad" icon="/usr/share/icons/hicolor/16x16/apps/leafpad.png">
        <action name="Execute"><execute>leafpad </execute></action>
      </item>
+      <item label="Stacer" icon="/usr/share/icons/hicolor/16x16/apps/stacer.png">
+       <action name="Execute"><execute>stacer</execute></action>
+     </item>
       <item label="Vim" icon="/usr/share/icons/hicolor/48x48/apps/gvim.png">
        <action name="Execute"><execute>xterm -e vim </execute></action>
      </item>
       <item label="Xarchiver" icon="/usr/share/icons/hicolor/16x16/apps/xarchiver.png">
        <action name="Execute"><execute>xarchiver </execute></action>
+     </item>
+      <item label="balenaEtcher" icon="/usr/share/icons/hicolor/16x16/apps/balena-etcher-electron.png">
+       <action name="Execute"><execute>/opt/balenaEtcher/balena-etcher-electron </execute></action>
      </item>
       <item label="compton" icon="/usr/share/icons/hicolor/48x48/apps/compton.png">
        <action name="Execute"><execute>compton</execute></action>
@@ -59,14 +65,35 @@
       <item label="Brave" icon="/usr/share/icons/hicolor/16x16/apps/brave-desktop.png">
        <action name="Execute"><execute>brave </execute></action>
      </item>
+      <item label="MEGAsync" icon="/usr/share/icons/hicolor/16x16/apps/mega.png">
+       <action name="Execute"><execute>megasync</execute></action>
+     </item>
+      <item label="Pale Moon" icon="/usr/share/icons/hicolor/16x16/apps/palemoon.png">
+       <action name="Execute"><execute>palemoon </execute></action>
+     </item>
       <item label="Signal" icon="/usr/share/icons/hicolor/16x16/apps/signal-desktop.png">
        <action name="Execute"><execute>signal-desktop -- </execute></action>
+     </item>
+      <item label="Skype" icon="/usr/share/icons/hicolor/16x16/apps/skypeforlinux.png">
+       <action name="Execute"><execute>/usr/bin/skypeforlinux </execute></action>
      </item>
       <item label="Telegram Desktop" icon="/usr/share/icons/hicolor/16x16/apps/telegram.png">
        <action name="Execute"><execute>telegram-desktop -- </execute></action>
      </item>
       <item label="Thunderbird" icon="/usr/share/icons/hicolor/16x16/apps/thunderbird.png">
        <action name="Execute"><execute>/usr/lib/thunderbird/thunderbird </execute></action>
+     </item>
+      <item label="Viber" icon="/usr/share/icons/hicolor/16x16/apps/viber.png">
+       <action name="Execute"><execute>viber </execute></action>
+     </item>
+      <item label="WhatsApp" icon="/usr/share/icons/hicolor/16x16/apps/whatsapp-nativefier.png">
+       <action name="Execute"><execute>whatsapp-nativefier</execute></action>
+     </item>
+      <item label="Zoom" icon="/usr/share/pixmaps/Zoom.png">
+       <action name="Execute"><execute>/usr/bin/zoom </execute></action>
+     </item>
+      <item label="pCloud" icon="/usr/share/icons/hicolor/16x16/apps/pcloud.png">
+       <action name="Execute"><execute>env DESKTOPINTEGRATION=false /usr/bin/pcloud</execute></action>
      </item>
  </menu> <!-- Internet -->
  <menu id="Office" label="Office">
@@ -94,16 +121,28 @@
       <item label="Master PDF Editor" icon="///opt/master-pdf-editor-4/masterpdfeditor4.png">
        <action name="Execute"><execute>/opt/master-pdf-editor-4/masterpdfeditor4 </execute></action>
      </item>
+      <item label="PDFsam" icon="/usr/share/icons/hicolor/16x16/apps/pdfsam.png">
+       <action name="Execute"><execute>pdfsam</execute></action>
+     </item>
       <item label="Xpdf" icon="/usr/share/pixmaps/xpdf.svg">
        <action name="Execute"><execute>xpdf </execute></action>
      </item>
  </menu> <!-- Office -->
  <menu id="Programming" label="Programming">
-      <item label="CMake" icon="/usr/share/icons/hicolor/32x32/apps/CMakeSetup.png">
-       <action name="Execute"><execute>cmake-gui </execute></action>
-     </item>
       <item label="Geany" icon="/usr/share/icons/hicolor/16x16/apps/geany.png">
        <action name="Execute"><execute>geany </execute></action>
+     </item>
+      <item label="Qt Assistant" icon="/usr/share/icons/hicolor/32x32/apps/assistant.png">
+       <action name="Execute"><execute>assistant</execute></action>
+     </item>
+      <item label="Qt Designer" icon="/usr/share/icons/hicolor/128x128/apps/QtProject-designer.png">
+       <action name="Execute"><execute>designer </execute></action>
+     </item>
+      <item label="Qt Linguist" icon="/usr/share/icons/hicolor/16x16/apps/linguist.png">
+       <action name="Execute"><execute>linguist </execute></action>
+     </item>
+      <item label="Qt QDBusViewer " icon="/usr/share/icons/hicolor/32x32/apps/qdbusviewer.png">
+       <action name="Execute"><execute>qdbusviewer</execute></action>
      </item>
  </menu> <!-- Programming -->
  <menu id="Sound &amp; Video" label="Sound &amp; Video">
@@ -148,8 +187,17 @@
       <item label="LXTerminal" icon="/usr/share/icons/hicolor/128x128/apps/lxterminal.png">
        <action name="Execute"><execute>lxterminal</execute></action>
      </item>
+      <item label="MEGAsync" icon="/usr/share/icons/hicolor/16x16/apps/mega.png">
+       <action name="Execute"><execute>megasync</execute></action>
+     </item>
       <item label="Manage Printing" icon="/usr/share/icons/hicolor/16x16/apps/cups.png">
        <action name="Execute"><execute>/usr/bin/xdg-open http://localhost:631/</execute></action>
+     </item>
+      <item label="OpenJDK Java 17 Console">
+       <action name="Execute"><execute>/usr/lib/jvm/java-17-openjdk/bin/jconsole</execute></action>
+     </item>
+      <item label="OpenJDK Java 17 Shell">
+       <action name="Execute"><execute>xterm -e /usr/lib/jvm/java-17-openjdk/bin/jshell</execute></action>
      </item>
       <item label="Psensor" icon="/usr/share/icons/hicolor/16x16/apps/psensor.png">
        <action name="Execute"><execute>psensor</execute></action>
