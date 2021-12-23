@@ -451,3 +451,16 @@
 [2021-12-22T05:41:13+0100] [ALPM] running 'update-desktop-database.hook'...
 [2021-12-23T06:11:16+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2021-12-23T06:11:16+0100] [PACMAN] synchronizing package lists
+[2021-12-23T06:11:34+0100] [PACMAN] starting full system upgrade
+[2021-12-23T06:12:05+0100] [ALPM] transaction started
+[2021-12-23T06:12:05+0100] [ALPM] upgraded argon2 (20190702-3 -> 20190702-4)
+[2021-12-23T06:12:05+0100] [ALPM] upgraded libarchive (3.5.2-1 -> 3.5.2-2)
+[2021-12-23T06:12:05+0100] [ALPM] upgraded libmicrohttpd (0.9.73-1 -> 0.9.74-1)
+[2021-12-23T06:12:05+0100] [ALPM] upgraded pango (1:1.50.2-1 -> 1:1.50.3-1)
+[2021-12-23T06:12:05+0100] [ALPM] upgraded perl-http-message (6.33-1 -> 6.34-1)
+[2021-12-23T06:12:05+0100] [ALPM] upgraded qpdf (10.4.0-1 -> 10.5.0-1)
+[2021-12-23T06:12:08+0100] [ALPM] upgraded qt5-base (5.15.2+kde+r263-3 -> 5.15.2+kde+r263-4)
+[2021-12-23T06:12:09+0100] [ALPM] transaction completed
+[2021-12-23T06:12:10+0100] [ALPM] running '30-systemd-update.hook'...
+[2021-12-23T06:12:10+0100] [ALPM] running 'detect-old-perl-modules.hook'...
+[2021-12-23T06:12:10+0100] [ALPM] running 'texinfo-install.hook'...
