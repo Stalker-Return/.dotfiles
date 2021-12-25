@@ -389,15 +389,15 @@
           <FileView Type="columns">
             <Sortings>
               <Sorting>
-                <Direction>1</Direction>
-                <Function>12</Function>
+                <Direction>2</Direction>
+                <Function>7</Function>
               </Sorting>
             </Sortings>
             <History>
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/</Path>
+                  <Path>/home/ed/Documents/ViberDownloads/</Path>
                 </Paths>
               </Entry>
             </History>
