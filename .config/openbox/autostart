@@ -5,10 +5,10 @@
 
 #cbatticon -u 20 -i standard -c "poweroff" -l 15 -r 3 &		# system tray for battery
 
-#pcmanfm --desktop &										# enable management of the desktop for Openbox
+pcmanfm --desktop &										# enable management of the desktop for Openbox
 #pcmanfm --daemon-mode &										# run PCManFM in the background
 
-sh ~/.fehbg													# set wallpapers
+#sh ~/.fehbg													# set wallpapers
 #sh ~/.setbg												# set random wallpapers
 
 sudo mkdir -p /run/media/ed/DATA							# make DATA folder to mount volumes

@@ -118,11 +118,12 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>2</number>
+    <number>3</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>$ws1</name>
       <name>$ws2</name>
+      <name>$ws3</name>
     </names>
     <popupTime>500</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -191,6 +192,12 @@
         <to>2</to>
       </action>
     </keybind>
+    <!-- Go to Desktop 3 -->
+    <keybind key="W-3">
+      <action name="GoToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
     <!-- Send to Desktop 1 -->
     <keybind key="A-C-1">
       <action name="SendToDesktop">
@@ -201,6 +208,12 @@
     <keybind key="A-C-2">
       <action name="SendToDesktop">
         <to>2</to>
+      </action>
+    </keybind>
+    <!-- Send to Desktop 3 -->
+    <keybind key="A-C-3">
+      <action name="SendToDesktop">
+        <to>3</to>
       </action>
     </keybind>
     <keybind key="A-S-d">
@@ -473,21 +486,15 @@
       </action>
     </keybind>
     <!-- Start tint2 bottom -->
-    <keybind key="A-C-3">
+    <keybind key="A-C-4">
       <action name="Execute">
         <command>tint2 ~/.config/tint2/tint2rc</command>
       </action>
     </keybind>
     <!-- Start tint2 left -->
-    <keybind key="A-C-4">
-      <action name="Execute">
-        <command>tint2 ~/.config/tint2/tint2rc-left</command>
-      </action>
-    </keybind>
-    <!-- Start tint2 top -->
     <keybind key="A-C-5">
       <action name="Execute">
-        <command>tint2 ~/.config/tint2/tint2rc-top</command>
+        <command>tint2 ~/.config/tint2/tint2rc-left</command>
       </action>
     </keybind>
     <!-- Set blue tint2 -->

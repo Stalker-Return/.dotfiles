@@ -517,3 +517,12 @@
 [2021-12-25T05:15:40+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2021-12-25T05:15:40+0100] [PACMAN] synchronizing package lists
 [2021-12-25T05:15:44+0100] [PACMAN] starting full system upgrade
+[2021-12-25T05:16:22+0100] [ALPM] transaction started
+[2021-12-25T05:16:22+0100] [ALPM] upgraded libmfx (21.3.5-1 -> 21.3.5-2)
+[2021-12-25T05:16:22+0100] [ALPM] upgraded libunwind (1.5.0-1 -> 1.6.2-1)
+[2021-12-25T05:16:22+0100] [ALPM] upgraded sdl2 (2.0.18-2 -> 2.0.18-3)
+[2021-12-25T05:16:22+0100] [ALPM] upgraded starship (1.1.0-1 -> 1.1.1-1)
+[2021-12-25T05:16:23+0100] [ALPM] transaction completed
+[2021-12-25T05:16:23+0100] [ALPM] running '30-systemd-update.hook'...
+[2021-12-26T01:21:13+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-12-26T01:21:13+0100] [PACMAN] synchronizing package lists

@@ -321,7 +321,7 @@
   </Toolbars>
   <MainWindow>
     <Position Save="True">
-      <Left>119</Left>
+      <Left>246</Left>
       <Top>29</Top>
       <Width>1098</Width>
       <Height>602</Height>
@@ -389,15 +389,15 @@
           <FileView Type="columns">
             <Sortings>
               <Sorting>
-                <Direction>2</Direction>
-                <Function>7</Function>
+                <Direction>1</Direction>
+                <Function>12</Function>
               </Sorting>
             </Sortings>
             <History>
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/Documents/ViberDownloads/</Path>
+                  <Path>/home/ed/Clouds/Bureau/Transit/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -463,7 +463,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/ed/Clouds/Bureau/</Path>
+                  <Path>/home/ed/Clouds/Dropbox/BackUps/Linux/tools/</Path>
                 </Paths>
               </Entry>
             </History>

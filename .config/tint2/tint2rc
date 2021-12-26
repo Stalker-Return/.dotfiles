@@ -475,7 +475,7 @@ execp_cache_icon = 0
 execp_continuous = 0
 execp_markup = 1
 execp_monitor = all
-execp_tooltip = Left click to change layout
+execp_tooltip = Left click to change layout (Ctrl+Shift)
 execp_lclick_command = KEYNUM=$(xkblayout-state print '%c'); case $KEYNUM in 0) xkblayout-state set 1 ;; 1) xkblayout-state set 2 ;; 2) xkblayout-state set 0 ;; esac
 execp_rclick_command = 
 execp_mclick_command = 
