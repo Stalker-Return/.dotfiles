@@ -537,6 +537,9 @@
 				<item label="tint2rc" icon=".local/share/icons/apps/preferences-desktop.svg">
 					<action name="Execute"><execute>geany ~/.config/tint2/tint2rc </execute></action>
 				</item>
+				<item label=".xinitrc" icon=".local/share/icons/apps/preferences-desktop.svg">
+					<action name="Execute"><execute>geany ~/.xinitrc </execute></action>
+				</item>
 				<item label=".xprofile" icon=".local/share/icons/apps/preferences-desktop.svg">
 					<action name="Execute"><execute>geany ~/.xprofile </execute></action>
 				</item>

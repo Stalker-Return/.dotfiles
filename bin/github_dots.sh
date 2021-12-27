@@ -11,9 +11,9 @@ summctrl=0
 .bashrc .fehbg .xscreensaver README.md .Xresources scripts/ bin/ Templates/ \
 .local/share/icons/ .local/share/log-files/ .local/share/wallpapers/ .local/share/applications/ \
 .config/mimeapps.list \
-.config/geany/ .config/gtk-3.0/ .config/lxterminal/ .config/libreoffice/ .config/pulse/ \
-.config/systemd/ .config/tint2/ .config/openbox/ .config/pcmanfm/ .config/dunst/ \
-.config/FreeFileSync/ .config/conky/ .config/i3/ .config/doublecmd/
+.config/gtk-3.0/ .config/lxterminal/ .config/libreoffice/ .config/pulse/ .config/FreeFileSync/ \
+.config/systemd/ .config/tint2/ .config/openbox/ .config/pcmanfm/ .config/dunst/ .config/doublecmd/ \
+.config/geany/ .config/conky/ .config/i3/ .config/lxpanel/ .config/lxsession/ .config/lxsession-default-apps/
 exitcode=$?
 exitcontrol
 exitcode1=$exitcode

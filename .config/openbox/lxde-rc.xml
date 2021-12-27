@@ -120,11 +120,12 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>2</number>
+    <number>3</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>$ws1</name>
       <name>$ws2</name>
+      <name>$ws3</name>
     </names>
     <popupTime>500</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -193,6 +194,12 @@
         <to>2</to>
       </action>
     </keybind>
+    <!-- Go to Desktop 3 -->
+    <keybind key="W-3">
+      <action name="GoToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
     <!-- Send to Desktop 1 -->
     <keybind key="A-C-1">
       <action name="SendToDesktop">
@@ -203,6 +210,12 @@
     <keybind key="A-C-2">
       <action name="SendToDesktop">
         <to>2</to>
+      </action>
+    </keybind>
+    <!-- Send to Desktop 3 -->
+    <keybind key="A-C-3">
+      <action name="SendToDesktop">
+        <to>3</to>
       </action>
     </keybind>
     <keybind key="A-S-d">
@@ -230,7 +243,7 @@
         <menu>root-menu</menu>
         <position>
           <x>1</x>
-          <y>423</y>
+          <y>380</y>
           <monitor>1</monitor>
         </position>
       </action>
@@ -241,7 +254,7 @@
         <menu>exit-menu</menu>
         <position>
           <x>1275</x>
-          <y>658</y>
+          <y>653</y>
           <monitor>1</monitor>
         </position>
       </action>
@@ -252,7 +265,7 @@
         <menu>system-settings-menu</menu>
         <position>
           <x>1</x>
-          <y>396</y>
+          <y>1</y>
           <monitor>1</monitor>
         </position>
       </action>
@@ -263,7 +276,7 @@
         <menu>system-tools-menu</menu>
         <position>
           <x>1</x>
-          <y>396</y>
+          <y>1</y>
           <monitor>1</monitor>
         </position>
       </action>
@@ -330,8 +343,14 @@
         <command>xterm -bg gray15 -fg snow -T Maintance -geometry 90x28+30+20 -e sudo sh ~/scripts/wtf.sh </command>
         <startupnotify>
           <enabled>yes</enabled>
-          <name>wtf-scriptf</name>
+          <name>wtf-script</name>
         </startupnotify>
+      </action>
+    </keybind>
+    <!-- Log-files control -->
+    <keybind key="A-C-c">
+      <action name="Execute">
+        <command>sh ~/bin/logs.sh </command>
       </action>
     </keybind>
     <keybind key="A-Tab">
@@ -370,10 +389,11 @@
         <command>pcmanfm --desktop</command>
       </action>
     </keybind>
-    <!-- Run rofi -->
+    <!-- Run Dmenu -->
     <keybind key="W-r">
       <action name="Execute">
-        <command>rofi -show run -theme "Arc-Dark" -font "ubuntu 10"</command>
+        <command>dmenu_run -fn 'Droid Sans Mono-9' </command>
+        <!-- <command>rofi -show run -theme "Arc-Dark" -font "ubuntu 10"</command> -->
       </action>
     </keybind>
     <!-- Reboot -->
@@ -468,37 +488,31 @@
       </action>
     </keybind>
     <!-- Start tint2 bottom -->
-    <keybind key="A-S-1">
+    <keybind key="A-C-4">
       <action name="Execute">
         <command>tint2 ~/.config/tint2/tint2rc</command>
       </action>
     </keybind>
     <!-- Start tint2 left -->
-    <keybind key="A-S-2">
+    <keybind key="A-C-5">
       <action name="Execute">
         <command>tint2 ~/.config/tint2/tint2rc-left</command>
       </action>
     </keybind>
-    <!-- Start tint2 top -->
-    <keybind key="A-S-3">
-      <action name="Execute">
-        <command>tint2 ~/.config/tint2/tint2rc-top</command>
-      </action>
-    </keybind>
     <!-- Set blue tint2 -->
-    <keybind key="A-S-4">
+    <keybind key="A-C-6">
       <action name="Execute">
         <command>sh ~/scripts/tint2/changetint.sh blue </command>
       </action>
     </keybind>
     <!-- Set black tint2 -->
-    <keybind key="A-S-5">
+    <keybind key="A-C-7">
       <action name="Execute">
         <command>sh ~/scripts/tint2/changetint.sh black </command>
       </action>
     </keybind>
     <!-- Kill All tint2 -->
-    <keybind key="A-S-0">
+    <keybind key="A-C-0">
       <action name="Execute">
         <prompt>Are you sure you want to kill tint2?</prompt>
         <startupnotify>
@@ -547,7 +561,7 @@
     <!-- Run Whatsapp -->
     <keybind key="A-C-n">
       <action name="Execute">
-        <command>whatsapp-for-linux</command>
+        <command>whatsapp-nativefier </command>
       </action>
     </keybind>
     <!-- Run Skype -->
