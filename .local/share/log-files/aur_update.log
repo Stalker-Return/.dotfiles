@@ -24,3 +24,7 @@ Success | Thu Dec 23 06:11:26 AM CET 2021 | Exit code = 0 | AUR packages update 
 Success | Fri Dec 24 06:28:25 AM CET 2021 | Exit code = 0 | AUR packages update has completed.
 Success | Sat Dec 25 05:15:58 AM CET 2021 | Exit code = 0 | AUR packages update has completed.
 Success | Sun Dec 26 01:21:31 AM CET 2021 | Exit code = 0 | AUR packages update has completed.
+Catchall for general errors | Mon Dec 27 06:09:16 AM CET 2021 | Exit code = 1 | AUR packages update has completed.
+Catchall for general errors | Mon Dec 27 06:13:39 AM CET 2021 | Exit code = 1 | AUR packages update has completed.
+Catchall for general errors | Mon Dec 27 06:16:00 AM CET 2021 | Exit code = 1 | AUR packages update has completed.
+Success | Mon Dec 27 06:16:40 AM CET 2021 | Exit code = 0 | AUR packages update has completed.

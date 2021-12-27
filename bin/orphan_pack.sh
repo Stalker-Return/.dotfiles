@@ -26,7 +26,7 @@ function notifynowempty() {
 	iconerr=/home/ed/.local/share/icons/status/dialog-warning.svg
 	iconst=/home/ed/.local/share/icons/status/trophy-gold.svg
 
-	echo "Exit code = $exitcode | $codedescription | $(date) | Orphan Packages have not found." \
+	echo "$codedescription | $(date) | Exit code = $exitcode | Orphan Packages have not found." \
 	>> $HOME/.local/share/log-files/orphan_pac.log
 
 	case $exitcode in
