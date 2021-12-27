@@ -526,3 +526,22 @@
 [2021-12-25T05:16:23+0100] [ALPM] running '30-systemd-update.hook'...
 [2021-12-26T01:21:13+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2021-12-26T01:21:13+0100] [PACMAN] synchronizing package lists
+[2021-12-26T08:13:45+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-12-26T08:13:45+0100] [PACMAN] synchronizing package lists
+[2021-12-26T08:13:55+0100] [PACMAN] starting full system upgrade
+[2021-12-26T08:14:22+0100] [ALPM] transaction started
+[2021-12-26T08:14:22+0100] [ALPM] installed libcgif (0.0.4-2)
+[2021-12-26T08:14:22+0100] [ALPM] upgraded libvips (8.11.4-1 -> 8.12.1-1)
+[2021-12-26T08:14:22+0100] [ALPM] upgraded perl-lwp-mediatypes (6.02-9 -> 6.04-1)
+[2021-12-26T08:14:22+0100] [ALPM] upgraded popt (1.18-1 -> 1.18-2)
+[2021-12-26T08:14:22+0100] [ALPM] upgraded unicode-emoji (13.1-1 -> 14.0-1)
+[2021-12-26T08:14:23+0100] [ALPM] upgraded vim-runtime (8.2.3582-3 -> 8.2.3890-1)
+[2021-12-26T08:14:24+0100] [ALPM] upgraded vim (8.2.3582-3 -> 8.2.3890-1)
+[2021-12-26T08:14:25+0100] [ALPM] transaction completed
+[2021-12-26T08:14:25+0100] [ALPM] running '30-systemd-update.hook'...
+[2021-12-26T08:14:25+0100] [ALPM] running 'detect-old-perl-modules.hook'...
+[2021-12-26T08:14:25+0100] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2021-12-26T08:14:26+0100] [ALPM] running 'update-desktop-database.hook'...
+[2021-12-27T06:08:43+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-12-27T06:08:43+0100] [PACMAN] synchronizing package lists
+[2021-12-27T06:08:55+0100] [PACMAN] starting full system upgrade

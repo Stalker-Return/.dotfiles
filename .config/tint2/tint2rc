@@ -11,8 +11,8 @@ color_stop = 60.000000 #221111 30
 
 # Gradient 2
 gradient = horizontal
-start_color = #000020 94
-end_color = #4282b4 94
+start_color = #07060b 94
+end_color = #77767b 94
 
 # Gradient 3
 gradient = vertical
@@ -32,8 +32,8 @@ border_width = 1
 border_sides = TLR
 border_content_tint_weight = 0
 background_content_tint_weight = 0
-background_color = #010101 96
-border_color = #010101 96
+background_color = #000043 96
+border_color = #000043 96
 gradient_id = 0
 background_color_hover = #3d3846 100
 border_color_hover = #000000 100
@@ -64,7 +64,7 @@ border_width = 1
 border_sides = TBLR
 border_content_tint_weight = 0
 background_content_tint_weight = 0
-background_color = #0c0c9c 97
+background_color = #010101 97
 border_color = #c0bfbc 100
 gradient_id = 0
 background_color_hover = #2f4f4f 100

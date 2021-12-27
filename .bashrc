@@ -98,6 +98,6 @@ WhiteBG="\e[0;47m"
 BlackBG="\e[0;40m"
 #
 # Autostart X at login
-#if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-#	exec startx
-#fi
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+	exec startx
+fi
