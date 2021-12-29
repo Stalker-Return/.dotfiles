@@ -562,3 +562,57 @@
 [2021-12-27T06:10:06+0100] [ALPM] running 'texinfo-install.hook'...
 [2021-12-28T00:00:12+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2021-12-28T00:00:12+0100] [PACMAN] synchronizing package lists
+[2021-12-28T00:00:17+0100] [PACMAN] starting full system upgrade
+[2021-12-28T00:00:29+0100] [ALPM] transaction started
+[2021-12-28T00:00:29+0100] [ALPM] upgraded systemd-libs (249.7-2 -> 250-1)
+[2021-12-28T00:00:29+0100] [ALPM] upgraded cryptsetup (2.4.2-1 -> 2.4.2-3)
+[2021-12-28T00:00:30+0100] [ALPM] upgraded libxml2 (2.9.12-5 -> 2.9.12-6)
+[2021-12-28T00:00:32+0100] [ALPM] upgraded systemd (249.7-2 -> 250-1)
+[2021-12-28T00:00:36+0100] [ALPM] upgraded systemd-sysvcompat (249.7-2 -> 250-1)
+[2021-12-28T00:00:37+0100] [ALPM] transaction completed
+[2021-12-28T00:00:37+0100] [ALPM] running '20-systemd-sysusers.hook'...
+[2021-12-28T00:00:38+0100] [ALPM] running '30-systemd-catalog.hook'...
+[2021-12-28T00:00:38+0100] [ALPM] running '30-systemd-daemon-reload.hook'...
+[2021-12-28T00:00:39+0100] [ALPM] running '30-systemd-hwdb.hook'...
+[2021-12-28T00:00:42+0100] [ALPM] running '30-systemd-sysctl.hook'...
+[2021-12-28T00:00:42+0100] [ALPM] running '30-systemd-tmpfiles.hook'...
+[2021-12-28T00:00:42+0100] [ALPM-SCRIPTLET] Cannot set file attributes for '/var/log/journal', maybe due to incompatibility in specified attributes, previous=0x00080000, current=0x00080000, expected=0x00880000, ignoring.
+[2021-12-28T00:00:42+0100] [ALPM-SCRIPTLET] Cannot set file attributes for '/var/log/journal/7248fdd628d943aab5fa1b209f94f709', maybe due to incompatibility in specified attributes, previous=0x00080000, current=0x00080000, expected=0x00880000, ignoring.
+[2021-12-28T00:00:42+0100] [ALPM-SCRIPTLET] Cannot set file attributes for '/var/log/journal/remote', maybe due to incompatibility in specified attributes, previous=0x00080000, current=0x00080000, expected=0x00880000, ignoring.
+[2021-12-28T00:00:42+0100] [ALPM] running '30-systemd-udev-reload.hook'...
+[2021-12-28T00:00:42+0100] [ALPM] running '30-systemd-update.hook'...
+[2021-12-28T00:00:42+0100] [ALPM] running '90-mkinitcpio-install.hook'...
+[2021-12-28T00:00:42+0100] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux-lts.preset: 'default'
+[2021-12-28T00:00:42+0100] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux-lts -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-lts.img
+[2021-12-28T00:00:42+0100] [ALPM-SCRIPTLET] ==> Starting build: 5.10.88-2-lts
+[2021-12-28T00:00:43+0100] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2021-12-28T00:00:44+0100] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2021-12-28T00:00:45+0100] [ALPM-SCRIPTLET]   -> Running build hook: [autodetect]
+[2021-12-28T00:00:45+0100] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2021-12-28T00:00:45+0100] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2021-12-28T00:01:05+0100] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2021-12-28T00:01:06+0100] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2021-12-28T00:01:07+0100] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2021-12-28T00:01:08+0100] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2021-12-28T00:01:08+0100] [ALPM-SCRIPTLET] ==> Creating zstd-compressed initcpio image: /boot/initramfs-linux-lts.img
+[2021-12-28T00:01:11+0100] [ALPM-SCRIPTLET] ==> Image generation successful
+[2021-12-28T00:01:11+0100] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux-lts.preset: 'fallback'
+[2021-12-28T00:01:11+0100] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux-lts -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-lts-fallback.img -S autodetect
+[2021-12-28T00:01:11+0100] [ALPM-SCRIPTLET] ==> Starting build: 5.10.88-2-lts
+[2021-12-28T00:01:11+0100] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2021-12-28T00:01:12+0100] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2021-12-28T00:01:13+0100] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2021-12-28T00:01:13+0100] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2021-12-28T00:01:16+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: aic94xx
+[2021-12-28T00:01:18+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: wd719x
+[2021-12-28T00:01:23+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: xhci_pci
+[2021-12-28T00:01:29+0100] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2021-12-28T00:01:34+0100] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2021-12-28T00:01:40+0100] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2021-12-28T00:01:44+0100] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2021-12-28T00:01:44+0100] [ALPM-SCRIPTLET] ==> Creating zstd-compressed initcpio image: /boot/initramfs-linux-lts-fallback.img
+[2021-12-28T00:01:53+0100] [ALPM-SCRIPTLET] ==> Image generation successful
+[2021-12-28T00:01:53+0100] [ALPM] running 'dbus-reload.hook'...
+[2021-12-29T06:09:40+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-12-29T06:09:40+0100] [PACMAN] synchronizing package lists
+[2021-12-29T06:09:49+0100] [PACMAN] starting full system upgrade
