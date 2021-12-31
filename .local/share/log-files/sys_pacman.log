@@ -668,3 +668,5 @@
 [2021-12-29T06:13:49+0100] [ALPM] running 'texinfo-install.hook'...
 [2021-12-30T10:16:43+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2021-12-30T10:16:43+0100] [PACMAN] synchronizing package lists
+[2021-12-31T07:10:25+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2021-12-31T07:10:25+0100] [PACMAN] synchronizing package lists
