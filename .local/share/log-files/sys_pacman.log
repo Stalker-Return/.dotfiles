@@ -732,3 +732,5 @@
 [2022-01-01T09:52:24+0100] [PACMAN] synchronizing package lists
 [2022-01-02T20:25:42+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2022-01-02T20:25:42+0100] [PACMAN] synchronizing package lists
+[2022-01-03T14:40:35+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2022-01-03T14:40:35+0100] [PACMAN] synchronizing package lists
