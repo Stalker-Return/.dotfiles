@@ -8,3 +8,5 @@ Success | Tue Dec 21 08:29:58 AM CET 2021 | Exit code = 0 | Orphan packages has 
 Catchall for general errors | Mon Dec 27 06:09:20 AM CET 2021 | Exit code = 1 | Orphan packages has cleaned.
 Exit code = 0 | Success | Mon Dec 27 06:14:42 AM CET 2021 | Orphan Packages have not found.
 Success | Mon Dec 27 06:20:19 AM CET 2021 | Exit code = 0 | Orphan Packages have not found.
+Catchall for general errors | Mon Jan  3 02:41:09 PM CET 2022 | Exit code = 1 | Orphan packages has cleaned.
+Success | Mon Jan  3 02:53:01 PM CET 2022 | Exit code = 0 | Orphan packages has cleaned.
