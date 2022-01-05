@@ -801,3 +801,18 @@
 [2022-01-03T15:01:41+0100] [ALPM] running 'update-desktop-database.hook'...
 [2022-01-04T04:45:51+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2022-01-04T04:45:51+0100] [PACMAN] synchronizing package lists
+[2022-01-04T04:59:26+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2022-01-04T04:59:26+0100] [PACMAN] synchronizing package lists
+[2022-01-04T04:59:39+0100] [PACMAN] starting full system upgrade
+[2022-01-04T05:00:05+0100] [ALPM] transaction started
+[2022-01-04T05:00:06+0100] [ALPM] upgraded iso-codes (4.8.0-1 -> 4.9.0-1)
+[2022-01-04T05:00:10+0100] [ALPM] upgraded qt5-base (5.15.2+kde+r268-1 -> 5.15.2+kde+r274-1)
+[2022-01-04T05:00:12+0100] [ALPM] upgraded qt5-declarative (5.15.2+kde+r41-1 -> 5.15.2+kde+r42-1)
+[2022-01-04T05:00:12+0100] [ALPM] upgraded qt5-svg (5.15.2+kde+r13-1 -> 5.15.2+kde+r14-1)
+[2022-01-04T05:00:13+0100] [ALPM] transaction completed
+[2022-01-04T05:00:13+0100] [ALPM] running '30-systemd-update.hook'...
+[2022-01-04T05:34:32+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2022-01-04T05:34:32+0100] [PACMAN] synchronizing package lists
+[2022-01-04T05:34:38+0100] [PACMAN] starting full system upgrade
+[2022-01-05T07:15:42+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2022-01-05T07:15:42+0100] [PACMAN] synchronizing package lists
