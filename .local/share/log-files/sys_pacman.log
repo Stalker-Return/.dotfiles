@@ -816,3 +816,25 @@
 [2022-01-04T05:34:38+0100] [PACMAN] starting full system upgrade
 [2022-01-05T07:15:42+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2022-01-05T07:15:42+0100] [PACMAN] synchronizing package lists
+[2022-01-05T07:37:05+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2022-01-05T07:37:05+0100] [PACMAN] synchronizing package lists
+[2022-01-05T07:37:17+0100] [PACMAN] starting full system upgrade
+[2022-01-05T07:39:45+0100] [ALPM] transaction started
+[2022-01-05T07:39:52+0100] [ALPM] upgraded arc-gtk-theme (20211018-1 -> 20220102-1)
+[2022-01-05T07:39:52+0100] [ALPM] upgraded feh (3.7.2-1 -> 3.8-1)
+[2022-01-05T07:39:52+0100] [ALPM] upgraded hidapi (0.11.0-1 -> 0.11.2-1)
+[2022-01-05T07:39:53+0100] [ALPM] upgraded libcgif (0.0.4-2 -> 0.1.0-1)
+[2022-01-05T07:39:53+0100] [ALPM] upgraded sqlite (3.37.0-1 -> 3.37.1-1)
+[2022-01-05T07:39:55+0100] [ALPM] upgraded qt5-base (5.15.2+kde+r274-1 -> 5.15.2+kde+r275-1)
+[2022-01-05T07:39:55+0100] [ALPM] upgraded qt5-svg (5.15.2+kde+r14-1 -> 5.15.2+kde+r15-1)
+[2022-01-05T07:40:05+0100] [ALPM] upgraded signal-desktop (5.26.1-1 -> 5.27.0-1)
+[2022-01-05T07:40:08+0100] [ALPM] upgraded telegram-desktop (3.4.2-2 -> 3.4.3-2)
+[2022-01-05T07:40:08+0100] [ALPM] upgraded xorg-server-common (21.1.2-2 -> 21.1.3-1)
+[2022-01-05T07:40:09+0100] [ALPM] upgraded xorg-server (21.1.2-2 -> 21.1.3-1)
+[2022-01-05T07:40:10+0100] [ALPM] transaction completed
+[2022-01-05T07:40:11+0100] [ALPM] running '30-systemd-update.hook'...
+[2022-01-05T07:40:11+0100] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2022-01-05T07:40:12+0100] [ALPM] running 'update-desktop-database.hook'...
+[2022-01-06T07:03:35+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2022-01-06T07:03:35+0100] [PACMAN] synchronizing package lists
+[2022-01-06T07:03:39+0100] [PACMAN] starting full system upgrade
