@@ -892,3 +892,54 @@
 [2022-01-06T07:05:54+0100] [ALPM] running 'dbus-reload.hook'...
 [2022-01-07T07:20:04+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
 [2022-01-07T07:20:04+0100] [PACMAN] synchronizing package lists
+[2022-01-07T07:25:35+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2022-01-07T07:25:35+0100] [PACMAN] synchronizing package lists
+[2022-01-07T07:25:45+0100] [PACMAN] starting full system upgrade
+[2022-01-07T07:30:18+0100] [ALPM] running '60-mkinitcpio-remove.hook'...
+[2022-01-07T07:30:19+0100] [ALPM] transaction started
+[2022-01-07T07:30:19+0100] [ALPM] upgraded libpipeline (1.5.4-1 -> 1.5.5-1)
+[2022-01-07T07:30:30+0100] [ALPM] upgraded libreoffice-fresh (7.2.4-3 -> 7.2.5-1)
+[2022-01-07T07:30:46+0100] [ALPM] upgraded linux-lts (5.10.89-1 -> 5.10.90-1)
+[2022-01-07T07:31:04+0100] [ALPM] upgraded linux-lts-headers (5.10.89-1 -> 5.10.90-1)
+[2022-01-07T07:31:07+0100] [ALPM] upgraded qt5-base (5.15.2+kde+r275-1 -> 5.15.2+kde+r276-1)
+[2022-01-07T07:31:13+0100] [ALPM] upgraded signal-desktop (5.27.0-1 -> 5.27.1-1)
+[2022-01-07T07:31:14+0100] [ALPM] transaction completed
+[2022-01-07T07:31:17+0100] [ALPM] running '30-systemd-update.hook'...
+[2022-01-07T07:31:17+0100] [ALPM] running '30-update-mime-database.hook'...
+[2022-01-07T07:31:24+0100] [ALPM] running '60-depmod.hook'...
+[2022-01-07T07:31:43+0100] [ALPM] running '90-mkinitcpio-install.hook'...
+[2022-01-07T07:31:44+0100] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux-lts.preset: 'default'
+[2022-01-07T07:31:44+0100] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux-lts -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-lts.img
+[2022-01-07T07:31:44+0100] [ALPM-SCRIPTLET] ==> Starting build: 5.10.90-1-lts
+[2022-01-07T07:31:44+0100] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2022-01-07T07:31:45+0100] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2022-01-07T07:31:46+0100] [ALPM-SCRIPTLET]   -> Running build hook: [autodetect]
+[2022-01-07T07:31:46+0100] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2022-01-07T07:31:46+0100] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2022-01-07T07:31:51+0100] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2022-01-07T07:31:51+0100] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2022-01-07T07:31:53+0100] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2022-01-07T07:31:54+0100] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2022-01-07T07:31:54+0100] [ALPM-SCRIPTLET] ==> Creating zstd-compressed initcpio image: /boot/initramfs-linux-lts.img
+[2022-01-07T07:31:56+0100] [ALPM-SCRIPTLET] ==> Image generation successful
+[2022-01-07T07:31:56+0100] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux-lts.preset: 'fallback'
+[2022-01-07T07:31:56+0100] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-linux-lts -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-lts-fallback.img -S autodetect
+[2022-01-07T07:31:56+0100] [ALPM-SCRIPTLET] ==> Starting build: 5.10.90-1-lts
+[2022-01-07T07:31:56+0100] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2022-01-07T07:31:57+0100] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2022-01-07T07:31:58+0100] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2022-01-07T07:31:58+0100] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2022-01-07T07:32:01+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: aic94xx
+[2022-01-07T07:32:03+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: wd719x
+[2022-01-07T07:32:07+0100] [ALPM-SCRIPTLET] ==> WARNING: Possibly missing firmware for module: xhci_pci
+[2022-01-07T07:32:12+0100] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2022-01-07T07:32:15+0100] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2022-01-07T07:32:20+0100] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2022-01-07T07:32:24+0100] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2022-01-07T07:32:24+0100] [ALPM-SCRIPTLET] ==> Creating zstd-compressed initcpio image: /boot/initramfs-linux-lts-fallback.img
+[2022-01-07T07:32:32+0100] [ALPM-SCRIPTLET] ==> Image generation successful
+[2022-01-07T07:32:32+0100] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2022-01-07T07:32:33+0100] [ALPM] running 'update-desktop-database.hook'...
+[2022-01-08T06:29:05+0100] [PACMAN] Running 'pacman -Syu --noconfirm --logfile /home/ed/.local/share/log-files/sys_pacman.log'
+[2022-01-08T06:29:05+0100] [PACMAN] synchronizing package lists
+[2022-01-08T06:29:12+0100] [PACMAN] starting full system upgrade
